@@ -1,0 +1,28 @@
+uuid: 9326b246-5eb2-49ce-9a65-2b5fb3fcbfa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hr_announcement.body
+    - node.type.hr_announcement
+  module:
+    - text
+    - user
+id: node.hr_announcement.default
+targetEntityType: node
+bundle: hr_announcement
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

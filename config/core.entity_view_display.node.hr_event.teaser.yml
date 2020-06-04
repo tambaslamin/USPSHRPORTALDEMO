@@ -1,0 +1,30 @@
+uuid: 46b776ec-d376-4449-80c8-d3c9ada7038a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hr_event.body
+    - node.type.hr_event
+  module:
+    - text
+    - user
+id: node.hr_event.teaser
+targetEntityType: node
+bundle: hr_event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
