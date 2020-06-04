@@ -84,6 +84,7 @@
         "drupal/views_bulk_operations": "^3.7",
         "drupal/votingapi_widgets": "^1.0@alpha",
         "drupal/weather-weather": "^1.0@beta",
+        "drupal/webform": "^5.16",
         "drupal/xmlsitemap": "^1.0@RC",
         "drupal/youtube": "^1.1",
         "drush-ops/behat-drush-endpoint": "^9.3",
