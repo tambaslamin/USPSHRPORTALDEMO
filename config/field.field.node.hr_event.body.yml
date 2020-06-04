@@ -1,0 +1,23 @@
+uuid: 4dbc5e7e-7097-4739-808b-2b20f4391097
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hr_event
+  module:
+    - text
+id: node.hr_event.body
+field_name: body
+entity_type: node
+bundle: hr_event
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

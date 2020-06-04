@@ -1,0 +1,28 @@
+uuid: c3f29207-a557-499a-95b0-6e7abd7d0236
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hr_event.body
+    - node.type.hr_event
+  module:
+    - text
+    - user
+id: node.hr_event.default
+targetEntityType: node
+bundle: hr_event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
