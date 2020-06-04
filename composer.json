@@ -64,6 +64,7 @@
         "drupal/message_ui": "^1.0@beta",
         "drupal/metatag": "^1.13",
         "drupal/moderation_dashboard": "^1.0@beta",
+        "drupal/olivero": "^1.0@alpha",
         "drupal/override_node_options": "^2.4",
         "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.8",
