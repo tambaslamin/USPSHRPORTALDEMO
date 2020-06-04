@@ -1,0 +1,28 @@
+uuid: 07e58fa3-cf47-431d-9d2d-d7ad901707ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hr_media_gallery.body
+    - node.type.hr_media_gallery
+  module:
+    - text
+    - user
+id: node.hr_media_gallery.default
+targetEntityType: node
+bundle: hr_media_gallery
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

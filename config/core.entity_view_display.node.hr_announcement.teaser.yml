@@ -1,0 +1,30 @@
+uuid: 6fd5374d-34a8-4384-809e-65d9b7e74dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hr_announcement.body
+    - node.type.hr_announcement
+  module:
+    - text
+    - user
+id: node.hr_announcement.teaser
+targetEntityType: node
+bundle: hr_announcement
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
