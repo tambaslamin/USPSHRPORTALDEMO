@@ -1,0 +1,20 @@
+uuid: 890474d9-21ec-4b47-830e-9f531d409db5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uspshrdemo
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: uspshrdemo_page_title
+theme: uspshrdemo
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,5 +1,11 @@
 module:
+  actions_permissions: 0
+  admin_toolbar: 0
+  admin_toolbar_links_access_filter: 0
+  admin_toolbar_search: 0
+  admin_toolbar_tools: 0
   automated_cron: 0
+  ban: 0
   better_exposed_filters: 0
   big_pipe: 0
   block: 0
@@ -20,8 +26,12 @@ module:
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
+  eck: 0
   editor: 0
+  embed: 0
   entity: 0
+  entity_browser: 0
+  entity_embed: 0
   entity_reference_revisions: 0
   field: 0
   field_ui: 0
@@ -31,18 +41,26 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
   layout_builder: 0
+  layout_builder_restrictions: 0
+  layout_builder_styles: 0
   layout_discovery: 0
   link: 0
+  link_attributes: 0
+  login_security: 0
   media: 0
   media_library: 0
   menu_ui: 0
   metatag: 0
+  metatag_views: 0
   node: 0
   options: 0
+  override_node_options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  private_message: 0
   profile: 0
   purge: 0
   purge_drush: 0
@@ -56,7 +74,10 @@ module:
   redirect_404: 0
   search: 0
   settings_tray: 0
+  shariff: 0
   shortcut: 0
+  sitemap: 0
+  superfish: 0
   syslog: 0
   system: 0
   taxonomy: 0
@@ -64,11 +85,15 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  toolbar_anti_flicker: 0
   tour: 0
   update: 0
   user: 0
   video_embed_field: 0
+  views_bulk_operations: 0
   views_ui: 0
+  webform: 0
+  webform_ui: 0
   workflows: 0
   xmlsitemap_custom: 0
   xmlsitemap_engines: 0
@@ -83,6 +108,8 @@ theme:
   classy: 0
   bartik: 0
   claro: 0
+  bootstrap_barrio: 0
+  uspshrdemo: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

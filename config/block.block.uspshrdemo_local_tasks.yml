@@ -1,0 +1,22 @@
+uuid: d5575409-38db-4bbf-a702-546b7ff0ee3f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uspshrdemo
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: uspshrdemo_local_tasks
+theme: uspshrdemo
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

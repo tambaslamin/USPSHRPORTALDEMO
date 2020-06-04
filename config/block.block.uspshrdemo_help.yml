@@ -1,0 +1,22 @@
+uuid: 74faf03e-a387-446a-b170-084f0f4ffc90
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - uspshrdemo
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: uspshrdemo_help
+theme: uspshrdemo
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
