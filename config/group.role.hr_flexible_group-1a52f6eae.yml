@@ -1,0 +1,17 @@
+uuid: f27368b6-3bfa-45e7-b04b-9e30bcc66b2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+  enforced:
+    config:
+      - user.role.hr_content_owner
+id: hr_flexible_group-1a52f6eae
+label: 'HR Content Owner'
+weight: -5
+internal: true
+audience: outsider
+group_type: hr_flexible_group
+permissions_ui: false
+permissions: {  }

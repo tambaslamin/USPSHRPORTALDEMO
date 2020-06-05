@@ -1,15 +1,21 @@
 module:
   actions_permissions: 0
+  address: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  auto_entitylabel: 0
+  autologout: 0
   automated_cron: 0
   ban: 0
   better_exposed_filters: 0
   big_pipe: 0
   block: 0
+  block_blacklist: 0
+  block_class: 0
   block_content: 0
+  block_user_info: 0
   breakpoint: 0
   chosen: 0
   chosen_field: 0
@@ -25,19 +31,30 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  diff: 0
+  dropzonejs: 0
+  dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
   eck: 0
   editor: 0
   embed: 0
   entity: 0
+  entity_block: 0
   entity_browser: 0
+  entity_browser_enhanced: 0
+  entity_browser_example: 0
+  entity_clone: 0
   entity_embed: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  flag: 0
+  gnode: 0
   google_analytics: 0
+  group: 0
   help: 0
   history: 0
   image: 0
@@ -46,18 +63,27 @@ module:
   layout_builder_restrictions: 0
   layout_builder_styles: 0
   layout_discovery: 0
+  layout_library: 0
+  layout_section_classes: 0
   link: 0
   link_attributes: 0
   login_security: 0
   media: 0
   media_library: 0
+  menu_block: 0
   menu_ui: 0
+  message: 0
+  message_ui: 0
   metatag: 0
   metatag_views: 0
+  moderation_dashboard: 0
   node: 0
   options: 0
   override_node_options: 0
   page_cache: 0
+  page_manager: 0
+  panels: 0
+  paragraph_blocks: 0
   path: 0
   path_alias: 0
   private_message: 0
@@ -81,6 +107,7 @@ module:
   syslog: 0
   system: 0
   taxonomy: 0
+  taxonomy_menu: 0
   telephone: 0
   text: 0
   token: 0

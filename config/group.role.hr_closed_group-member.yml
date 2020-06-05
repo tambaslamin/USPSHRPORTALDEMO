@@ -1,0 +1,14 @@
+uuid: 4472c6da-4fb9-421a-9220-043bb13e3dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_closed_group
+id: hr_closed_group-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: hr_closed_group
+permissions_ui: true
+permissions: {  }

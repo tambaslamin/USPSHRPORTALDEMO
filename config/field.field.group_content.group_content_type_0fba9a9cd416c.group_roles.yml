@@ -1,0 +1,22 @@
+uuid: 0154a94b-ceec-48c4-85c3-c9df25101dc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.group_roles
+    - group.content_type.group_content_type_0fba9a9cd416c
+id: group_content.group_content_type_0fba9a9cd416c.group_roles
+field_name: group_roles
+entity_type: group_content
+bundle: group_content_type_0fba9a9cd416c
+label: Roles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'group_type:group_role'
+  handler_settings:
+    group_type_id: hr_flexible_group
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: f8a3c1e4-4e12-4add-a7cf-7c9e1ee709c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+id: hr_public_group-group_manager
+label: 'Group Manager'
+weight: 102
+internal: false
+audience: member
+group_type: hr_public_group
+permissions_ui: true
+permissions: {  }

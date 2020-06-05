@@ -1,0 +1,28 @@
+uuid: 2c1ae3d5-0770-44e9-a1d5-5692c218dd54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.hr_public_group.field_hr_description
+    - field.field.group.hr_public_group.field_hr_image
+    - group.type.hr_public_group
+  module:
+    - text
+id: group.hr_public_group.default
+targetEntityType: group
+bundle: hr_public_group
+mode: default
+content:
+  field_hr_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_hr_image: true
+  label: true
+  uid: true

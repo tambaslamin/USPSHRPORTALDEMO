@@ -1,0 +1,19 @@
+uuid: 837dba97-ab04-4abd-99da-182df608fe9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+    - node.type.hr_announcement
+  module:
+    - gnode
+    - node
+id: group_content_type_fb04a02bb6e35
+label: 'Open group: Group node (HR Announcement)'
+description: 'Adds <em class="placeholder">HR Announcement</em> content to groups both publicly and privately.'
+group_type: hr_open_group
+content_plugin: 'group_node:hr_announcement'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

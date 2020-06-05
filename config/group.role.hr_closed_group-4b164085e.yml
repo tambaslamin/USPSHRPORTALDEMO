@@ -1,0 +1,17 @@
+uuid: 0bf21f4f-a5a6-4e42-8af6-a10cde821977
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_closed_group
+  enforced:
+    config:
+      - user.role.hr_supervisor
+id: hr_closed_group-4b164085e
+label: 'HR Supervisor'
+weight: -4
+internal: true
+audience: outsider
+group_type: hr_closed_group
+permissions_ui: false
+permissions: {  }

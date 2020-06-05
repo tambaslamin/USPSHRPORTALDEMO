@@ -1,0 +1,24 @@
+uuid: 39c34099-45ea-497f-9554-fe1b6087cb69
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+id: hr_flexible_group-admin
+label: 'Group Admin'
+weight: 100
+internal: false
+audience: member
+group_type: hr_flexible_group
+permissions_ui: true
+permissions:
+  - 'access content overview'
+  - 'access group_node overview'
+  - 'administer group'
+  - 'administer members'
+  - 'delete group'
+  - 'edit group'
+  - 'leave group'
+  - 'update own group_membership content'
+  - 'view group'
+  - 'view group_membership content'

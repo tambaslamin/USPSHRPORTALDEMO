@@ -1,0 +1,14 @@
+uuid: bd08f7e6-b053-42d5-aa92-804cc5038cea
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+id: hr_public_group-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: hr_public_group
+permissions_ui: true
+permissions: {  }

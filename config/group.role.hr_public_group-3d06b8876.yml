@@ -1,0 +1,17 @@
+uuid: b9a0e8c8-1738-4680-9bd8-6bf77894c69e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+  enforced:
+    config:
+      - user.role.hr_standard_user
+id: hr_public_group-3d06b8876
+label: 'HR Standard User'
+weight: -7
+internal: true
+audience: outsider
+group_type: hr_public_group
+permissions_ui: false
+permissions: {  }

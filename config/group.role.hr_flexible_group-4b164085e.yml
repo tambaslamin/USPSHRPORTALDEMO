@@ -1,0 +1,17 @@
+uuid: fb8620b6-4562-4948-927f-20bcadcec367
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+  enforced:
+    config:
+      - user.role.hr_supervisor
+id: hr_flexible_group-4b164085e
+label: 'HR Supervisor'
+weight: -4
+internal: true
+audience: outsider
+group_type: hr_flexible_group
+permissions_ui: false
+permissions: {  }

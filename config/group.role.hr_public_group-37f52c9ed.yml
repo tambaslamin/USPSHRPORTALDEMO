@@ -1,0 +1,17 @@
+uuid: dabd7ba9-a19a-4b43-8e0f-1e4464a864d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+  enforced:
+    config:
+      - user.role.hr_professional
+id: hr_public_group-37f52c9ed
+label: 'HR Professional'
+weight: -6
+internal: true
+audience: outsider
+group_type: hr_public_group
+permissions_ui: false
+permissions: {  }

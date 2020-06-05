@@ -1,0 +1,14 @@
+uuid: a55ae0fe-18a1-4e94-86a7-149cf9a8f978
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_closed_group
+id: hr_closed_group-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: hr_closed_group
+permissions_ui: true
+permissions: {  }

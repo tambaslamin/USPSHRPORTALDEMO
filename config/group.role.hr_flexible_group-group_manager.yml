@@ -1,0 +1,14 @@
+uuid: f54e5b25-0e8f-4bcd-a2ea-8accc4e25d29
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+id: hr_flexible_group-group_manager
+label: 'Group Manager'
+weight: 101
+internal: false
+audience: member
+group_type: hr_flexible_group
+permissions_ui: true
+permissions: {  }
