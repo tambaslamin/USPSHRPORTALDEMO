@@ -1,0 +1,28 @@
+uuid: ccc98870-9e70-4f73-a690-d12beeb96dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_hr_hero_image
+    - media.type.image
+id: block_content.basic.field_hr_hero_image
+field_name: field_hr_hero_image
+entity_type: block_content
+bundle: basic
+label: 'Hero Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

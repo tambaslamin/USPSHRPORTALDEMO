@@ -1,0 +1,23 @@
+uuid: 98276beb-fb15-45bd-adf3-a9f358541e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hr_more_from_compliance
+    - profile.type.hr_profile
+  module:
+    - link
+id: profile.hr_profile.field_hr_more_from_compliance
+field_name: field_hr_more_from_compliance
+entity_type: profile
+bundle: hr_profile
+label: 'More from compliance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

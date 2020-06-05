@@ -1,0 +1,14 @@
+uuid: 2a2564a2-8c39-41a0-809c-53460dc0b79f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_standard_user
+  module:
+    - user
+id: user_add_role_action.hr_standard_user
+label: 'Add the HR Standard User role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hr_standard_user

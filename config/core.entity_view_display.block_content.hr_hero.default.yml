@@ -1,0 +1,55 @@
+uuid: b68bc588-c3e2-4c43-9e87-e144e029051d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_hero
+    - field.field.block_content.hr_hero.body
+    - field.field.block_content.hr_hero.field_hr_hero_image
+    - field.field.block_content.hr_hero.field_hr_hero_link
+    - field.field.block_content.hr_hero.field_hr_hero_title
+  module:
+    - link
+    - text
+id: block_content.hr_hero.default
+targetEntityType: block_content
+bundle: hr_hero
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hr_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_hr_hero_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_hr_hero_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

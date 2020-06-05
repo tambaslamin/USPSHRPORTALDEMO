@@ -1,0 +1,23 @@
+uuid: af7e1919-f838-4ed4-bcf5-392134021cfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_hr_menu_link
+    - system.menu.main
+  module:
+    - link
+id: menu_link_content.main.field_hr_menu_link
+field_name: field_hr_menu_link
+entity_type: menu_link_content
+bundle: main
+label: 'Menu Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

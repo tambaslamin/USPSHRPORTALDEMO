@@ -1,0 +1,9 @@
+uuid: 73a7996a-d7cf-47a7-804a-4f76163f7ff0
+langcode: en
+status: true
+dependencies: {  }
+id: hr_manager
+label: 'HR Manager'
+weight: -3
+is_admin: null
+permissions: {  }

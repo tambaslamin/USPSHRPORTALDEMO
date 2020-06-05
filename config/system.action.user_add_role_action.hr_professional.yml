@@ -1,0 +1,14 @@
+uuid: c54ce229-babc-492e-aeab-474a71a8162c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_professional
+  module:
+    - user
+id: user_add_role_action.hr_professional
+label: 'Add the HR Professional role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hr_professional
