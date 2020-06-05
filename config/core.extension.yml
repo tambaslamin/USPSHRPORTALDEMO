@@ -51,7 +51,6 @@ module:
   login_security: 0
   media: 0
   media_library: 0
-  menu_item_extras: 0
   menu_ui: 0
   metatag: 0
   metatag_views: 0

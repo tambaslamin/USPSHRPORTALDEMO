@@ -6,11 +6,10 @@ dependencies:
     - field.field.menu_link_content.main.field_hr_menu_link
     - field.field.menu_link_content.main.field_hr_menu_title
     - field.field.menu_link_content.main.layout_builder__layout
-    - system.menu.main
   module:
     - link
     - link_attributes
-    - menu_item_extras
+    - menu_link_content
 id: menu_link_content.main.default
 targetEntityType: menu_link_content
 bundle: main
@@ -41,10 +40,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   view_mode:
-    type: menu_item_extras_view_mode_selector_select
-    weight: 3
-    region: content
-    settings: {  }
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   layout_builder__layout: true

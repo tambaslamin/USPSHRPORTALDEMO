@@ -1,0 +1,8 @@
+uuid: 924d9fa2-3599-443d-99a1-1e179c6bb94c
+langcode: en
+status: true
+dependencies: {  }
+name: 'MIE Demo Content'
+vid: mie_demo_content
+description: 'Demo content for Menu Item Extras module'
+weight: 0

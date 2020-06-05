@@ -1,0 +1,8 @@
+uuid: a788db7d-38a8-473c-b97d-04fa45438118
+langcode: en
+status: true
+dependencies: {  }
+id: mie-demo-base-menu
+label: 'Menu Item Extras Demo Menu'
+description: 'Demo menu for Menu Item Extras module'
+locked: false

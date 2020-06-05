@@ -7,11 +7,10 @@ dependencies:
     - field.field.menu_link_content.mie-demo-base-menu.field_image
     - field.field.menu_link_content.mie-demo-base-menu.field_mie_demo_content_terms
     - image.style.thumbnail
-    - system.menu.mie-demo-base-menu
   module:
     - image
     - link_attributes
-    - menu_item_extras
+    - menu_link_content
     - text
 _core:
   default_config_hash: LkpFjQ2WsHkJ7-j75Vpwja0D5zhU5EY27mmJVZDE9Aw
@@ -55,9 +54,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   view_mode:
-    type: menu_item_extras_view_mode_selector_select
-    weight: 1
-    region: content
-    settings: {  }
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden: {  }
