@@ -1,0 +1,9 @@
+uuid: 36d17000-ff7d-4d8a-bd97-53af127eeef1
+langcode: en
+status: true
+dependencies: {  }
+id: hr_professional
+label: 'HR Professional'
+weight: -6
+is_admin: null
+permissions: {  }
