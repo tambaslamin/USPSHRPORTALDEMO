@@ -1,0 +1,14 @@
+uuid: 1e5008a4-8f48-47c1-b12e-37fa82b75f72
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_former_employee
+  module:
+    - user
+id: user_add_role_action.hr_former_employee
+label: 'Add the HR Former Employee role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hr_former_employee

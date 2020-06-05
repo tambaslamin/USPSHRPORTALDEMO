@@ -1,0 +1,20 @@
+uuid: a542a8b2-09d0-4bdd-b73f-4b1b503abd8d
+langcode: en
+status: true
+dependencies: {  }
+id: hr_profile
+label: 'HR Profile'
+display_label: 'My Profile'
+multiple: false
+registration: true
+roles:
+  authenticated: authenticated
+  hr_former_employee: hr_former_employee
+  hr_standard_user: hr_standard_user
+  hr_professional: hr_professional
+  hr_content_owner: hr_content_owner
+  hr_supervisor: hr_supervisor
+  hr_manager: hr_manager
+  administrator: administrator
+allow_revisions: true
+new_revision: true

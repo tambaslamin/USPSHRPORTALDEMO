@@ -1,0 +1,9 @@
+uuid: fcde76b7-36c4-459d-b8ef-1a8f74143c6a
+langcode: en
+status: true
+dependencies: {  }
+id: hr_supervisor
+label: 'HR Supervisor'
+weight: -4
+is_admin: null
+permissions: {  }

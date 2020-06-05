@@ -1,0 +1,12 @@
+uuid: 8a62509e-3145-45ad-a6f1-2556bdd5e52b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+_core:
+  default_config_hash: RcPP6Be18-i77k6ZvASVJeq6p2bRPMNPSjqrWKsjd68
+id: menu_link_content.banner
+label: Banner
+targetEntityType: menu_link_content
+cache: true

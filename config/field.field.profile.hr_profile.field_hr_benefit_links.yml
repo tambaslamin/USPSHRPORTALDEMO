@@ -1,0 +1,23 @@
+uuid: ff539d64-d7d7-480b-9daa-00303cbcb677
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hr_benefit_links
+    - profile.type.hr_profile
+  module:
+    - link
+id: profile.hr_profile.field_hr_benefit_links
+field_name: field_hr_benefit_links
+entity_type: profile
+bundle: hr_profile
+label: 'Benefit Links'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

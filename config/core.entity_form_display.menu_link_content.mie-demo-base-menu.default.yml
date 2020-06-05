@@ -1,0 +1,31 @@
+uuid: 7d2633e2-1430-4f2e-8a77-9ee3134f75c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - link_attributes
+    - menu_link_content
+_core:
+  default_config_hash: LkpFjQ2WsHkJ7-j75Vpwja0D5zhU5EY27mmJVZDE9Aw
+id: menu_link_content.mie-demo-base-menu.default
+targetEntityType: menu_link_content
+bundle: mie-demo-base-menu
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  view_mode:
+    weight: 22
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

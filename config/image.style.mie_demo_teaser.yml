@@ -1,0 +1,17 @@
+uuid: 79a6632a-31b9-4aad-9bd4-16795a578a8b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QmrfJJLC4o5sPK4tQO85c81ZaHsWoZM29IbhAKo77wU
+name: mie_demo_teaser
+label: 'MIE Demo Teaser'
+effects:
+  72717da7-049f-4acb-ab5e-e26a295c3d84:
+    uuid: 72717da7-049f-4acb-ab5e-e26a295c3d84
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

@@ -1,0 +1,14 @@
+uuid: 4ea743a3-fcc6-4002-8ee7-16b3825b689d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_professional
+  module:
+    - user
+id: user_remove_role_action.hr_professional
+label: 'Remove the HR Professional role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hr_professional

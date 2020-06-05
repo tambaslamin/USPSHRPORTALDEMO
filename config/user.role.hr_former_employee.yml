@@ -1,0 +1,9 @@
+uuid: da5f6a46-232e-4c3b-a5db-2d891fd89168
+langcode: en
+status: true
+dependencies: {  }
+id: hr_former_employee
+label: 'HR Former Employee'
+weight: -8
+is_admin: null
+permissions: {  }

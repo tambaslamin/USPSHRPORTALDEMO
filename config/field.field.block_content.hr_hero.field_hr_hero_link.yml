@@ -1,0 +1,23 @@
+uuid: d72e642d-aa93-4835-9067-433d6d5b6c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_hero
+    - field.storage.block_content.field_hr_hero_link
+  module:
+    - link
+id: block_content.hr_hero.field_hr_hero_link
+field_name: field_hr_hero_link
+entity_type: block_content
+bundle: hr_hero
+label: 'Hero Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

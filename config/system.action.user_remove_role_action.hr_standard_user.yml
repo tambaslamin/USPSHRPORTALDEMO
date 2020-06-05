@@ -1,0 +1,14 @@
+uuid: edc7073d-9609-4507-945e-30372d33d912
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_standard_user
+  module:
+    - user
+id: user_remove_role_action.hr_standard_user
+label: 'Remove the HR Standard User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hr_standard_user

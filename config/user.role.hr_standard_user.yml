@@ -1,0 +1,9 @@
+uuid: 234f8b26-61bb-4127-aebd-1263994139d6
+langcode: en
+status: true
+dependencies: {  }
+id: hr_standard_user
+label: 'HR Standard User'
+weight: -7
+is_admin: null
+permissions: {  }

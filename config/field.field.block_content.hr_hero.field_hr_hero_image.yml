@@ -1,0 +1,28 @@
+uuid: 248dd32d-7979-4586-afca-a63a687bb39a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_hero
+    - field.storage.block_content.field_hr_hero_image
+    - media.type.image
+id: block_content.hr_hero.field_hr_hero_image
+field_name: field_hr_hero_image
+entity_type: block_content
+bundle: hr_hero
+label: 'Hero Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

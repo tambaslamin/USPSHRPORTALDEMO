@@ -1,0 +1,14 @@
+uuid: aec7bb53-8e51-463a-969f-d3376640c18e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_content_owner
+  module:
+    - user
+id: user_add_role_action.hr_content_owner
+label: 'Add the HR Content Owner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hr_content_owner
