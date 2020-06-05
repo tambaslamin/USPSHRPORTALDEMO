@@ -1,0 +1,20 @@
+uuid: 578465cc-4402-40bb-a39b-e24aeffea591
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uspshrdemo
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: uspshrdemo_local_actions
+theme: uspshrdemo
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

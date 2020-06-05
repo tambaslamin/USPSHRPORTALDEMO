@@ -1,0 +1,22 @@
+uuid: 11d5a0be-2b55-490d-a628-89c2f3d13c31
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uspshrdemo
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: uspshrdemo_content
+theme: uspshrdemo
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
