@@ -1,0 +1,152 @@
+uuid: ba817710-b7fc-478c-aee5-fb58367b8ba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.hr_profile.field_hr_benefit_links
+    - field.field.profile.hr_profile.field_hr_compliance_links
+    - field.field.profile.hr_profile.field_hr_explorer_your_benefit
+    - field.field.profile.hr_profile.field_hr_first_name
+    - field.field.profile.hr_profile.field_hr_full_retirement_info
+    - field.field.profile.hr_profile.field_hr_go_to_training
+    - field.field.profile.hr_profile.field_hr_last_name
+    - field.field.profile.hr_profile.field_hr_middle_name
+    - field.field.profile.hr_profile.field_hr_more_from_compliance
+    - field.field.profile.hr_profile.field_hr_retirement_date
+    - field.field.profile.hr_profile.field_hr_retirement_message
+    - field.field.profile.hr_profile.field_hr_start_date
+    - field.field.profile.hr_profile.field_hr_training_complete
+    - field.field.profile.hr_profile.field_hr_training_in_progress
+    - field.field.profile.hr_profile.field_hr_training_pending
+    - field.field.profile.hr_profile.field_hr_training_total
+    - profile.type.hr_profile
+  module:
+    - datetime
+    - link
+id: profile.hr_profile.default
+targetEntityType: profile
+bundle: hr_profile
+mode: default
+content:
+  field_hr_benefit_links:
+    weight: 33
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hr_compliance_links:
+    weight: 35
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hr_explorer_your_benefit:
+    weight: 34
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hr_first_name:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hr_full_retirement_info:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hr_go_to_training:
+    weight: 41
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hr_last_name:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hr_middle_name:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hr_more_from_compliance:
+    weight: 36
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hr_retirement_date:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_hr_retirement_message:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hr_start_date:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_hr_training_complete:
+    weight: 38
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_hr_training_in_progress:
+    weight: 39
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_hr_training_pending:
+    weight: 40
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_hr_training_total:
+    weight: 37
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  is_default: true

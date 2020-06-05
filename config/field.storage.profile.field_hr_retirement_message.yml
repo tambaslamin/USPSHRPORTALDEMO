@@ -1,0 +1,21 @@
+uuid: 29f6bfa1-c9c6-4f2e-9d36-062f79d4aaf6
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_hr_retirement_message
+field_name: field_hr_retirement_message
+entity_type: profile
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 5b10ae2c-e31e-4e3b-bdfd-fdd85f52a3cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_former_employee
+  module:
+    - user
+id: user_remove_role_action.hr_former_employee
+label: 'Remove the HR Former Employee role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hr_former_employee

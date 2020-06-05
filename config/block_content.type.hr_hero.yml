@@ -1,0 +1,8 @@
+uuid: 29222d27-c32d-4520-99af-1cc480e57c77
+langcode: en
+status: true
+dependencies: {  }
+id: hr_hero
+label: 'HR Hero'
+revision: 1
+description: ''

@@ -1,0 +1,23 @@
+uuid: 4cf239e6-d779-4a18-9536-b6d0aa058672
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hr_full_retirement_info
+    - profile.type.hr_profile
+  module:
+    - link
+id: profile.hr_profile.field_hr_full_retirement_info
+field_name: field_hr_full_retirement_info
+entity_type: profile
+bundle: hr_profile
+label: 'Full Retirement Info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

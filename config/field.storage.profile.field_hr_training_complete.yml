@@ -1,0 +1,20 @@
+uuid: 16b5bf36-dbd4-4d2e-af73-fe5c0706c706
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+id: profile.field_hr_training_complete
+field_name: field_hr_training_complete
+entity_type: profile
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

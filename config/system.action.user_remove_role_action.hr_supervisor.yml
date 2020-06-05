@@ -1,0 +1,14 @@
+uuid: d7ab6cc2-687b-487e-824e-d3a9f4a745d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_supervisor
+  module:
+    - user
+id: user_remove_role_action.hr_supervisor
+label: 'Remove the HR Supervisor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hr_supervisor

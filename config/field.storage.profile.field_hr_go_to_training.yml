@@ -1,0 +1,19 @@
+uuid: d7c4b8d6-c57d-4b76-adae-af1e50ce1124
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - profile
+id: profile.field_hr_go_to_training
+field_name: field_hr_go_to_training
+entity_type: profile
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

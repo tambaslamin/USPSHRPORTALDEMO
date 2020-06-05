@@ -1,0 +1,23 @@
+uuid: d6641eff-392f-4294-8434-7d2c390dd04a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hr_training_complete
+    - profile.type.hr_profile
+id: profile.hr_profile.field_hr_training_complete
+field_name: field_hr_training_complete
+entity_type: profile
+bundle: hr_profile
+label: 'Training Complete'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

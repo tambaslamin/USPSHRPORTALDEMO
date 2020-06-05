@@ -1,0 +1,14 @@
+uuid: d48f39ed-9f63-4162-abda-ab4a4c7c94d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_content_owner
+  module:
+    - user
+id: user_remove_role_action.hr_content_owner
+label: 'Remove the HR Content Owner role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hr_content_owner

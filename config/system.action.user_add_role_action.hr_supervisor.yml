@@ -1,0 +1,14 @@
+uuid: a1acaba1-4a06-4ec2-9eb9-11921173ccb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hr_supervisor
+  module:
+    - user
+id: user_add_role_action.hr_supervisor
+label: 'Add the HR Supervisor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hr_supervisor

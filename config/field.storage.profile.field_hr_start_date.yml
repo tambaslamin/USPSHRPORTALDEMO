@@ -1,0 +1,20 @@
+uuid: 336064d9-400a-407d-a9e7-3ae0e681a4dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - profile
+id: profile.field_hr_start_date
+field_name: field_hr_start_date
+entity_type: profile
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

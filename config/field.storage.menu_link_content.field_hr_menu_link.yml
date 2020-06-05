@@ -1,0 +1,19 @@
+uuid: 961d9014-98c2-4f43-925b-4509ee9e2461
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - menu_link_content
+id: menu_link_content.field_hr_menu_link
+field_name: field_hr_menu_link
+entity_type: menu_link_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

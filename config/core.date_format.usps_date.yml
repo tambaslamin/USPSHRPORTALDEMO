@@ -1,0 +1,8 @@
+uuid: 431b8bf3-cdf1-47de-a258-676a8294697d
+langcode: en
+status: true
+dependencies: {  }
+id: usps_date
+label: 'USPS Date'
+locked: false
+pattern: 'F j, Y'
