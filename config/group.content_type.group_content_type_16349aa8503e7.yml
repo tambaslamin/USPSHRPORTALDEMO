@@ -1,0 +1,19 @@
+uuid: 634b6d70-c2d7-49aa-b239-33820c1b44dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+    - node.type.hr_topic
+  module:
+    - gnode
+    - node
+id: group_content_type_16349aa8503e7
+label: 'Open group: Group node (Topic)'
+description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'
+group_type: hr_open_group
+content_plugin: 'group_node:hr_topic'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

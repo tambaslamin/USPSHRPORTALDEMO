@@ -1,0 +1,11 @@
+uuid: c0d0b456-9f8b-45f7-b0ec-7c36d6fb0941
+langcode: en
+status: true
+dependencies: {  }
+id: hr_flexible_group
+label: 'Flexible group'
+description: 'By choosing this option you can customize many group settings to your needs.'
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - hr_flexible_group-group_manager

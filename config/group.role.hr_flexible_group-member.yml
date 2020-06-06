@@ -1,0 +1,14 @@
+uuid: 4ad71ba4-8948-40fd-b8f4-f6197cdd9cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+id: hr_flexible_group-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: hr_flexible_group
+permissions_ui: true
+permissions: {  }

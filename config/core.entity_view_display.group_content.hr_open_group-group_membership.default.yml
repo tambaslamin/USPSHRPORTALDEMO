@@ -1,0 +1,23 @@
+uuid: 93a6e94d-d204-4be0-8830-33d6cf58bedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.hr_open_group-group_membership.group_roles
+    - group.content_type.hr_open_group-group_membership
+id: group_content.hr_open_group-group_membership.default
+targetEntityType: group_content
+bundle: hr_open_group-group_membership
+mode: default
+content:
+  group_roles:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: false
+    weight: -4
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_id: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: c5ad6ca7-5007-4ea0-9744-8ab6e0102474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hr_topic
+  module:
+    - text
+id: node.hr_topic.body
+field_name: body
+entity_type: node
+bundle: hr_topic
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

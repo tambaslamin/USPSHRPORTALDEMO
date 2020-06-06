@@ -1,0 +1,17 @@
+uuid: 97268911-05db-437c-905e-9f5cb12954a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+  enforced:
+    config:
+      - user.role.administrator
+id: hr_open_group-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: hr_open_group
+permissions_ui: false
+permissions: {  }

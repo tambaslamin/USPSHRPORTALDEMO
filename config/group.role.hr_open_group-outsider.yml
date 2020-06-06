@@ -1,0 +1,14 @@
+uuid: 1ad0ba53-daca-426e-8cde-b39ef94192bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+id: hr_open_group-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: hr_open_group
+permissions_ui: true
+permissions: {  }

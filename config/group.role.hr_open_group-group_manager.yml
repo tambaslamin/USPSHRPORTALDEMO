@@ -1,0 +1,14 @@
+uuid: 911d346f-fada-4cd8-89df-da359fa117c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+id: hr_open_group-group_manager
+label: 'Group Manager'
+weight: 103
+internal: false
+audience: member
+group_type: hr_open_group
+permissions_ui: true
+permissions: {  }

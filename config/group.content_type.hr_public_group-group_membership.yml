@@ -1,0 +1,16 @@
+uuid: 4804b505-9293-4d04-bac0-887a59075659
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+  module:
+    - user
+id: hr_public_group-group_membership
+label: 'Public group: Group membership'
+description: 'Adds users to groups as members.'
+group_type: hr_public_group
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1

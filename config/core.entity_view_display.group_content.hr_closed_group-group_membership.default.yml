@@ -1,0 +1,23 @@
+uuid: 2de2081e-e6c8-41a7-b6a8-7c5e62ee03e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_content.hr_closed_group-group_membership.group_roles
+    - group.content_type.hr_closed_group-group_membership
+id: group_content.hr_closed_group-group_membership.default
+targetEntityType: group_content
+bundle: hr_closed_group-group_membership
+mode: default
+content:
+  group_roles:
+    label: above
+    type: entity_reference_label
+    settings:
+      link: false
+    weight: -4
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_id: true
+  uid: true

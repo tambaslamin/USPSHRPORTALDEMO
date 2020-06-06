@@ -1,0 +1,14 @@
+uuid: 0480dd60-fd03-433f-9c6d-5d5e501ef324
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+id: hr_open_group-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: hr_open_group
+permissions_ui: true
+permissions: {  }

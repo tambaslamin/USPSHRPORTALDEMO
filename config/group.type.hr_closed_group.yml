@@ -1,0 +1,10 @@
+uuid: b11ec005-4140-4096-8ca4-27f39ae001cb
+langcode: en
+status: true
+dependencies: {  }
+id: hr_closed_group
+label: 'Closed group'
+description: 'This is a closed group. Users can only join by invitation and the content in the group is hidden from non members.'
+creator_membership: true
+creator_wizard: true
+creator_roles: {  }

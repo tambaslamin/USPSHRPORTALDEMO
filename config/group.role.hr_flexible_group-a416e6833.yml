@@ -1,0 +1,17 @@
+uuid: 63ca11ca-155e-4fa2-8090-7c8f8083d91b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+  enforced:
+    config:
+      - user.role.administrator
+id: hr_flexible_group-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: hr_flexible_group
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,13 @@
+uuid: 4594ae2c-5f3c-4c8e-b49e-5c128b0bf49b
+langcode: en
+status: true
+dependencies:
+  module:
+    - message_ui
+_core:
+  default_config_hash: qD7X7eY0Kv0XheTWrriRJCeVZu4DPtCNjUJcMdLtOY8
+id: message_save_action
+label: 'Save message'
+type: message
+plugin: message_save_action
+configuration: {  }

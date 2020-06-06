@@ -1,0 +1,17 @@
+uuid: 8ba39001-00b8-4d18-a018-3f7074f37b4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Topic
+type: hr_topic
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

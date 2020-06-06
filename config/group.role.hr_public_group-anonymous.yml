@@ -1,0 +1,14 @@
+uuid: 34cd151a-2175-4e97-8a08-6e48cac532e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+id: hr_public_group-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: hr_public_group
+permissions_ui: true
+permissions: {  }

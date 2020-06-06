@@ -1,0 +1,19 @@
+uuid: cd4d9980-5917-42fd-b409-43ae6bf7cf41
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+    - node.type.hr_event
+  module:
+    - gnode
+    - node
+id: group_content_type_8abe2f69db5f4
+label: 'Public group: Group node (HR Event)'
+description: 'Adds <em class="placeholder">HR Event</em> content to groups both publicly and privately.'
+group_type: hr_public_group
+content_plugin: 'group_node:hr_event'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

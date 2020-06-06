@@ -1,0 +1,17 @@
+uuid: 8f551701-59da-4e78-ab25-1d0a3755a66f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+  enforced:
+    config:
+      - user.role.hr_supervisor
+id: hr_public_group-4b164085e
+label: 'HR Supervisor'
+weight: -4
+internal: true
+audience: outsider
+group_type: hr_public_group
+permissions_ui: false
+permissions: {  }

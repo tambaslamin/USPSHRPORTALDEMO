@@ -1,0 +1,17 @@
+uuid: 92daf22e-00e0-4737-b649-a283ad931f94
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+  enforced:
+    config:
+      - user.role.hr_professional
+id: hr_open_group-37f52c9ed
+label: 'HR Professional'
+weight: -6
+internal: true
+audience: outsider
+group_type: hr_open_group
+permissions_ui: false
+permissions: {  }

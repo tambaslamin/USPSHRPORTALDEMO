@@ -1,0 +1,32 @@
+uuid: 3ebd5ce3-f714-41b1-a276-b670128f0a44
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hr_topic.body
+    - node.type.hr_topic
+  module:
+    - text
+    - user
+id: node.hr_topic.teaser
+targetEntityType: node
+bundle: hr_topic
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  private_message_link: true
+  shariff_field: true

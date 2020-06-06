@@ -1,0 +1,11 @@
+uuid: 41c72417-dfee-4f5c-b492-3d781e9a262c
+langcode: en
+status: true
+dependencies: {  }
+id: hr_open_group
+label: 'Open group'
+description: 'This is an open group. Users may join without approval and all content added in this group will be visible to all community members.'
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - hr_open_group-admin

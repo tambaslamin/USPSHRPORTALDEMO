@@ -1,0 +1,17 @@
+uuid: 27324084-7304-4d93-a4d3-6ca9682994e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+  enforced:
+    config:
+      - user.role.hr_manager
+id: hr_open_group-e9e31285d
+label: 'HR Manager'
+weight: -3
+internal: true
+audience: outsider
+group_type: hr_open_group
+permissions_ui: false
+permissions: {  }

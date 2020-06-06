@@ -1,0 +1,19 @@
+uuid: 6cab171c-1835-4392-8d44-0119f8c06b45
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_open_group
+    - node.type.hr_event
+  module:
+    - gnode
+    - node
+id: group_content_type_e827e6ef900c3
+label: 'Open group: Group node (HR Event)'
+description: 'Adds <em class="placeholder">HR Event</em> content to groups both publicly and privately.'
+group_type: hr_open_group
+content_plugin: 'group_node:hr_event'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

@@ -1,11 +1,11 @@
 uuid: ed9cac3e-9c23-4aab-b8a7-de9325d340d7
-name: uspshrportaldemo
+name: 'USPS HR Portal'
 mail: tamba.s.lamin@accenture.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

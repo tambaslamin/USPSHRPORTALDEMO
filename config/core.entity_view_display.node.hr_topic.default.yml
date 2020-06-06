@@ -1,0 +1,30 @@
+uuid: 685bf418-9c50-4b8b-a797-228c46fa29e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hr_topic.body
+    - node.type.hr_topic
+  module:
+    - text
+    - user
+id: node.hr_topic.default
+targetEntityType: node
+bundle: hr_topic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  private_message_link: true
+  shariff_field: true
