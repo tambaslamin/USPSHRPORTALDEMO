@@ -10,6 +10,10 @@ libraries:
   - uspshrdemo/global-styling
 
 regions:
+  global_branding_top: 'HR Portal Global Branding Header'
+  global_search_top: 'HR Portal Global Search Header'
+  global_notifications_top: 'HR Portal Global Notification Header'
+  global_myaccount_top: 'HR Portal Global My Account Header'
   top_header: 'Top header'
   top_header_form: 'Top header form'
   header: Header
@@ -21,12 +25,21 @@ regions:
   highlighted: Highlighted
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
+  global_page_title: 'HR Portal Global Page Title'
+  content_top_left: 'HR Portal Content Top Left'
+  content_top_middle: 'HR Portal Content Top Middle'
+  content_top_right: 'HR Portal Content Top Right'
   content: Content
+  content_bottom_left: 'HR Portal Content Bottom Left'
+  content_bottom_middle: 'HR Portal Content Bottom Middle'
+  content_bottom_right: 'HR Portal Content Bottom Right'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   featured_bottom_first: 'Featured bottom first'
   featured_bottom_second: 'Featured bottom second'
   featured_bottom_third: 'Featured bottom third'
+  global_footer_first: 'HR Portal Global Footer first'
+  global_footer_second: 'HR Portal Global Footer second'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'

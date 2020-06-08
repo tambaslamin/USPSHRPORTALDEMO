@@ -70,6 +70,34 @@
 #}
 
 {% block head %}
+{% if page.global_branding_top or page.global_search_top or page.global_notifications_top or page.global_myaccount_top %}
+<div class="row global_header">
+    {% if page.global_branding_top %}
+         <div class="global-branding float-left">
+             {{ page.global_branding_top }}
+         </div>
+    {% endif %}
+
+    {% if page.global_search_top %}
+         <div class="global-search">
+             {{ page.global_search_top }}
+         </div>
+    {% endif %}
+
+    {% if page.global_notifications_top %}
+         <div class="global-notifications">
+             {{ page.global_notifications_top }}
+         </div>
+    {% endif %}
+
+    {% if page.global_myaccount_top %}
+         <div class="global-myaccount float-right">
+             {{ page.global_myaccount_top }}
+         </div>
+    {% endif %}
+</div>
+{% endif %}
+
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
           <nav{{ navbar_top_attributes }}>
           {% if container_navbar %}
@@ -112,6 +140,27 @@
         </nav>
 {% endblock %}
 
+{% if page.content_top_left or page.content_top_middle or page.content_top_right %}
+<div class="row global-content-top">
+ {% if page.content_top_left %}
+         <div class="content_top_left">
+             {{ page.content_top_left }}
+         </div>
+    {% endif %}
+
+ {% if page.content_top_middle %}
+         <div class="content_top_middle">
+             {{ page.content_top_middle }}
+         </div>
+    {% endif %}
+
+ {% if page.content_top_right %}
+         <div class="content_top_right">
+             {{ page.content_top_right }}
+         </div>
+    {% endif %}
+</div>
+{% endif %}
 {% block content %}
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
@@ -139,8 +188,44 @@
           </div>
         </div>
 {% endblock %}
+{% if page.content_bottom_left or page.content_bottom_middle or page.content_bottom_right %}
+<div class="row global-content-bottom>
+ {% if page.content_bottom_left %}
+         <div class="content_bottom_left">
+             {{ page.content_bottom_left }}
+         </div>
+    {% endif %}
+
+ {% if page.content_bottom_middle %}
+         <div class="content_bottom_middle">
+             {{ page.content_bottom_middle }}
+         </div>
+    {% endif %}
+
+ {% if page.content_bottom_right %}
+         <div class="content_bottom_right">
+             {{ page.content_bottom_right }}
+         </div>
+    {% endif %}
+</div>
+{% endif %}
 
 {% block footer %}
+{% if page.global_footer_first or page.global_footer_second %}
+<div class="row global-footer">
+ {% if page.global_myaccount_top %}
+         <div class="global_footer_first float-left">
+             {{ page.global_footer_first }}
+         </div>
+    {% endif %}
+ {% if page.global_myaccount_top %}
+         <div class="global_footer_second float-right">
+             {{ page.global_footer_second }}
+         </div>
+    {% endif %}
+</div>
+{% endif %}
+
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
             <div class="site-footer__top clearfix">
