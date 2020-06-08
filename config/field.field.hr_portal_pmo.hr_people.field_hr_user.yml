@@ -1,0 +1,28 @@
+uuid: b952782a-761e-4833-9257-a3bec9b7cbe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_people
+    - field.storage.hr_portal_pmo.field_hr_user
+id: hr_portal_pmo.hr_people.field_hr_user
+field_name: field_hr_user
+entity_type: hr_portal_pmo
+bundle: hr_people
+label: 'HR User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

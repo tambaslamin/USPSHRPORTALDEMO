@@ -1,0 +1,9 @@
+uuid: 30bbb44c-8bfd-4f18-9f9c-c794c6a70145
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hr_portal_pmo
+type: hr_org
+name: 'HR Org'
+description: ''

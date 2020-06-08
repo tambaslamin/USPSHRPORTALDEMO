@@ -1,0 +1,32 @@
+uuid: 3138f23e-1818-4f1b-88b9-7ee52cea6625
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_team
+    - field.field.hr_portal_pmo.hr_team.field_hr_members
+id: hr_portal_pmo.hr_team.default
+targetEntityType: hr_portal_pmo
+bundle: hr_team
+mode: default
+content:
+  field_hr_members:
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

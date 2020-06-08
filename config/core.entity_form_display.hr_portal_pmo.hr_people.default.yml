@@ -1,0 +1,35 @@
+uuid: 9717c937-cbb4-4f66-a648-1358a3a8de17
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_people
+    - field.field.hr_portal_pmo.hr_people.field_hr_display_name
+    - field.field.hr_portal_pmo.hr_people.field_hr_user
+id: hr_portal_pmo.hr_people.default
+targetEntityType: hr_portal_pmo
+bundle: hr_people
+mode: default
+content:
+  field_hr_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_hr_display_name: true
+  uid: true

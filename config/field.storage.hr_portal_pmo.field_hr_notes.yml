@@ -1,0 +1,19 @@
+uuid: d5422781-19f5-44e8-97e0-401f14fc0710
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: hr_portal_pmo.field_hr_notes
+field_name: field_hr_notes
+entity_type: hr_portal_pmo
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

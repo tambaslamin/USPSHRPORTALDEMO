@@ -1,0 +1,21 @@
+uuid: 6c5d7729-8344-48b7-a1cf-38ba326248cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_task
+    - field.storage.hr_portal_pmo.field_hr_type
+  module:
+    - options
+id: hr_portal_pmo.hr_task.field_hr_type
+field_name: field_hr_type
+entity_type: hr_portal_pmo
+bundle: hr_task
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

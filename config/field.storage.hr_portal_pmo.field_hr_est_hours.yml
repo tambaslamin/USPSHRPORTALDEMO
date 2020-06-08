@@ -1,0 +1,20 @@
+uuid: 0441fc34-0cc5-4ac2-aee4-6a48aaededc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: hr_portal_pmo.field_hr_est_hours
+field_name: field_hr_est_hours
+entity_type: hr_portal_pmo
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

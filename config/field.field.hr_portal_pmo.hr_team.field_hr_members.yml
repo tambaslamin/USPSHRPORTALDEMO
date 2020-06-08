@@ -1,0 +1,28 @@
+uuid: 22e6c44a-cfc6-4b30-87cc-37312716ce9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_people
+    - eck.eck_type.hr_portal_pmo.hr_team
+    - field.storage.hr_portal_pmo.field_hr_members
+id: hr_portal_pmo.hr_team.field_hr_members
+field_name: field_hr_members
+entity_type: hr_portal_pmo
+bundle: hr_team
+label: 'HR Members'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:hr_portal_pmo'
+  handler_settings:
+    target_bundles:
+      hr_people: hr_people
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,9 @@
+uuid: 76e1671a-3f36-4dab-98af-2743516b5681
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hr_portal_pmo
+type: hr_team
+name: 'HR Team'
+description: ''

@@ -1,0 +1,48 @@
+uuid: 64ed96ee-13ce-4616-8538-a0a1a115ca31
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: hr_portal_pmo.field_hr_type
+field_name: field_hr_type
+entity_type: hr_portal_pmo
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Hero-CSOD
+      label: Hero-CSOD
+    -
+      value: PES
+      label: PES
+    -
+      value: eCareer
+      label: eCareer
+    -
+      value: TACS
+      label: TACS
+    -
+      value: eRMS
+      label: eRMS
+    -
+      value: eReassign
+      label: eReassign
+    -
+      value: eTravel
+      label: eTravel
+    -
+      value: Drupal
+      label: Drupal
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

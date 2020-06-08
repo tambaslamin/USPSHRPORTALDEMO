@@ -1,0 +1,9 @@
+uuid: 7c29cbdc-52c4-4efb-bbdb-8411f7aab433
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hr_portal_pmo
+type: hr_task
+name: 'HR Task'
+description: ''

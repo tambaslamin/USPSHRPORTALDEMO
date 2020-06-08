@@ -1,0 +1,23 @@
+uuid: 15b954ec-1843-40fc-9796-167294f5d163
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_task
+    - field.storage.hr_portal_pmo.field_hr_est_hours
+id: hr_portal_pmo.hr_task.field_hr_est_hours
+field_name: field_hr_est_hours
+entity_type: hr_portal_pmo
+bundle: hr_task
+label: 'Est. Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

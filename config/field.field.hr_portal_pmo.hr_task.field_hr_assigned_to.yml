@@ -1,0 +1,28 @@
+uuid: a4cab92d-a102-4e18-8f13-1b11e03dcf53
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_people
+    - eck.eck_type.hr_portal_pmo.hr_task
+    - field.storage.hr_portal_pmo.field_hr_assigned_to
+id: hr_portal_pmo.hr_task.field_hr_assigned_to
+field_name: field_hr_assigned_to
+entity_type: hr_portal_pmo
+bundle: hr_task
+label: 'Assigned to'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:hr_portal_pmo'
+  handler_settings:
+    target_bundles:
+      hr_people: hr_people
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

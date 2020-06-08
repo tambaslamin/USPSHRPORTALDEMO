@@ -1,0 +1,21 @@
+uuid: 0294f34a-2922-4b9b-8198-aac182f07467
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_task
+    - field.storage.hr_portal_pmo.field_hr_due_date
+  module:
+    - datetime
+id: hr_portal_pmo.hr_task.field_hr_due_date
+field_name: field_hr_due_date
+entity_type: hr_portal_pmo
+bundle: hr_task
+label: 'Due Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

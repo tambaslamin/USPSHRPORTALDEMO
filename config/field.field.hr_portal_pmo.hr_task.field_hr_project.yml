@@ -1,0 +1,28 @@
+uuid: e6075303-758b-427f-aeb6-a8e10e5efe9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_project
+    - eck.eck_type.hr_portal_pmo.hr_task
+    - field.storage.hr_portal_pmo.field_hr_project
+id: hr_portal_pmo.hr_task.field_hr_project
+field_name: field_hr_project
+entity_type: hr_portal_pmo
+bundle: hr_task
+label: Project
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:hr_portal_pmo'
+  handler_settings:
+    target_bundles:
+      hr_project: hr_project
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 609fd3e2-8abf-47e3-90a8-ff1c665ba26b
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - eck
+id: hr_portal_pmo.field_hr_due_date
+field_name: field_hr_due_date
+entity_type: hr_portal_pmo
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
