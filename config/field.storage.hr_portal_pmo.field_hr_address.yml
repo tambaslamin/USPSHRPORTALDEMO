@@ -1,0 +1,19 @@
+uuid: 7d072ff7-e62e-4c25-990d-0a2cf61fe20a
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - eck
+id: hr_portal_pmo.field_hr_address
+field_name: field_hr_address
+entity_type: hr_portal_pmo
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

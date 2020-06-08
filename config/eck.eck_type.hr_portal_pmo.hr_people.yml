@@ -1,0 +1,9 @@
+uuid: b27d458e-5a6c-4414-a71f-28b4d0a92eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hr_portal_pmo
+type: hr_people
+name: 'HR People'
+description: ''

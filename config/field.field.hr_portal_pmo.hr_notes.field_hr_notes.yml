@@ -1,0 +1,21 @@
+uuid: e01f23a5-a5c2-4d98-b676-be8a8a6edbb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_notes
+    - field.storage.hr_portal_pmo.field_hr_notes
+  module:
+    - text
+id: hr_portal_pmo.hr_notes.field_hr_notes
+field_name: field_hr_notes
+entity_type: hr_portal_pmo
+bundle: hr_notes
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

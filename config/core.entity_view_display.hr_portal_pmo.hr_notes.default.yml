@@ -1,0 +1,33 @@
+uuid: bdb18f50-dcd5-48ec-88e8-7cd5f67b64a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_notes
+    - field.field.hr_portal_pmo.hr_notes.field_hr_notes
+  module:
+    - text
+id: hr_portal_pmo.hr_notes.default
+targetEntityType: hr_portal_pmo
+bundle: hr_notes
+mode: default
+content:
+  field_hr_notes:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

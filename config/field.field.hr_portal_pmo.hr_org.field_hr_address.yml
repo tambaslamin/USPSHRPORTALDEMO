@@ -1,0 +1,25 @@
+uuid: 2b0481c3-1d7b-4d7c-a5d2-87dceadc6c05
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_org
+    - field.storage.hr_portal_pmo.field_hr_address
+  module:
+    - address
+id: hr_portal_pmo.hr_org.field_hr_address
+field_name: field_hr_address
+entity_type: hr_portal_pmo
+bundle: hr_org
+label: 'HR Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

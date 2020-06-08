@@ -1,0 +1,33 @@
+uuid: cce88a3e-8b3d-4bf1-b9a4-89bd23895676
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_org
+    - field.field.hr_portal_pmo.hr_org.field_hr_address
+  module:
+    - address
+id: hr_portal_pmo.hr_org.default
+targetEntityType: hr_portal_pmo
+bundle: hr_org
+mode: default
+content:
+  field_hr_address:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

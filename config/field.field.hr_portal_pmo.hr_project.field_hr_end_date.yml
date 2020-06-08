@@ -1,0 +1,21 @@
+uuid: e80295e1-8552-4a74-a7f1-64413f9129d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_project
+    - field.storage.hr_portal_pmo.field_hr_end_date
+  module:
+    - datetime
+id: hr_portal_pmo.hr_project.field_hr_end_date
+field_name: field_hr_end_date
+entity_type: hr_portal_pmo
+bundle: hr_project
+label: 'HR End Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

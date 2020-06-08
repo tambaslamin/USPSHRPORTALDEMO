@@ -1,0 +1,9 @@
+uuid: 5c4977a0-e580-4708-ba6a-25d113089651
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hr_portal_pmo
+type: hr_documents
+name: 'HR Documents'
+description: ''

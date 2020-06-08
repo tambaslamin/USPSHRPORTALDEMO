@@ -1,0 +1,8 @@
+uuid: ec6c22e1-685c-4b33-9042-bd122e7b6df3
+langcode: en
+status: true
+dependencies: {  }
+id: hr_image
+label: 'HR Image'
+revision: 1
+description: ''

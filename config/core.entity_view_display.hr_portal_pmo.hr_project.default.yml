@@ -1,0 +1,54 @@
+uuid: 77cb5c5b-20e5-44a1-9e29-ee2391e016f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_project
+    - field.field.hr_portal_pmo.hr_project.field_hr_description
+    - field.field.hr_portal_pmo.hr_project.field_hr_end_date
+    - field.field.hr_portal_pmo.hr_project.field_hr_start_date
+  module:
+    - datetime
+    - text
+id: hr_portal_pmo.hr_project.default
+targetEntityType: hr_portal_pmo
+bundle: hr_project
+mode: default
+content:
+  field_hr_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_hr_end_date:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: usps_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_hr_start_date:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: usps_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

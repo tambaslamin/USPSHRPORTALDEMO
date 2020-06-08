@@ -1,0 +1,20 @@
+uuid: dca15f71-6f8a-4554-8f24-e03e3456bd11
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - eck
+id: hr_portal_pmo.field_hr_end_date
+field_name: field_hr_end_date
+entity_type: hr_portal_pmo
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

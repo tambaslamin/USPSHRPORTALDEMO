@@ -1,0 +1,9 @@
+uuid: 62c728fd-783a-489a-8413-66f8a309bb16
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.hr_portal_pmo
+type: hr_project
+name: 'HR Project'
+description: ''

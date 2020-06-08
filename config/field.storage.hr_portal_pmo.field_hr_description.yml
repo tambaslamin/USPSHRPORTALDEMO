@@ -1,0 +1,19 @@
+uuid: c7f909bd-5067-4626-a19f-60ba739267d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+id: hr_portal_pmo.field_hr_description
+field_name: field_hr_description
+entity_type: hr_portal_pmo
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
