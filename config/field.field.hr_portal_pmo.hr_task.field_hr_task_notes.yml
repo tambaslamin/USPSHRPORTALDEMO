@@ -1,0 +1,28 @@
+uuid: f7162a92-5680-4e0e-817d-411a240108ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_notes
+    - eck.eck_type.hr_portal_pmo.hr_task
+    - field.storage.hr_portal_pmo.field_hr_task_notes
+id: hr_portal_pmo.hr_task.field_hr_task_notes
+field_name: field_hr_task_notes
+entity_type: hr_portal_pmo
+bundle: hr_task
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:hr_portal_pmo'
+  handler_settings:
+    target_bundles:
+      hr_notes: hr_notes
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

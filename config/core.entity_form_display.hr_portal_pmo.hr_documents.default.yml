@@ -1,0 +1,32 @@
+uuid: 19d8a922-882a-450f-8a41-af800bd8daa7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_documents
+    - field.field.hr_portal_pmo.hr_documents.field_hr_media_doc
+  module:
+    - media_library
+id: hr_portal_pmo.hr_documents.default
+targetEntityType: hr_portal_pmo
+bundle: hr_documents
+mode: default
+content:
+  field_hr_media_doc:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

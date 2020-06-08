@@ -1,0 +1,28 @@
+uuid: 93880d1e-cef7-4f92-bf9a-4996483c9d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_documents
+    - field.storage.hr_portal_pmo.field_hr_media_doc
+    - media.type.document
+id: hr_portal_pmo.hr_documents.field_hr_media_doc
+field_name: field_hr_media_doc
+entity_type: hr_portal_pmo
+bundle: hr_documents
+label: Document
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

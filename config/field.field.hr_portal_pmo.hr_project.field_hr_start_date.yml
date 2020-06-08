@@ -1,0 +1,21 @@
+uuid: 41c9f9d0-0d96-4077-b36e-2df64805755b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_project
+    - field.storage.hr_portal_pmo.field_hr_start_date
+  module:
+    - datetime
+id: hr_portal_pmo.hr_project.field_hr_start_date
+field_name: field_hr_start_date
+entity_type: hr_portal_pmo
+bundle: hr_project
+label: 'HR Start Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

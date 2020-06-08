@@ -1,0 +1,33 @@
+uuid: 0b2d9f0a-02dd-414f-a756-0fee3cf765ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - options
+id: hr_portal_pmo.field_hr_priority
+field_name: field_hr_priority
+entity_type: hr_portal_pmo
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Urgent
+      label: Urgent
+    -
+      value: High
+      label: High
+    -
+      value: Medium
+      label: Medium
+    -
+      value: Low
+      label: Low
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

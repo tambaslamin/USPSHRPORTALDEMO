@@ -1,0 +1,21 @@
+uuid: 43561cd3-5bef-4791-85d3-c2bcb8f40a5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_project
+    - field.storage.hr_portal_pmo.field_hr_description
+  module:
+    - text
+id: hr_portal_pmo.hr_project.field_hr_description
+field_name: field_hr_description
+entity_type: hr_portal_pmo
+bundle: hr_project
+label: 'HR Description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

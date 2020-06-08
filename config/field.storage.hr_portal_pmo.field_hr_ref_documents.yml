@@ -1,0 +1,19 @@
+uuid: 3567c5f7-c229-4a7e-9cb3-af6b4e46222c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: hr_portal_pmo.field_hr_ref_documents
+field_name: field_hr_ref_documents
+entity_type: hr_portal_pmo
+type: entity_reference
+settings:
+  target_type: hr_portal_pmo
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 02a70b8d-015c-4f5f-b41b-90083ea57939
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hr_image
+    - field.field.block_content.hr_image.body
+  module:
+    - text
+id: block_content.hr_image.default
+targetEntityType: block_content
+bundle: hr_image
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

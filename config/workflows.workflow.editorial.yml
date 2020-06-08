@@ -11,16 +11,26 @@ label: Editorial
 type: content_moderation
 type_settings:
   states:
+    approved_to_be_published:
+      published: false
+      default_revision: false
+      label: 'Approved to be Published'
+      weight: -1
     archived:
       label: Archived
-      weight: 5
+      weight: 1
       published: false
       default_revision: true
     draft:
       label: Draft
       published: false
       default_revision: false
-      weight: -5
+      weight: -2
+    in_review:
+      published: false
+      default_revision: false
+      label: 'In Review'
+      weight: 2
     published:
       label: Published
       published: true
