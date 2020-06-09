@@ -1,0 +1,20 @@
+uuid: 7e66da47-cc0e-41db-b74f-d002460d57d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uspshrdemo
+id: poweredbydrupal
+theme: uspshrdemo
+region: global_search_top
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

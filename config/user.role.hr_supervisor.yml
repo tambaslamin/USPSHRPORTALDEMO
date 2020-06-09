@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_supervisor
-label: 'HR Supervisor'
+label: Supervisor
 weight: -4
 is_admin: null
 permissions: {  }

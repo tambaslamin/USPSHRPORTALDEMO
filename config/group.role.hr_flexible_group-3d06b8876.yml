@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.hr_standard_user
 id: hr_flexible_group-3d06b8876
-label: 'HR Standard User'
+label: 'EIN Authenticated user'
 weight: -7
 internal: true
 audience: outsider

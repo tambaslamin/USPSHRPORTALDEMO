@@ -1,0 +1,39 @@
+uuid: a400e1ab-972c-4552-8920-49ee21f302ca
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hr_hero:97d252dd-fc6d-4b31-a10d-b2351f1b0732'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - uspshrdemo
+id: welcometotheuspshrportal
+theme: uspshrdemo
+region: highlighted
+weight: -7
+provider: null
+plugin: 'block_content:97d252dd-fc6d-4b31-a10d-b2351f1b0732'
+settings:
+  id: 'block_content:97d252dd-fc6d-4b31-a10d-b2351f1b0732'
+  label: 'Welcome to the USPS HR Portal'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

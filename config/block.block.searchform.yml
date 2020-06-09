@@ -1,0 +1,21 @@
+uuid: 8a55dd17-f63c-45d7-bcc8-60a58c0ab6f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - uspshrdemo
+id: searchform
+theme: uspshrdemo
+region: global_search_top
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

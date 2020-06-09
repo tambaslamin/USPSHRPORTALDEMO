@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_content_owner
-label: 'HR Content Owner'
+label: 'Content Owner'
 weight: -5
 is_admin: null
 permissions: {  }
