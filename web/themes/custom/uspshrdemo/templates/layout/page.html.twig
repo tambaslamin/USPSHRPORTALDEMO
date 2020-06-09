@@ -140,6 +140,8 @@
         </nav>
 {% endblock %}
 
+{% block content %}
+
 {% if page.content_top_left or page.content_top_middle or page.content_top_right %}
 <div class="row global-content-top">
  {% if page.content_top_left %}
@@ -161,7 +163,7 @@
     {% endif %}
 </div>
 {% endif %}
-{% block content %}
+
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
@@ -187,28 +189,30 @@
             {% endif %}
           </div>
         </div>
+
+        {% if page.content_bottom_left or page.content_bottom_middle or page.content_bottom_right %}
+        <div class="row global-content-bottom>
+         {% if page.content_bottom_left %}
+                 <div class="content_bottom_left">
+                     {{ page.content_bottom_left }}
+                 </div>
+            {% endif %}
+
+         {% if page.content_bottom_middle %}
+                 <div class="content_bottom_middle">
+                     {{ page.content_bottom_middle }}
+                 </div>
+            {% endif %}
+
+         {% if page.content_bottom_right %}
+                 <div class="content_bottom_right">
+                     {{ page.content_bottom_right }}
+                 </div>
+            {% endif %}
+        </div>
+        {% endif %}
 {% endblock %}
-{% if page.content_bottom_left or page.content_bottom_middle or page.content_bottom_right %}
-<div class="row global-content-bottom>
- {% if page.content_bottom_left %}
-         <div class="content_bottom_left">
-             {{ page.content_bottom_left }}
-         </div>
-    {% endif %}
 
- {% if page.content_bottom_middle %}
-         <div class="content_bottom_middle">
-             {{ page.content_bottom_middle }}
-         </div>
-    {% endif %}
-
- {% if page.content_bottom_right %}
-         <div class="content_bottom_right">
-             {{ page.content_bottom_right }}
-         </div>
-    {% endif %}
-</div>
-{% endif %}
 
 {% block footer %}
 {% if page.global_footer_first or page.global_footer_second %}
