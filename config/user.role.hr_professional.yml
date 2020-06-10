@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_professional
-label: 'HR Professional'
+label: Professional
 weight: -6
 is_admin: null
 permissions: {  }

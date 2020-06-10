@@ -3,7 +3,45 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_supervisor
-label: 'HR Supervisor'
+label: Supervisor
 weight: -4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access administration pages'
+  - 'access contextual links'
+  - 'access group overview'
+  - 'access hr_portal_pmo entity listing'
+  - 'access site in maintenance mode'
+  - 'access test_files entity browser pages'
+  - 'access test_files1 entity browser pages'
+  - 'access test_files_ajax entity browser pages'
+  - 'access test_nodes entity browser pages'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create article content'
+  - 'create entity_browser_test content'
+  - 'create hr_announcement content'
+  - 'create hr_closed_group group'
+  - 'create hr_event content'
+  - 'create hr_flexible_group group'
+  - 'create hr_landing_page content'
+  - 'create hr_media_gallery content'
+  - 'create hr_open_group group'
+  - 'create hr_public_group group'
+  - 'create media'
+  - 'create page content'
+  - 'delete any hr_portal_pmo entities'
+  - 'delete own hr_portal_pmo entities'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition publish'
+  - 'view any hr_portal_pmo entities'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished profile'
+  - 'view the administration theme'

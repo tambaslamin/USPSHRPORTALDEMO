@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.hr_professional
 id: hr_closed_group-37f52c9ed
-label: 'HR Professional'
+label: Professional
 weight: -6
 internal: true
 audience: outsider

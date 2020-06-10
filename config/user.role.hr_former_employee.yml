@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_former_employee
-label: 'HR Former Employee'
-weight: -8
+label: 'Former Employee'
+weight: -9
 is_admin: null
 permissions: {  }

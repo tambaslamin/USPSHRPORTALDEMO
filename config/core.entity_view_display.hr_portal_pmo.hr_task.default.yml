@@ -12,6 +12,7 @@ dependencies:
     - field.field.hr_portal_pmo.hr_task.field_hr_project
     - field.field.hr_portal_pmo.hr_task.field_hr_ref_documents
     - field.field.hr_portal_pmo.hr_task.field_hr_task_notes
+    - field.field.hr_portal_pmo.hr_task.field_hr_task_status
     - field.field.hr_portal_pmo.hr_task.field_hr_type
   module:
     - datetime
@@ -25,7 +26,7 @@ mode: default
 content:
   changed:
     type: timestamp
-    weight: 11
+    weight: 13
     region: content
     label: above
     settings:
@@ -36,7 +37,7 @@ content:
   created:
     label: above
     type: timestamp
-    weight: 10
+    weight: 12
     region: content
     settings:
       date_format: medium
@@ -44,7 +45,7 @@ content:
       timezone: ''
     third_party_settings: {  }
   field_hr_assigned_to:
-    weight: 6
+    weight: 1
     label: above
     settings:
       link: false
@@ -52,14 +53,14 @@ content:
     type: entity_reference_label
     region: content
   field_hr_description:
-    weight: 5
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_hr_due_date:
-    weight: 2
+    weight: 6
     label: above
     settings:
       format_type: medium
@@ -68,7 +69,7 @@ content:
     type: datetime_default
     region: content
   field_hr_est_hours:
-    weight: 3
+    weight: 7
     label: above
     settings:
       thousand_separator: ''
@@ -79,14 +80,14 @@ content:
     type: number_decimal
     region: content
   field_hr_priority:
-    weight: 4
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_hr_project:
-    weight: 1
+    weight: 8
     label: above
     settings:
       link: false
@@ -94,7 +95,7 @@ content:
     type: entity_reference_label
     region: content
   field_hr_ref_documents:
-    weight: 13
+    weight: 10
     label: above
     settings:
       link: true
@@ -102,15 +103,22 @@ content:
     type: entity_reference_label
     region: content
   field_hr_task_notes:
-    weight: 12
+    weight: 9
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_hr_task_status:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_hr_type:
-    weight: 8
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -127,7 +135,7 @@ content:
   uid:
     label: above
     type: author
-    weight: 9
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }

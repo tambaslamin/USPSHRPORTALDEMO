@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.hr_former_employee
 id: hr_public_group-4ac553ccb
-label: 'HR Former Employee'
+label: 'Former Employee'
 weight: -8
 internal: true
 audience: outsider
