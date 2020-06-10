@@ -1,0 +1,49 @@
+uuid: 6c54f3ed-59eb-4978-bffb-5af24e1faa5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forms.body
+    - field.field.node.forms.field_file_upload
+    - field.field.node.forms.field_form_category
+    - node.type.forms
+  module:
+    - file
+    - text
+    - user
+id: node.forms.default
+targetEntityType: node
+bundle: forms
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file_upload:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_form_category:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  private_message_link: true
+  shariff_field: true

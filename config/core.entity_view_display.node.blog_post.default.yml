@@ -1,0 +1,30 @@
+uuid: bd338671-7ea7-4483-9e38-47859eebd542
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog_post.body
+    - node.type.blog_post
+  module:
+    - text
+    - user
+id: node.blog_post.default
+targetEntityType: node
+bundle: blog_post
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  private_message_link: true
+  shariff_field: true

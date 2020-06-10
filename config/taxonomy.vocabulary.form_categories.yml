@@ -1,0 +1,8 @@
+uuid: d3d4af76-64d7-4eb9-abec-42ede03db664
+langcode: en
+status: true
+dependencies: {  }
+name: 'Form Categories'
+vid: form_categories
+description: ''
+weight: 0
