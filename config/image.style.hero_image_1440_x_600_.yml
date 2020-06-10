@@ -1,0 +1,15 @@
+uuid: 90b31131-4138-456f-93a1-4cc08d902bf5
+langcode: en
+status: true
+dependencies: {  }
+name: hero_image_1440_x_600_
+label: 'Hero Image  (1440 x 600)'
+effects:
+  c0d6ea98-a071-4c9b-ad5c-14248e4de5e2:
+    uuid: c0d6ea98-a071-4c9b-ad5c-14248e4de5e2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1110
+      height: 521
+      upscale: false

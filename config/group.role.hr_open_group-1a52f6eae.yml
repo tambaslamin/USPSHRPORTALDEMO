@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.hr_content_owner
 id: hr_open_group-1a52f6eae
-label: 'HR Content Owner'
+label: 'Content Owner'
 weight: -5
 internal: true
 audience: outsider

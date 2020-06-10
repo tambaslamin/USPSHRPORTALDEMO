@@ -3,7 +3,26 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_content_owner
-label: 'HR Content Owner'
+label: 'Content Owner'
 weight: -5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access administration pages'
+  - 'access group overview'
+  - 'access site in maintenance mode'
+  - 'access test_files entity browser pages'
+  - 'access test_files1 entity browser pages'
+  - 'access test_files_ajax entity browser pages'
+  - 'access test_nodes entity browser pages'
+  - 'access toolbar'
+  - 'access tour'
+  - 'create hr_closed_group group'
+  - 'create hr_flexible_group group'
+  - 'create hr_open_group group'
+  - 'create hr_public_group group'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'view the administration theme'

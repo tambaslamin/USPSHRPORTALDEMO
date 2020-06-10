@@ -1,0 +1,39 @@
+uuid: ce618fd6-0abd-4b4b-9653-9a0cff701f60
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a53baf1f-06d7-4990-8a6c-3ffb4a7a9e89'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - uspshrdemo
+id: covid19banner
+theme: uspshrdemo
+region: highlighted
+weight: -8
+provider: null
+plugin: 'block_content:a53baf1f-06d7-4990-8a6c-3ffb4a7a9e89'
+settings:
+  id: 'block_content:a53baf1f-06d7-4990-8a6c-3ffb4a7a9e89'
+  label: 'COVID-19 Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

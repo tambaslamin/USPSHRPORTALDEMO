@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.hr_supervisor
 id: hr_open_group-4b164085e
-label: 'HR Supervisor'
+label: Supervisor
 weight: -4
 internal: true
 audience: outsider
