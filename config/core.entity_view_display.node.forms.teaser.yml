@@ -1,0 +1,36 @@
+uuid: 27b11608-7365-48e6-b961-5ce51b268b34
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.forms.body
+    - field.field.node.forms.field_file_upload
+    - field.field.node.forms.field_form_category
+    - node.type.forms
+  module:
+    - text
+    - user
+id: node.forms.teaser
+targetEntityType: node
+bundle: forms
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_file_upload: true
+  field_form_category: true
+  private_message_link: true
+  shariff_field: true
