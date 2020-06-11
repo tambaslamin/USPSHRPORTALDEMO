@@ -1,0 +1,24 @@
+/* ---------- Header Section Styles ----------- */
+
+.global-branding .navbar-brand {
+  width: 302px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+.region-global-search-top .form-control {
+  width: 532px;
+  height: 50px;
+}
+.region-global-search-top .form-submit {
+  display: none;
+}
+.region-global-search-top .form-group {
+  margin-bottom: 0;
+}
+.region-global-myaccount-top .image-style-thumbnail {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 0;
+}
