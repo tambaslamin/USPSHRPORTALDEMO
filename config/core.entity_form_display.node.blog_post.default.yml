@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_image
+    - image.style.thumbnail
     - node.type.blog_post
   module:
+    - image
     - path
     - text
 id: node.blog_post.default
@@ -29,6 +32,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   path:
     type: path
     weight: 30

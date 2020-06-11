@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.forms.body
     - field.field.node.forms.field_file_upload
     - field.field.node.forms.field_form_category
+    - field.field.node.forms.field_webform
     - node.type.forms
   module:
     - file
     - text
     - user
+    - webform
 id: node.forms.default
 targetEntityType: node
 bundle: forms
@@ -38,6 +40,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_webform:
+    weight: 104
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
     region: content
   links:
     weight: 100

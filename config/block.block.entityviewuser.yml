@@ -1,0 +1,23 @@
+uuid: 26072dbb-a9ce-4331-b38d-a4578a098941
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - uspshrdemo
+id: entityviewuser
+theme: uspshrdemo
+region: global_myaccount_top
+weight: 0
+provider: null
+plugin: 'entity_view:user'
+settings:
+  id: 'entity_view:user'
+  label: 'Entity view (User)'
+  provider: ctools
+  label_display: '0'
+  view_mode: compact
+  context_mapping:
+    entity: '@user.current_user_context:current_user'
+visibility: {  }

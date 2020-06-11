@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_image
     - node.type.blog_post
   module:
     - text
@@ -28,5 +29,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_image: true
   private_message_link: true
   shariff_field: true
