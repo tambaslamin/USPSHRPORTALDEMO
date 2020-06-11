@@ -71,30 +71,31 @@
 
 {% block head %}
 {% if page.global_branding_top or page.global_search_top or page.global_notifications_top or page.global_myaccount_top %}
-<div class="row global_header">
-    {% if page.global_branding_top %}
-         <div class="global-branding float-left">
-             {{ page.global_branding_top }}
-         </div>
-    {% endif %}
-
-    {% if page.global_search_top %}
-         <div class="global-search">
-             {{ page.global_search_top }}
-         </div>
-    {% endif %}
-
-    {% if page.global_notifications_top %}
-         <div class="global-notifications">
-             {{ page.global_notifications_top }}
-         </div>
-    {% endif %}
-
-    {% if page.global_myaccount_top %}
-         <div class="global-myaccount float-right">
-             {{ page.global_myaccount_top }}
-         </div>
-    {% endif %}
+<div class="row global_header h-100 justify-content-end align-items-center">
+      {% if page.global_branding_top %}
+          <div class="col-6 global-branding float-left">
+              {{ page.global_branding_top }}
+          </div>
+      {% endif %}
+      <div class="col-6">
+        <div class= "row m-0">
+          {% if page.global_search_top %}
+              <div class="col-10 global-search d-flex justify-content-end">
+                  {{ page.global_search_top }}
+              </div>
+          {% endif %}
+          {% if page.global_notifications_top %}
+              <div class="col-1 global-notifications  d-flex justify-content-center align-items-center">
+                  {{ page.global_notifications_top }}
+              </div>
+          {% endif %}
+          {% if page.global_myaccount_top %}
+              <div class="col-1 global-myaccount d-flex justify-content-center align-items-center">
+                  {{ page.global_myaccount_top }}
+              </div>
+          {% endif %}
+          </div>
+    </div>
 </div>
 {% endif %}
 
