@@ -1,0 +1,5 @@
+services:
+  usps_hr.route_subscriber:
+    class: Drupal\usps_hr\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
