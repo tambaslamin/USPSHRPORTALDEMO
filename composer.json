@@ -74,6 +74,7 @@
         "drupal/layout_library": "^1.0@beta",
         "drupal/layout_section_classes": "^1.0@RC",
         "drupal/link_attributes": "^1.10",
+        "drupal/login_redirect_per_role": "^1.7",
         "drupal/login_security": "^1.5",
         "drupal/mailsystem": "^4.3",
         "drupal/masquerade": "^2.0@beta",
