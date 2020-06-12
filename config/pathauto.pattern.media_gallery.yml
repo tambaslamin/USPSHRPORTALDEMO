@@ -1,0 +1,22 @@
+uuid: c2ec0fee-3d08-4062-9033-16bbd9c18e43
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: media_gallery
+label: 'Media Gallery'
+type: 'canonical_entities:node'
+pattern: 'media-galleries/[node:title]'
+selection_criteria:
+  a6d8c4cd-492d-4a24-9ca9-d8b918269a6f:
+    id: node_type
+    bundles:
+      hr_media_gallery: hr_media_gallery
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a6d8c4cd-492d-4a24-9ca9-d8b918269a6f
+selection_logic: and
+weight: -5
+relationships: {  }
