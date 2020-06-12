@@ -35,6 +35,9 @@ body.page-user-login footer.site-footer {
   }
   body.page-user-login #content {
     flex: 1;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
   }
   body.page-user-login #content > .section {
     display: flex;
@@ -48,5 +51,13 @@ body.page-user-login footer.site-footer {
   body.page-user-login .login-page-poster-image img {
     visibility: hidden;
     max-width: 100%;
+  }
+  fieldset label {
+    text-transform: uppercase;
+    color: #333366;
+  }
+  #edit-name ~ .description,
+  #edit-pass ~ .description {
+    display: none;
   }
 }

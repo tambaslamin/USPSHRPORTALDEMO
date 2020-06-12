@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Provides functionalities specific to the USPS HR Portal.
+ */
+
+/**
+ * {@inheritdoc}
+ */
+function usps_hr_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'user_login_form') {
+    $form['actions']['submit']['#attributes']['class'][] = 'btn-block';
+    $form['name']['#title'] = t('Employee ID');
+    $form['name']['#attributes']['placeholder'] = 'Enter ACE ID or EIN';
+    $form['pass']['#attributes']['placeholder'] = 'Enter your password';
+  }
+}
