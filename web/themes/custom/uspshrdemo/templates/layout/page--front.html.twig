@@ -73,11 +73,11 @@
 {% if page.global_branding_top or page.global_search_top or page.global_notifications_top or page.global_myaccount_top %}
 <div class="row global_header h-100 justify-content-end align-items-center">
       {% if page.global_branding_top %}
-          <div class="col-6 global-branding float-left">
+          <div class="col-md-6 col-sm-12 global-branding float-left">
               {{ page.global_branding_top }}
           </div>
       {% endif %}
-      <div class="col-6">
+      <div class="col-md-6 col-sm-12">
         <div class= "row m-0">
           {% if page.global_search_top %}
               <div class="col-10 global-search d-flex justify-content-end">
@@ -215,20 +215,20 @@
 {% endblock %}
 
 {% block footer %}
-<div class="{{ container }}">
-{% if page.global_footer_first or page.global_footer_second %}
-<div class="row global-footer clearfix">
- {% if page.global_myaccount_top %}
-         <div class="global_footer_first float-left">
-             {{ page.global_footer_first }}
-         </div>
-    {% endif %}
- {% if page.global_myaccount_top %}
-         <div class="global_footer_second float-right">
-             {{ page.global_footer_second }}
-         </div>
-    {% endif %}
-</div>
-</div>
+  <div class="{{ container }}">
+  {% if page.global_footer_first or page.global_footer_second %}
+    <div class="row global-footer clearfix">
+    {% if page.global_myaccount_top %}
+            <div class="global_footer_first float-left col-md-4">
+                {{ page.global_footer_first }}
+            </div>
+        {% endif %}
+    {% if page.global_myaccount_top %}
+            <div class="global_footer_second float-right col-md-8">
+                {{ page.global_footer_second }}
+            </div>
+        {% endif %}
+    </div>
+  </div>
 {% endif %}
 {% endblock %}
