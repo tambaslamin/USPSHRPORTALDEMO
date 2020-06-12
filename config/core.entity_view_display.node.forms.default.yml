@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.forms.body
+    - field.field.node.forms.feeds_item
     - field.field.node.forms.field_file_upload
     - field.field.node.forms.field_form_category
     - field.field.node.forms.field_webform
@@ -22,6 +23,11 @@ content:
     label: hidden
     type: text_default
     weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -55,5 +61,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
   private_message_link: true
+  search_api_excerpt: true
   shariff_field: true

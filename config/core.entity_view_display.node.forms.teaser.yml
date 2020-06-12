@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.forms.body
+    - field.field.node.forms.feeds_item
     - field.field.node.forms.field_file_upload
     - field.field.node.forms.field_form_category
     - field.field.node.forms.field_webform
@@ -25,14 +26,21 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
   field_file_upload: true
   field_form_category: true
   field_webform: true
   private_message_link: true
+  search_api_excerpt: true
   shariff_field: true
