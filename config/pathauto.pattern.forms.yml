@@ -1,0 +1,23 @@
+uuid: 75192b88-59da-4a14-b09c-815c5b464235
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: forms
+label: Forms
+type: 'canonical_entities:taxonomy_term'
+pattern: 'forms/[term:name]'
+selection_criteria:
+  da2c5107-8133-439d-bda1-65884cf50f73:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      form_categories: form_categories
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: da2c5107-8133-439d-bda1-65884cf50f73
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -2,6 +2,17 @@ uuid: 5aae8a2f-4606-458d-b3eb-b0848d12434a
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.blog_post
+    - node.type.entity_browser_test
+    - node.type.forms
+    - node.type.hr_announcement
+    - node.type.hr_event
+    - node.type.hr_landing_page
+    - node.type.hr_media_gallery
+    - node.type.hr_topic
+    - node.type.page
   module:
     - content_moderation
 _core:
@@ -69,5 +80,16 @@ type_settings:
       from:
         - draft
         - published
-  entity_types: {  }
+  entity_types:
+    node:
+      - article
+      - blog_post
+      - entity_browser_test
+      - forms
+      - hr_announcement
+      - hr_event
+      - hr_landing_page
+      - hr_media_gallery
+      - hr_topic
+      - page
   default_moderation_state: draft

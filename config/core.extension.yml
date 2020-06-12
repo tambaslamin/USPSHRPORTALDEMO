@@ -44,10 +44,12 @@ module:
   entity_block: 0
   entity_browser: 0
   entity_browser_enhanced: 0
+  entity_browser_entity_form: 0
   entity_browser_example: 0
   entity_clone: 0
   entity_embed: 0
   entity_reference_revisions: 0
+  feeds: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -103,6 +105,9 @@ module:
   redirect: 0
   redirect_404: 0
   search: 0
+  search_api: 0
+  search_api_pantheon: 0
+  search_api_solr: 0
   settings_tray: 0
   shariff: 0
   shortcut: 0
