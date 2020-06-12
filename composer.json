@@ -108,6 +108,7 @@
         "drupal/toolbar_anti_flicker": "^9.3",
         "drupal/tvi": "^1.0@beta",
         "drupal/video_embed_field": "^2.4",
+        "drupal/views_autocomplete_api": "^1.0",
         "drupal/views_autocomplete_search": "^1.0@beta",
         "drupal/views_bulk_operations": "^3.7",
         "drupal/votingapi_widgets": "^1.0@alpha",
