@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Provides functionalities specific to the USPS HR Portal.
+ */
+
+/**
  * {@inheritdoc}
  */
 function usps_hr_form_alter(&$form, &$form_state, $form_id) {
