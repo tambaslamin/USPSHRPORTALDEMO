@@ -15,6 +15,7 @@ module:
   block_blacklist: 0
   block_class: 0
   block_content: 0
+  block_content_permissions: 0
   block_user_info: 0
   breakpoint: 0
   chosen: 0
@@ -27,6 +28,7 @@ module:
   config_direct_save: 0
   contact: 0
   content_moderation: 0
+  content_moderation_notifications: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -78,6 +80,7 @@ module:
   metatag_views: 0
   moderation_dashboard: 0
   node: 0
+  node_view_permissions: 0
   options: 0
   override_node_options: 0
   page_cache: 0
@@ -117,6 +120,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  usps_hr: 0
   video_embed_field: 0
   views_bulk_operations: 0
   views_ui: 0
@@ -134,7 +138,6 @@ module:
 theme:
   stable: 0
   classy: 0
-  bartik: 0
   claro: 0
   bootstrap_barrio: 0
   uspshrdemo: 0

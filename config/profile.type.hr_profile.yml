@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 id: hr_profile
-label: 'HR Profile'
+label: Profile
 display_label: 'My Profile'
 multiple: false
 registration: true
 roles:
-  authenticated: authenticated
   hr_former_employee: hr_former_employee
+  authenticated: authenticated
   hr_standard_user: hr_standard_user
   hr_professional: hr_professional
   hr_content_owner: hr_content_owner
