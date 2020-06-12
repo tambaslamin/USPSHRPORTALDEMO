@@ -1,0 +1,52 @@
+body.page-user-login,
+body.page-user-login footer.site-footer {
+  background: #fff;
+}
+@media screen and (max-width: 767px) {
+  body.page-user-login .login-page-poster-image {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  html,
+  body.page-user-login,
+  body.page-user-login .dialog-off-canvas-main-canvas,
+  body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper,
+  body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page,
+  body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page #main-wrapper,
+  body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page #main-wrapper #main,
+  body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page #main-wrapper #main > .row {
+    height: 100%;
+  }
+  body.page-user-login #page {
+    display: flex;
+    flex-direction: column;
+  }
+  body.page-user-login main.main-content {
+    display: flex;
+    align-items: center;
+  }
+  body.page-user-login .login-page-contents {
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  body.page-user-login #content {
+    flex: 1;
+  }
+  body.page-user-login #content > .section {
+    display: flex;
+    flex-direction: column;
+  }
+  body.page-user-login .login-page-poster-image {
+    background-image: url(/themes/custom/uspshrdemo/images/login-page.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  body.page-user-login .login-page-poster-image img {
+    visibility: hidden;
+    max-width: 100%;
+  }
+}

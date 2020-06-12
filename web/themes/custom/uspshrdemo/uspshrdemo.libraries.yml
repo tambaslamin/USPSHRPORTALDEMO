@@ -32,3 +32,7 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+login-page:
+  css:
+    theme:
+      css/login-page.css: {}
