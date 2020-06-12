@@ -8,6 +8,7 @@ weight: -5
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access files overview'
   - 'access group overview'
   - 'access site in maintenance mode'
   - 'access test_files entity browser pages'
@@ -20,6 +21,7 @@ permissions:
   - 'create hr_flexible_group group'
   - 'create hr_open_group group'
   - 'create hr_public_group group'
+  - 'dropzone upload files'
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any image media'

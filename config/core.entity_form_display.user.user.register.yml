@@ -20,47 +20,55 @@ bundle: user
 mode: register
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
-  contact:
-    weight: 5
-    region: content
-  google_analytics:
-    weight: 3
     settings: {  }
     third_party_settings: {  }
+  contact:
+    weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  google_analytics:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   hr_profile_profiles:
     type: profile_form
-    weight: 90
+    weight: 2
     settings:
       form_mode: default
     third_party_settings: {  }
     region: content
   language:
-    weight: 0
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   private_messages:
-    weight: 0
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   timezone:
-    weight: 6
+    weight: 7
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
+    weight: 1
     region: content
 hidden:
   layout_builder__layout: true

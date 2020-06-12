@@ -6,4 +6,5 @@ id: hr_former_employee
 label: 'Former Employee'
 weight: -9
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view any page content'

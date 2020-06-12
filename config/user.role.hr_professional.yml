@@ -6,4 +6,6 @@ id: hr_professional
 label: Professional
 weight: -6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access files overview'
+  - 'dropzone upload files'
