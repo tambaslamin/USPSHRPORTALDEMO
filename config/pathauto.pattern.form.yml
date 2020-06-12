@@ -1,0 +1,22 @@
+uuid: 5536ad54-8488-4ce8-a1f9-41e944569a91
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: form
+label: Form
+type: 'canonical_entities:node'
+pattern: 'forms/[node:title]'
+selection_criteria:
+  be11d2b9-7cba-419e-b86f-a1bb945a18bf:
+    id: node_type
+    bundles:
+      forms: forms
+    negate: false
+    context_mapping:
+      node: node
+    uuid: be11d2b9-7cba-419e-b86f-a1bb945a18bf
+selection_logic: and
+weight: -5
+relationships: {  }

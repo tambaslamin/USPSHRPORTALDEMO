@@ -1,6 +1,6 @@
 uuid: 1409eab1-3a73-4348-b87a-4b255aa55b61
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -35,7 +35,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'view any page content'
       cache:
         type: tag
         options: {  }
@@ -447,7 +447,8 @@ display:
         weight: 0
         menu_name: main
         parent: ''
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
     cache_metadata:
       contexts:
         - 'languages:language_content'

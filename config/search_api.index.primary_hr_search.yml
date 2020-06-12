@@ -1,0 +1,65 @@
+uuid: c9139318-907d-4dc5-a42b-99326203f6a4
+langcode: en
+status: false
+dependencies:
+  config:
+    - search_api.server.pantheon_search
+  module:
+    - search_api
+    - node
+    - file
+    - group
+    - eck
+    - profile
+id: primary_hr_search
+name: 'Primary Search'
+description: ''
+read_only: false
+field_settings: {  }
+datasource_settings:
+  'entity:file': {  }
+  'entity:group':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:group_content':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:hr_portal_pmo':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected:
+        - en
+  'entity:profile':
+    bundles:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: pantheon_search

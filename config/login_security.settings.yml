@@ -1,12 +1,12 @@
 track_time: 1
-user_wrong_count: 0
-host_wrong_count: 0
-host_wrong_count_hard: 0
-activity_threshold: 0
-disable_core_login_error: 0
-notice_attempts_available: 0
-last_login_timestamp: 0
-last_access_timestamp: 0
+user_wrong_count: 3
+host_wrong_count: 9
+host_wrong_count_hard: 12
+activity_threshold: 12
+disable_core_login_error: 1
+notice_attempts_available: 1
+last_login_timestamp: 1
+last_access_timestamp: 1
 user_blocked_notification_emails: ''
 login_activity_notification_emails: ''
 notice_attempts_message: 'You have used @user_current_count out of @user_block_attempts login attempts. After all @user_block_attempts have been used, you will be unable to login.'

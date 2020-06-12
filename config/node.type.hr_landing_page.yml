@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'HR Landing Page'
+name: 'Landing Page'
 type: hr_landing_page
 description: ''
 help: ''

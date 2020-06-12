@@ -1,0 +1,20 @@
+uuid: 3c02bec2-752a-4bf8-ac6d-ffa5542a3493
+langcode: en
+status: true
+dependencies: {  }
+id: usps_person_profile
+label: 'USPS Person Profile'
+display_label: Profile
+multiple: false
+registration: false
+roles:
+  hr_former_employee: hr_former_employee
+  authenticated: authenticated
+  hr_standard_user: hr_standard_user
+  hr_professional: hr_professional
+  hr_content_owner: hr_content_owner
+  hr_supervisor: hr_supervisor
+  hr_manager: hr_manager
+  administrator: administrator
+allow_revisions: false
+new_revision: false

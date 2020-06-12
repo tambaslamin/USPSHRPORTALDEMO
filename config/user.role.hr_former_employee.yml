@@ -7,4 +7,5 @@ label: 'Former Employee'
 weight: -9
 is_admin: null
 permissions:
+  - 'access content'
   - 'view any page content'
