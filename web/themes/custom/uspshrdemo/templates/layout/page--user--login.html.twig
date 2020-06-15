@@ -109,6 +109,18 @@
           </div>
           <div class="global_footer_second float-right">
             {{ page.global_footer_second }}
+            <div class="{{ container }}">
+                  {% if page.footer_first %}
+                    <div class="site-footer__top clearfix">
+                          <div class="row">
+                            <div class="col-md-12">
+                              {{ page.footer_first }}
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                </div>
           </div>
         </div>
       {% endblock %}
