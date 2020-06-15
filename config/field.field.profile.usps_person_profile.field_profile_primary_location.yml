@@ -1,0 +1,19 @@
+uuid: 3afaf24a-625f-41a8-8ffc-7983db0cdb92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_primary_location
+    - profile.type.usps_person_profile
+id: profile.usps_person_profile.field_profile_primary_location
+field_name: field_profile_primary_location
+entity_type: profile
+bundle: usps_person_profile
+label: 'Primary Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

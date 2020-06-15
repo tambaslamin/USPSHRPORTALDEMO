@@ -1,0 +1,48 @@
+uuid: 11557aa3-9c37-4dbe-8824-e82b08f1d275
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_profile_your_links
+field_name: field_profile_your_links
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'TSP Benefits'
+      label: 'TSP Benefits'
+    -
+      value: 'Link 2'
+      label: 'Link 2'
+    -
+      value: 'Link 3'
+      label: 'Link 3'
+    -
+      value: 'Link 4'
+      label: 'Link 4'
+    -
+      value: 'Link 5'
+      label: 'Link 5'
+    -
+      value: 'Link 6'
+      label: 'Link 6'
+    -
+      value: 'Link 7'
+      label: 'Link 7'
+    -
+      value: 'Link 8'
+      label: 'Link 8'
+    -
+      value: 'Link 9'
+      label: 'Link 9'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

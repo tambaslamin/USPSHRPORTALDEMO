@@ -33,6 +33,7 @@ hidden:
   feeds_item: true
   field_image: true
   field_tags: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true
   shariff_field: true

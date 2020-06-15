@@ -1,0 +1,264 @@
+uuid: 34dd22d5-0c0d-4191-b403-4d8d794b9029
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.usps_person_profile.field_profile_address
+    - field.field.profile.usps_person_profile.field_profile_email
+    - field.field.profile.usps_person_profile.field_profile_email_frequenc
+    - field.field.profile.usps_person_profile.field_profile_email_preferences
+    - field.field.profile.usps_person_profile.field_profile_first_name
+    - field.field.profile.usps_person_profile.field_profile_language
+    - field.field.profile.usps_person_profile.field_profile_last_name
+    - field.field.profile.usps_person_profile.field_profile_manager
+    - field.field.profile.usps_person_profile.field_profile_notifications_pref
+    - field.field.profile.usps_person_profile.field_profile_primary_location
+    - field.field.profile.usps_person_profile.field_profile_retirement_date
+    - field.field.profile.usps_person_profile.field_profile_start_date
+    - field.field.profile.usps_person_profile.field_profile_task_preferences
+    - field.field.profile.usps_person_profile.field_profile_telephone
+    - field.field.profile.usps_person_profile.field_profile_title
+    - field.field.profile.usps_person_profile.field_profile_your_apps
+    - field.field.profile.usps_person_profile.field_profile_your_links
+    - profile.type.usps_person_profile
+  module:
+    - address
+    - datetime
+    - field_group
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_profile_user_settings:
+      children:
+        - group_profile_general
+        - group_profile_retirement_eligib
+        - group_coprofile_figure_dashboard
+        - group_profile_preferences
+        - group_profile_ace_ein_link
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: 'User Settings'
+    group_profile_general:
+      children:
+        - field_profile_first_name
+        - field_profile_last_name
+        - field_profile_title
+        - field_profile_start_date
+        - field_profile_primary_location
+        - field_profile_manager
+        - group_profile_contact_info
+        - field_profile_language
+      parent_name: group_profile_user_settings
+      weight: 5
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: General
+    group_profile_retirement_eligib:
+      children:
+        - field_profile_retirement_date
+      parent_name: group_profile_user_settings
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Retirement Eligibility'
+    group_coprofile_figure_dashboard:
+      children:
+        - field_profile_your_apps
+        - field_profile_your_links
+      parent_name: group_profile_user_settings
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'Configure Dashboard'
+    group_profile_preferences:
+      children:
+        - field_profile_email_preferences
+        - field_profile_email_frequenc
+        - field_profile_task_preferences
+        - field_profile_notifications_pref
+      parent_name: group_profile_user_settings
+      weight: 8
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Preferences
+    group_profile_ace_ein_link:
+      children: {  }
+      parent_name: group_profile_user_settings
+      weight: 9
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: 'ACE & EIN Link'
+    group_profile_contact_info:
+      children:
+        - field_profile_address
+        - field_profile_telephone
+        - field_profile_email
+      parent_name: group_profile_general
+      weight: 39
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        required_fields: true
+        id: ''
+        classes: 'card card-body'
+      label: 'Contact Information'
+id: profile.usps_person_profile.default
+targetEntityType: profile
+bundle: usps_person_profile
+mode: default
+content:
+  field_profile_address:
+    weight: 40
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_profile_email:
+    weight: 42
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_profile_email_frequenc:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_profile_email_preferences:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_profile_first_name:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_language:
+    weight: 40
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_profile_last_name:
+    weight: 34
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_manager:
+    weight: 38
+    settings:
+      size: 60
+      placeholder: 'Allows for name and URL of manager'
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_profile_notifications_pref:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_profile_primary_location:
+    weight: 37
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_retirement_date:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_profile_start_date:
+    weight: 36
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_profile_task_preferences:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_profile_telephone:
+    weight: 41
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_profile_title:
+    weight: 35
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_your_apps:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_profile_your_links:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  is_default: true

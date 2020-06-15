@@ -1,0 +1,74 @@
+login:
+  hr_former_employee:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  authenticated:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  ace_user:
+    redirect_url: /group/ace-users
+    allow_destination: true
+    weight: 0
+  hr_standard_user:
+    redirect_url: /group/ein-users
+    allow_destination: true
+    weight: 0
+  hr_professional:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_content_owner:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_supervisor:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  administrator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+logout:
+  hr_former_employee:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  authenticated:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  ace_user:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_standard_user:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_professional:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_content_owner:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_supervisor:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  hr_manager:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false
+  administrator:
+    redirect_url: ''
+    weight: 0
+    allow_destination: false

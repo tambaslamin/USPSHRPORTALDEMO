@@ -1,0 +1,24 @@
+uuid: d46bd9ba-e63d-4d6d-8239-a59aa936e36c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_profile_email_preferences
+field_name: field_profile_email_preferences
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Allow email notifications'
+      label: 'Allow email notifications'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

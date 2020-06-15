@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_form_mode.user.register
     - field.field.user.user.layout_builder__layout
+    - field.field.user.user.message_subscribe_email
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -34,13 +35,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  hr_profile_profiles:
-    type: profile_form
-    weight: 2
-    settings:
-      form_mode: default
-    third_party_settings: {  }
-    region: content
   language:
     weight: 4
     region: content
@@ -68,7 +62,17 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    weight: 2
+    region: content
+  usps_person_profile_profiles:
+    type: profile_form
     weight: 1
+    settings:
+      form_mode: default
+    third_party_settings: {  }
     region: content
 hidden:
+  hr_profile_profiles: true
+  langcode: true
   layout_builder__layout: true
+  message_subscribe_email: true

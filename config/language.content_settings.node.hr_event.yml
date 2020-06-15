@@ -1,0 +1,11 @@
+uuid: 853e31ba-f77e-47c7-8f8a-5729acd512f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hr_event
+id: node.hr_event
+target_entity_type_id: node
+target_bundle: hr_event
+default_langcode: site_default
+language_alterable: false
