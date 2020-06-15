@@ -2,7 +2,7 @@
   background-color: #333366 !important;
 }
 
-.main-menu-header  .main-menu-ul .main-menu-li .sf-depth-1.main-menu-a{
+.main-menu-header  .main-menu-ul .main-menu-li .sf-depth-1.main-menu-a {
   color: #fff !important;
 }
 
@@ -17,7 +17,7 @@
 #block-covid19banner .alert-danger {
   text-align: center;
   color: #fff;
-  background: #E71921;
+  background: #e71921;
   border: 0;
   border-radius: 0;
 }
