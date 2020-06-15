@@ -6,7 +6,7 @@ id: hr_profile
 label: Profile
 display_label: 'My Profile'
 multiple: false
-registration: true
+registration: false
 roles:
   hr_former_employee: hr_former_employee
   authenticated: authenticated

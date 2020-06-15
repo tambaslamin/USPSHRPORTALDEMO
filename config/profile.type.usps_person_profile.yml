@@ -6,7 +6,7 @@ id: usps_person_profile
 label: 'USPS Person Profile'
 display_label: Profile
 multiple: false
-registration: false
+registration: true
 roles:
   hr_former_employee: hr_former_employee
   authenticated: authenticated
@@ -16,5 +16,5 @@ roles:
   hr_supervisor: hr_supervisor
   hr_manager: hr_manager
   administrator: administrator
-allow_revisions: false
-new_revision: false
+allow_revisions: true
+new_revision: true

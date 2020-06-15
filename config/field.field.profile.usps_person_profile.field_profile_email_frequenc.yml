@@ -1,0 +1,23 @@
+uuid: a9c39f96-995b-47ef-9ed8-53019d1d5f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_email_frequenc
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_email_frequenc
+field_name: field_profile_email_frequenc
+entity_type: profile
+bundle: usps_person_profile
+label: 'Email Frequency'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Daily
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: b3b8c292-327e-4b22-b45f-ba4e26999378
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_language
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_language
+field_name: field_profile_language
+entity_type: profile
+bundle: usps_person_profile
+label: Language
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: en_us
+default_value_callback: ''
+settings: {  }
+field_type: list_string

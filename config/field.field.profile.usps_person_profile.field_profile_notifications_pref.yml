@@ -1,0 +1,29 @@
+uuid: 6133ccfc-51e6-42e5-b0ed-d784083347c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_notifications_pref
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_notifications_pref
+field_name: field_profile_notifications_pref
+entity_type: profile
+bundle: usps_person_profile
+label: 'Notifications Preferences'
+description: 'Select applications that trigger a Notification'
+required: false
+translatable: false
+default_value:
+  -
+    value: HERO-CSOD
+  -
+    value: PES
+  -
+    value: eCareer
+  -
+    value: eReassign
+default_value_callback: ''
+settings: {  }
+field_type: list_string

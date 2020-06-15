@@ -34,13 +34,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  hr_profile_profiles:
-    type: profile_form
-    weight: 2
-    settings:
-      form_mode: default
-    third_party_settings: {  }
-    region: content
   language:
     weight: 4
     region: content
@@ -70,5 +63,13 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  usps_person_profile_profiles:
+    type: profile_form
+    weight: 90
+    settings:
+      form_mode: default
+    third_party_settings: {  }
+    region: content
 hidden:
+  hr_profile_profiles: true
   layout_builder__layout: true

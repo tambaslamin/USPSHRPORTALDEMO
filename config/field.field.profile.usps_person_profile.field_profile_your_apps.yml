@@ -1,0 +1,31 @@
+uuid: 71a6b584-f578-42f8-a661-182c0086fccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_your_apps
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_your_apps
+field_name: field_profile_your_apps
+entity_type: profile
+bundle: usps_person_profile
+label: 'Your Apps'
+description: 'Select up to five apps to display on your dashboard.'
+required: false
+translatable: false
+default_value:
+  -
+    value: eCareer
+  -
+    value: eLRA
+  -
+    value: ePayroll
+  -
+    value: eOPF
+  -
+    value: HERO
+default_value_callback: ''
+settings: {  }
+field_type: list_string
