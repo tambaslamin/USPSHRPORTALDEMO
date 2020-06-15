@@ -34,20 +34,24 @@ processor_configuration:
   skip_hash_check: false
   values:
     type: blog_post
-custom_sources: {  }
+custom_sources:
+  body:
+    label: Body
+    value: Body
+    machine_name: body
+  category:
+    label: Category
+    value: Category
+    machine_name: category
+  title:
+    label: Title
+    value: Title
+    machine_name: title
 mappings:
-  -
-    target: uid
-    map:
-      target_id: ''
-    settings:
-      language: null
-      reference_by: false
-      autocreate: false
   -
     target: body
     map:
-      value: ''
+      value: body
       summary: ''
     settings:
       language: null
@@ -55,15 +59,15 @@ mappings:
   -
     target: field_category
     map:
-      target_id: ''
+      target_id: category
     settings:
-      language: null
+      language: ''
       reference_by: name
-      autocreate: false
+      autocreate: '1'
   -
     target: title
     map:
-      value: ''
+      value: title
     unique: {  }
     settings:
       language: null
