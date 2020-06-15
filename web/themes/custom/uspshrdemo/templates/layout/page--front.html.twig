@@ -223,9 +223,44 @@
                 {{ page.global_footer_first }}
             </div>
         {% endif %}
-    {% if page.global_myaccount_top %}
+        {% if page.global_myaccount_top %}
             <div class="global_footer_second float-right col-md-8">
                 {{ page.global_footer_second }}
+                <div class="{{ container }}">
+                  {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+                    <div class="site-footer__top clearfix">
+                          
+                          <div class="row">
+                            <div class="col-md-12">
+                              {{ page.footer_first }}
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              {{ page.footer_second }}
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              {{ page.footer_third }}
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              {{ page.footer_fourth }}
+                            </div>
+                          </div> 
+                          
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if page.footer_fifth %}
+                    <div class="site-footer__bottom">
+                      {{ page.footer_fifth }}
+                    </div>
+                  {% endif %}
+                  </div>
             </div>
         {% endif %}
     </div>
