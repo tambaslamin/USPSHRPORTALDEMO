@@ -29,7 +29,7 @@ settings:
   speed: fast
   delay: '800'
   slide: vertical
-  supposition: 0
+  supposition: 1
   hoverintent: 1
   touch: '0'
   touchbh: '2'

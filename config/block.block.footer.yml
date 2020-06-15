@@ -11,7 +11,7 @@ dependencies:
 id: footer
 theme: uspshrdemo
 region: global_footer_second
-weight: 0
+weight: -10
 provider: null
 plugin: 'menu_block:footer'
 settings:

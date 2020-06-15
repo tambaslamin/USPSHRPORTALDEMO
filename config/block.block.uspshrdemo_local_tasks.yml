@@ -2,6 +2,8 @@ uuid: d5575409-38db-4bbf-a702-546b7ff0ee3f
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - uspshrdemo
 _core:
@@ -19,4 +21,9 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 32d59aad-36b3-4197-a858-bae0bbff9e1b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cb303d73-4d09-4caf-85a3-417dac35b287'
+  module:
+    - block_content
+    - system
+  theme:
+    - uspshrdemo
+id: formeremployeesuserloginpage
+theme: uspshrdemo
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:cb303d73-4d09-4caf-85a3-417dac35b287'
+settings:
+  id: 'block_content:cb303d73-4d09-4caf-85a3-417dac35b287'
+  label: 'Former Employees - User Login Page'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /user/login
+    negate: false
+    context_mapping: {  }

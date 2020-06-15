@@ -34,35 +34,39 @@ processor_configuration:
   skip_hash_check: false
   values:
     type: forms
-custom_sources: {  }
+custom_sources:
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  body:
+    label: Body
+    value: Body
+    machine_name: body
+  form_category:
+    label: 'Form Category'
+    value: 'Form Category'
+    machine_name: form_category
 mappings:
-  -
-    target: uid
-    map:
-      target_id: ''
-    settings:
-      language: null
-      reference_by: false
-      autocreate: false
   -
     target: title
     map:
-      value: ''
+      value: title
     unique: {  }
     settings:
       language: null
   -
     target: body
     map:
-      value: ''
-      summary: ''
+      value: body
+      summary: '----'
     settings:
       language: null
       format: plain_text
   -
     target: field_form_category
     map:
-      target_id: ''
+      target_id: form_category
     settings:
       language: null
       reference_by: name
