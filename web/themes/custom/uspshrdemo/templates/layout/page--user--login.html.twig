@@ -104,21 +104,14 @@
     <footer class="site-footer">
       {% block footer %}
        <div class="{{ container }}">
-          <div class="global_footer_first float-left">
+          <div class="global_footer_first float-left col-md-4">
             {{ page.global_footer_first }}
           </div>
-          <div class="global_footer_second float-right">
+          <div class="global_footer_second float-right col-md-8">
             {{ page.global_footer_second }}
             <div class="{{ container }}">
                   {% if page.footer_first %}
-                    <div class="site-footer__top clearfix">
-                          <div class="row">
-                            <div class="col-md-12">
-                              {{ page.footer_first }}
-                            </div>
-                        </div>
-                      </div>
-                    </div>
+                    <div class="hide"></div>
                   {% endif %}
                 </div>
           </div>
