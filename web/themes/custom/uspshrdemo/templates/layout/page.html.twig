@@ -194,7 +194,7 @@
         </div>
 
         {% if page.content_bottom_left or page.content_bottom_middle or page.content_bottom_right %}
-        <div class="row global-content-bottom>
+        <div class="row global-content-bottom">
          {% if page.content_bottom_left %}
                  <div class="content_bottom_left">
                      {{ page.content_bottom_left }}
@@ -216,34 +216,22 @@
         {% endif %}
 {% endblock %}
 
-
 {% block footer %}
-  <div class="{{ container }}">
-  {% if page.global_footer_first or page.global_footer_second %}
+<div class="{{ container }}">
+    {% if page.global_footer_first or page.global_footer_second %}
     <div class="row global-footer clearfix">
-    {% if page.global_myaccount_top %}
-            <div class="global_footer_first float-left col-md-4">
-                {{ page.global_footer_first }}
-            </div>
+        {% if page.global_myaccount_top %}
+        <div class="global_footer_first  col-md-4">
+            {{ page.global_footer_first }}
+        </div>
         {% endif %}
         {% if page.global_myaccount_top %}
-            <div class="global_footer_second float-right col-md-8">
-                {{ page.global_footer_second }}
-                <div class="{{ container }}">
-                  {% if page.footer_first %}
-                    <div class="site-footer__top clearfix">
-                          <div class="row">
-                            <div class="col-md-12">
-                              {{ page.footer_first }}
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  {% endif %}
-                </div>
-            </div>
+        <div class="global_footer_second  col-md-8">
+            {{ page.global_footer_second }}
+        </div>
         {% endif %}
     </div>
-  </div>
-{% endif %}
+    {% endif %}
+</div>
 {% endblock %}
+
