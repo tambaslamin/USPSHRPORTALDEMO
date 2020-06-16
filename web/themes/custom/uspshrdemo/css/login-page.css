@@ -16,7 +16,7 @@ body.page-user-login footer.site-footer {
   body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page #main-wrapper,
   body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page #main-wrapper #main,
   body.page-user-login .dialog-off-canvas-main-canvas #page-wrapper #page #main-wrapper #main > .row {
-    height: 100%;
+    min-height: 100%;
   }
   body.page-user-login #page {
     display: flex;
