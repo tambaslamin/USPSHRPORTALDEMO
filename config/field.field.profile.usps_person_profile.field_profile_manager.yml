@@ -1,0 +1,21 @@
+uuid: f42bc4a7-9cf3-423b-b88f-a3905fe66a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_manager
+    - profile.type.usps_person_profile
+  module:
+    - text
+id: profile.usps_person_profile.field_profile_manager
+field_name: field_profile_manager
+entity_type: profile
+bundle: usps_person_profile
+label: Manager
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

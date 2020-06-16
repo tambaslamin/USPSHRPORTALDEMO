@@ -1,0 +1,57 @@
+uuid: 7c47e566-07c1-404d-bcac-43c3304a07e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.hr_closed_group.field_hr_group_description
+    - field.field.group.hr_closed_group.field_hr_image
+    - group.type.hr_closed_group
+    - image.style.hero_image_1440_x_600_
+  module:
+    - image
+    - path
+    - text
+id: group.hr_closed_group.default
+targetEntityType: group
+bundle: hr_closed_group
+mode: default
+content:
+  field_hr_group_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hr_image:
+    weight: 1
+    settings:
+      preview_image_style: hero_image_1440_x_600_
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

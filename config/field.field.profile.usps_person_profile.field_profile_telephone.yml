@@ -1,0 +1,21 @@
+uuid: 51de6ae4-0142-4b0e-ad92-7b6c891182c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_telephone
+    - profile.type.usps_person_profile
+  module:
+    - telephone
+id: profile.usps_person_profile.field_profile_telephone
+field_name: field_profile_telephone
+entity_type: profile
+bundle: usps_person_profile
+label: Telephone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

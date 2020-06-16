@@ -1,0 +1,17 @@
+uuid: 3a5beaf4-e561-4cec-8d50-c85104e80e76
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+  enforced:
+    config:
+      - user.role.ace_user
+id: hr_public_group-08b1c0c28
+label: 'ACE Authenticated user'
+weight: -1
+internal: true
+audience: outsider
+group_type: hr_public_group
+permissions_ui: false
+permissions: {  }

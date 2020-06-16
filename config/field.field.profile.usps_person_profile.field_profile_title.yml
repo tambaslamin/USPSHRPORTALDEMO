@@ -1,0 +1,19 @@
+uuid: 4ef36e03-efbe-4487-8034-90e0e9a3fa2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_title
+    - profile.type.usps_person_profile
+id: profile.usps_person_profile.field_profile_title
+field_name: field_profile_title
+entity_type: profile
+bundle: usps_person_profile
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

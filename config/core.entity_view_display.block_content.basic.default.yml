@@ -5,6 +5,9 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_hr_hero_image
+    - field.field.block_content.basic.field_hr_hero_link
+    - field.field.block_content.basic.field_hr_hero_title
   module:
     - text
 _core:
@@ -21,4 +24,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_hr_hero_image: true
+  field_hr_hero_link: true
+  field_hr_hero_title: true
+  langcode: true
+  search_api_excerpt: true

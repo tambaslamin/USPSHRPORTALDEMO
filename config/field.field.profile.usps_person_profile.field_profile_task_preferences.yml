@@ -1,0 +1,29 @@
+uuid: 366a3a4a-4cef-4bb3-88c9-6d5777314b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_task_preferences
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_task_preferences
+field_name: field_profile_task_preferences
+entity_type: profile
+bundle: usps_person_profile
+label: 'Task Preferences'
+description: 'Select applications that trigger a Task'
+required: false
+translatable: false
+default_value:
+  -
+    value: HERO-CSOD
+  -
+    value: PES
+  -
+    value: eCareer
+  -
+    value: eReassign
+default_value_callback: ''
+settings: {  }
+field_type: list_string

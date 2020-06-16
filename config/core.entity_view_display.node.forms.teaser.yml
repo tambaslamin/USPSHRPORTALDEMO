@@ -41,6 +41,7 @@ hidden:
   field_file_upload: true
   field_form_category: true
   field_webform: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true
   shariff_field: true

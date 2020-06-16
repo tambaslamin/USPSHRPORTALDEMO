@@ -5,9 +5,14 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - superfish
+    - user
   theme:
     - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: main-menu-header
 id: mainnavigation
 theme: uspshrdemo
 region: primary_menu
@@ -65,7 +70,22 @@ settings:
   hide_linkdescription: 0
   add_linkdescription: 0
   link_depth_class: 1
-  custom_list_class: ''
-  custom_item_class: ''
-  custom_link_class: ''
-visibility: {  }
+  custom_list_class: main-menu-ul
+  custom_item_class: main-menu-il
+  custom_link_class: main-menu-a
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      hr_former_employee: hr_former_employee
+      authenticated: authenticated
+      ace_user: ace_user
+      hr_standard_user: hr_standard_user
+      hr_professional: hr_professional
+      hr_content_owner: hr_content_owner
+      hr_supervisor: hr_supervisor
+      hr_manager: hr_manager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

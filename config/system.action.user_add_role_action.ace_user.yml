@@ -1,0 +1,14 @@
+uuid: 64db6221-b62f-4b2c-82e9-e8555f035632
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ace_user
+  module:
+    - user
+id: user_add_role_action.ace_user
+label: 'Add the ACE User role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ace_user
