@@ -2,6 +2,9 @@
  * @file
  * Subtheme specific CSS.
  */
+#page-wrapper {
+  overflow: hidden;
+}
 body.node--type-page #main-wrapper {
   background: #f3f3f3;
 }
