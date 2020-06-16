@@ -2,3 +2,75 @@
  * @file
  * Subtheme specific CSS.
  */
+body.node--type-page #main-wrapper {
+  background: #f3f3f3;
+}
+body.node--type-page #block-uspshrdemo-page-title,
+body.node--type-page main > section.section > nav.tabs .nav-link:not(.active) {
+  color: #fff;
+}
+body.node--type-page main > section.section > nav.tabs .nav-link {
+  margin-right: .25em;
+}
+body.node--type-page main > section.section > nav.tabs {
+  margin-bottom: 0;
+  padding-bottom: 6em;
+}
+body.node--type-page main > section.section > nav.tabs ul.nav {
+  border-bottom: none;
+}
+body.node--type-page main > section.section > nav.tabs .nav-link {
+  border: 1px solid #fff;
+}
+body.node--type-page #block-uspshrdemo-page-title > .content,
+body.node--type-page #block-uspshrdemo-breadcrumbs nav {
+  overflow: auto; /* prevents margin issues in breadcrumb with background color */
+}
+body.node--type-page #block-uspshrdemo-page-title {
+  padding-bottom: 6em;;
+}
+body.node--type-page #block-uspshrdemo-page-title ~ nav.tabs {
+  margin-top: -6em;
+}
+body.node--type-page #block-uspshrdemo-page-title,
+body.node--type-page #block-uspshrdemo-breadcrumbs,
+body.node--type-page main > section.section > nav.tabs {
+  background: #3573b1;
+  position: relative;
+  z-index: 0;
+}
+body.node--type-page #block-uspshrdemo-page-title:before,
+body.node--type-page #block-uspshrdemo-breadcrumbs:before,
+body.node--type-page main > section.section > nav.tabs:before,
+body.node--type-page #block-uspshrdemo-page-title:after,
+body.node--type-page #block-uspshrdemo-breadcrumbs:after,
+body.node--type-page main > section.section > nav.tabs:after {
+  background: #3573b1;
+  position: absolute;
+  height: 100%;
+  width: 150vw;
+  top: 0;
+  display: block;
+  content: " ";
+  z-index: -1;
+}
+body.node--type-page #block-uspshrdemo-page-title:before,
+body.node--type-page #block-uspshrdemo-breadcrumbs:before,
+body.node--type-page main > section.section > nav.tabs:before {
+  right: 0;
+}
+body.node--type-page #block-uspshrdemo-page-title:after,
+body.node--type-page #block-uspshrdemo-breadcrumbs:after,
+body.node--type-page main > section.section > nav.tabs:after {
+  left: 0;
+}
+body.node--type-page #block-uspshrdemo-content {
+  margin-top: -3em;
+}
+body.node--type-page #block-uspshrdemo-content .card {
+  border: none;
+  color: #595959;
+}
+body.node--type-page #block-uspshrdemo-content .card h2 {
+  color: #1073ea;
+}
