@@ -31,3 +31,4 @@ hidden:
   delete_link: true
   private_message_form: true
   private_messages: true
+  search_api_excerpt: true

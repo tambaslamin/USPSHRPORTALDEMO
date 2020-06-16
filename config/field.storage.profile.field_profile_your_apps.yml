@@ -1,0 +1,48 @@
+uuid: 6293c5d7-f121-4643-a0ee-b882e1627412
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_profile_your_apps
+field_name: field_profile_your_apps
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: eCareer
+      label: eCareer
+    -
+      value: eLRA
+      label: eLRA
+    -
+      value: ePayroll
+      label: ePayroll
+    -
+      value: eOPF
+      label: eOPF
+    -
+      value: HERO
+      label: HERO
+    -
+      value: 'App 6'
+      label: 'App 6'
+    -
+      value: 'App 7'
+      label: 'App 7'
+    -
+      value: 'App 8'
+      label: 'App 8'
+    -
+      value: 'App 9'
+      label: 'App 9'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

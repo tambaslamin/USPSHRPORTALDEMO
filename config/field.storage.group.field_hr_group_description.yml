@@ -1,0 +1,19 @@
+uuid: 32a87dcc-52c6-4911-90e6-c5411f415542
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+    - text
+id: group.field_hr_group_description
+field_name: field_hr_group_description
+entity_type: group
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

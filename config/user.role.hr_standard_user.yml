@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: hr_standard_user
 label: 'EIN Authenticated user'
-weight: -7
+weight: -6
 is_admin: null
 permissions:
   - 'access files overview'

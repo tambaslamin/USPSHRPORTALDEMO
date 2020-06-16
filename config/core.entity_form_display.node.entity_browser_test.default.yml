@@ -12,10 +12,12 @@ dependencies:
     - field.field.node.entity_browser_test.field_image_browser
     - field.field.node.entity_browser_test.field_nodes
     - node.type.entity_browser_test
+    - workflows.workflow.editorial
   enforced:
     module:
       - entity_browser_example
   module:
+    - content_moderation
     - entity_browser
     - path
     - text
@@ -105,6 +107,19 @@ content:
       field_widget_replace: false
     third_party_settings: {  }
     region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
