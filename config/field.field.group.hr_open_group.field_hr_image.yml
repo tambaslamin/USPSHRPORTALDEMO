@@ -1,0 +1,45 @@
+uuid: 2f094636-9617-4522-8b8d-ec0ae580930a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_hr_image
+    - group.type.hr_open_group
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: group.hr_open_group.field_hr_image
+field_name: field_hr_image
+entity_type: group
+bundle: hr_open_group
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 5d96b522-a4de-47d6-b4b6-22abbcb7cace
+    alt: 'Demo Image'
+    title: ''
+    width: 1400
+    height: 586
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

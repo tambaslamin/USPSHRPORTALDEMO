@@ -46,6 +46,16 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 1
+          180ae0d2-4279-4f0c-b7eb-6f59c7dd66c4:
+            uuid: 180ae0d2-4279-4f0c-b7eb-6f59c7dd66c4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:hr_landing_page:content_moderation_control'
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
 id: node.hr_landing_page.default
 targetEntityType: node
@@ -59,12 +69,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  langcode: true
   layout_builder__layout: true
   private_message_link: true
+  search_api_excerpt: true
   shariff_field: true

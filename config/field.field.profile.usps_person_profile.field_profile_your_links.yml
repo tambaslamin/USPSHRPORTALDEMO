@@ -1,0 +1,23 @@
+uuid: 8b938518-de1f-4483-86a4-59d026b2c829
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_your_links
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_your_links
+field_name: field_profile_your_links
+entity_type: profile
+bundle: usps_person_profile
+label: 'Your Links'
+description: 'Select up to five links to display on your dashboard.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'TSP Benefits'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
