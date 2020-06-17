@@ -1,0 +1,10 @@
+uuid: e7ac3ebc-c25b-4950-b717-d64a462d7a4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: hr_portal_pmo.search_results
+label: 'Search Results'
+targetEntityType: hr_portal_pmo
+cache: true

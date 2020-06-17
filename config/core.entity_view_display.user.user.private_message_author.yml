@@ -16,6 +16,11 @@ targetEntityType: user
 bundle: user
 mode: private_message_author
 content:
+  flag_email_user:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   flag_subscribe_user:
     weight: 10
     settings: {  }

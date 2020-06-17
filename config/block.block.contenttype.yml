@@ -1,0 +1,29 @@
+uuid: 33704e8e-0e4a-4b41-a409-7d90e08b20a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+  module:
+    - facets
+    - system
+  theme:
+    - uspshrdemo
+id: contenttype
+theme: uspshrdemo
+region: sidebar_first
+weight: -12
+provider: null
+plugin: 'facet_block:content_type'
+settings:
+  id: 'facet_block:content_type'
+  label: 'Content type'
+  provider: facets
+  label_display: visible
+  block_id: contenttype
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

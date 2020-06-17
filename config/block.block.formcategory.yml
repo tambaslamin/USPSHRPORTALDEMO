@@ -1,0 +1,29 @@
+uuid: 35776062-c8b0-431b-b5f7-8891a8c41d06
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.form_category_taxonomy_term_name
+  module:
+    - facets
+    - system
+  theme:
+    - uspshrdemo
+id: formcategory
+theme: uspshrdemo
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:form_category_taxonomy_term_name'
+settings:
+  id: 'facet_block:form_category_taxonomy_term_name'
+  label: 'Form Category'
+  provider: facets
+  label_display: visible
+  block_id: formcategory
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

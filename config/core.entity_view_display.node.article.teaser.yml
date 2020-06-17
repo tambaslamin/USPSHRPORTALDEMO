@@ -30,14 +30,9 @@ content:
       trim_length: 600
     third_party_settings: {  }
     label: hidden
-  content_moderation_control:
-    weight: -20
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_image:
     type: image
-    weight: -1
+    weight: 1
     region: content
     settings:
       image_style: medium
@@ -46,20 +41,31 @@ content:
     label: hidden
   field_tags:
     type: entity_reference_label
-    weight: 10
+    weight: 2
     region: content
     settings:
       link: true
     third_party_settings: {  }
-    label: above
-  links:
-    weight: 100
+    label: hidden
+  flag_email_node:
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_subscribe_node:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   comment: true
+  content_moderation_control: true
   feeds_item: true
-  field_image: true
-  field_tags: true
   langcode: true
   private_message_link: true
   search_api_excerpt: true
