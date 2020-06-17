@@ -11,7 +11,7 @@ _core:
 id: uspshrdemo_messages
 theme: uspshrdemo
 region: highlighted
-weight: -6
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:

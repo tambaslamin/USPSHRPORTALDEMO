@@ -19,21 +19,17 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 100
+    weight: 0
     region: content
     settings:
       trim_length: 600
     third_party_settings: {  }
-  content_moderation_control:
-    weight: -20
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 101
-    region: content
 hidden:
+  content_moderation_control: true
+  flag_email_node: true
+  flag_subscribe_node: true
   langcode: true
+  links: true
   private_message_link: true
   search_api_excerpt: true
   shariff_field: true
