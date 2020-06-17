@@ -60,8 +60,8 @@
 }
 
 .user-menu-global  #account-userlogout {
-  background: #1073EA;
-  border: 1px solid #FFFFFF;
+  background: #1073ea;
+  border: 1px solid #fff;
   box-sizing: border-box;
   border-radius: 6px;
   text-align: center;
@@ -71,6 +71,6 @@
   line-height: 20px;
 }
 
-.user-menu-global  #account-userlogout a{
+.user-menu-global  #account-userlogout a {
   color: #fff;
 }
