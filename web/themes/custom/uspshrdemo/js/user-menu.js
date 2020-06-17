@@ -1,6 +1,6 @@
-jQuery(document).ready(function($) {
-    $('.field--name-user-picture a').hover(function () {
-        $('.user-menu-global').show();//hover on
+jQuery(document).ready(function() {
+    jQuery('.field--name-user-picture a').hover(function () {
+        jQuery('.user-menu-global').show();//hover on
     });
     jQuery(document).mouseup(function(e) {
         var container = $(".user-menu-global");
