@@ -32,6 +32,11 @@
   color: #595959;
 }
 
+.site-footer .region-global-footer-second a:hover {
+  color: #595959;
+  text-decoration: underline;
+}
+
 .site-footer .footer-menu {
   display: flex;
   flex-flow: row-reverse;

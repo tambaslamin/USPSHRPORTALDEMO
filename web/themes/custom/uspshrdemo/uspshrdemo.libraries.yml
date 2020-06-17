@@ -9,6 +9,7 @@ global-styling:
       css/colors.css: {}
       css/main-menu.css: {}
       css/header.css: {}
+      css/highlighted.css: {}
       css/footer.css: {}
 bootstrap:
   js:
