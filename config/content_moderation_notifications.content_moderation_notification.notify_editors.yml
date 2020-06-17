@@ -1,0 +1,21 @@
+uuid: c0838257-5c0a-434b-b0e5-f8dd037fb866
+langcode: en
+status: true
+dependencies: {  }
+id: notify_editors
+workflow: editorial
+transitions:
+  create_new_draft: create_new_draft
+roles:
+  hr_professional: hr_professional
+  hr_content_owner: hr_content_owner
+  hr_supervisor: hr_supervisor
+  hr_manager: hr_manager
+  administrator: administrator
+author: true
+emails: ''
+subject: 'Notifying Editors'
+body:
+  value: "<p>Notifying Editors Message</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+  format: basic_html
+label: 'Notify Editors'

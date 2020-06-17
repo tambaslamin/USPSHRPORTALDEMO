@@ -68,6 +68,7 @@ content:
     third_party_settings: {  }
 hidden:
   feeds_item: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true
   shariff_field: true

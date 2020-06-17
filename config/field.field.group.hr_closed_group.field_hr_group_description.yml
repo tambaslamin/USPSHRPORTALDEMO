@@ -1,0 +1,24 @@
+uuid: e1a71bab-03db-4da4-b020-d1449b2a2694
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_hr_group_description
+    - group.type.hr_closed_group
+  module:
+    - text
+id: group.hr_closed_group.field_hr_group_description
+field_name: field_hr_group_description
+entity_type: group
+bundle: hr_closed_group
+label: 'Group Description'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

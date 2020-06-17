@@ -1,0 +1,42 @@
+uuid: 497c85de-cda2-4c7e-9b5a-67963bbc78c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - profile
+id: profile.field_profile_notifications_pref
+field_name: field_profile_notifications_pref
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: HERO-CSOD
+      label: HERO-CSOD
+    -
+      value: PES
+      label: PES
+    -
+      value: eCareer
+      label: eCareer
+    -
+      value: TACS
+      label: TACS
+    -
+      value: eRMS
+      label: eRMS
+    -
+      value: eReassign
+      label: eReassign
+    -
+      value: eTravel
+      label: eTravel
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

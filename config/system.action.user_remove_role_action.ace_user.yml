@@ -1,0 +1,14 @@
+uuid: 90310ae6-abba-46be-a4f2-add03e807688
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ace_user
+  module:
+    - user
+id: user_remove_role_action.ace_user
+label: 'Remove the ACE User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ace_user

@@ -1,0 +1,7 @@
+uuid: 1d5f1c79-9151-47d0-854e-590969619ecf
+langcode: en
+status: false
+dependencies: {  }
+formId: node_hr_announcement_form
+captchaType: default
+label: null

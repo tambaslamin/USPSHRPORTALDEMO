@@ -1,0 +1,23 @@
+uuid: d0af073b-0c06-48d9-9517-29a8ff99d77e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_email_preferences
+    - profile.type.usps_person_profile
+  module:
+    - options
+id: profile.usps_person_profile.field_profile_email_preferences
+field_name: field_profile_email_preferences
+entity_type: profile
+bundle: usps_person_profile
+label: 'Email Preferences'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Allow email notifications'
+default_value_callback: ''
+settings: {  }
+field_type: list_string
