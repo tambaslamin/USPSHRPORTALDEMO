@@ -70,24 +70,24 @@
 {% if page.global_branding_top or page.global_search_top or page.global_notifications_top or page.global_myaccount_top %}
   <div class="row global_header h-100 justify-content-end align-items-center">
       {% if page.global_branding_top %}
-      <div class="col-md-6 col-sm-12 global-branding float-left">
+      <div class="col-lg-6 col-md-6 col-sm-12 global-branding float-left">
           {{ page.global_branding_top }}
       </div>
       {% endif %}
-      <div class="col-md-6 col-sm-12">
+      <div class="col-lg-6 col-md-6 col-sm-12">
           <div class= "row m-0">
               {% if page.global_search_top %}
-              <div class="col-10 global-search d-flex justify-content-end">
+              <div class="col-lg-10 col-md-8 global-search d-flex justify-content-end">
                   {{ page.global_search_top }}
               </div>
               {% endif %}
               {% if page.global_notifications_top %}
-              <div class="col-1 global-notifications  d-flex justify-content-center align-items-center">
+              <div class="col-lg-1 col-md-2 global-notifications  d-flex justify-content-center align-items-center">
                   {{ page.global_notifications_top }}
               </div>
               {% endif %}
               {% if page.global_myaccount_top %}
-              <div class="col-1 global-myaccount d-flex justify-content-center align-items-center">
+              <div class="col-lg-1 col-md-2 global-myaccount d-flex justify-content-center align-items-center">
                   {{ page.global_myaccount_top }}
               </div>
               {% endif %}
@@ -211,12 +211,12 @@
     {% if page.global_footer_first or page.global_footer_second %}
     <div class="row global-footer clearfix">
         {% if page.global_myaccount_top %}
-        <div class="global_footer_first  col-md-4">
+        <div class="global_footer_first  col-lg-4 col-md-12">
             {{ page.global_footer_first }}
         </div>
         {% endif %}
         {% if page.global_myaccount_top %}
-        <div class="global_footer_second  col-md-8">
+        <div class="global_footer_second  col-lg-8 col-md-12">
             {{ page.global_footer_second }}
         </div>
         {% endif %}

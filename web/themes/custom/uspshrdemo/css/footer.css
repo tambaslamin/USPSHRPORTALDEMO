@@ -76,3 +76,30 @@
 .site-footer .footer-menu li .nav-link {
   padding: 0;
 }
+
+@media (max-width: 768px) { 
+  .site-footer .navbar-brand {
+    padding: 0;
+  }
+
+  div#block-copyright {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .site-footer .region-global-footer-second {
+    margin: 20px 0;
+  }
+
+  .site-footer .footer-menu li {
+    padding: 0 5px;
+    text-align: center;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .site-footer .block {
+    padding-bottom: 10px;
+  }
+}
