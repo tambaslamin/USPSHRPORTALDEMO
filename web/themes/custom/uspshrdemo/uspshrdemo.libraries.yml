@@ -38,3 +38,7 @@ login-page:
   css:
     theme:
       css/login-page.css: {}
+home-page:
+  css:
+    theme:
+      css/home-page.css: {}
