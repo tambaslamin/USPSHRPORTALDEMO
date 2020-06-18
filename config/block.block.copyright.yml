@@ -22,7 +22,7 @@ settings:
   id: 'block_content:ae3e1b2f-7d15-45c5-b74d-b499bf0bb19a'
   label: Copyright
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

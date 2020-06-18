@@ -15,7 +15,7 @@ _core:
 id: uspshrdemo_privatemessageactions
 theme: uspshrdemo
 region: sidebar_first
-weight: 0
+weight: -14
 provider: null
 plugin: private_message_actions_block
 settings:

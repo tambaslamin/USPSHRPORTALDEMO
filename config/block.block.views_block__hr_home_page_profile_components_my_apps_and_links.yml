@@ -1,0 +1,31 @@
+uuid: ea4f4643-6708-40d2-a657-b92e0ba091f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hr_home_page_profile_components
+  module:
+    - system
+    - views
+  theme:
+    - uspshrdemo
+id: views_block__hr_home_page_profile_components_my_apps_and_links
+theme: uspshrdemo
+region: content_top_middle
+weight: 0
+provider: null
+plugin: 'views_block:hr_home_page_profile_components-my_apps_and_links'
+settings:
+  id: 'views_block:hr_home_page_profile_components-my_apps_and_links'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
