@@ -1,0 +1,25 @@
+uuid: 2f57cfce-892a-417a-a621-594c2a756555
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hr_home_page_profile_components
+  module:
+    - views
+  theme:
+    - uspshrdemo
+id: views_block__hr_home_page_profile_components_your_time_at_usps
+theme: uspshrdemo
+region: content_top_left
+weight: 0
+provider: null
+plugin: 'views_block:hr_home_page_profile_components-your_time_at_usps'
+settings:
+  id: 'views_block:hr_home_page_profile_components-your_time_at_usps'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

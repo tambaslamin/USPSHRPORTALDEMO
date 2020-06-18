@@ -1,4 +1,4 @@
-uuid: 890474d9-21ec-4b47-830e-9f531d409db5
+uuid: 4b9d31db-5469-44c3-9f07-5d9eff4c6b53
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - uspshrdemo
-_core:
-  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
-id: uspshrdemo_page_title
+id: pagetitle
 theme: uspshrdemo
-region: content
-weight: -11
+region: global_page_title
+weight: 0
 provider: null
 plugin: page_title_block
 settings:
@@ -23,5 +21,5 @@ visibility:
   request_path:
     id: request_path
     pages: '<front>'
-    negate: true
+    negate: false
     context_mapping: {  }
