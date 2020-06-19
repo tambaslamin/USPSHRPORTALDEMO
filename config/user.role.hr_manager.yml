@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: hr_manager
 label: Manager
-weight: -3
+weight: -2
 is_admin: null
 permissions:
   - 'access administration pages'

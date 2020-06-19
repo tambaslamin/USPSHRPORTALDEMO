@@ -2,6 +2,75 @@
   background-color: #333366 !important;
 }
 
-.header #navbar-main a {
+.main-menu-header  .main-menu-ul a.sf-depth-1.main-menu-a {
   color: #fff !important;
+}
+
+.main-menu-header  .main-menu-ul .main-menu-li .sf-depth-3 .main-menu-a {
+  color: #1073ea;
+}
+
+.header #navbar-main li.sf-multicolumn-wrapper {
+  background: #fff;
+}
+
+#block-covid19banner .alert-danger {
+  text-align: center;
+  color: #fff;
+  background: #e71921;
+  border: 0;
+  border-radius: 0;
+}
+
+.user-menu-global {
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  top: 60px;
+  right: 20px;
+  width: 250px;
+  border-radius: 5px;
+  margin: 0 20px 0 0;
+  display: none;
+  padding: 20px;
+}
+
+.user-menu-global  li:nth-child(3) {
+  border-bottom: 1px solid #ededed;
+}
+
+.user-menu-global  li:nth-child(3) a {
+  margin-bottom: 10px;
+}
+
+.user-menu-global ul.sf-menu a {
+  padding: 10px;
+}
+
+.user-menu-global-title {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 155.09%;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 20px;
+}
+
+.user-menu-global  #account-userlogout {
+  background: #1073ea;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 20px;
+  width: 210px;
+  height: 42px;
+  line-height: 20px;
+}
+
+.user-menu-global  #account-userlogout a {
+  color: #fff;
 }

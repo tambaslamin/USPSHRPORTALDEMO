@@ -1,0 +1,10 @@
+uuid: edf68137-df5f-4dc2-9c12-fee8e62795a5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
+id: usps_day
+label: 'USPS Day'
+locked: false
+pattern: 'l, F j, Y'

@@ -1,0 +1,25 @@
+uuid: 231febe5-583f-4ba0-8860-9c9da6a51dd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.primary_hr_search
+    - views.view.pantheon_search
+  module:
+    - views
+    - search_api_autocomplete
+id: pantheon_search
+label: 'Pantheon Search'
+index_id: primary_hr_search
+suggester_settings:
+  live_results:
+    fields: {  }
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:pantheon_search':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

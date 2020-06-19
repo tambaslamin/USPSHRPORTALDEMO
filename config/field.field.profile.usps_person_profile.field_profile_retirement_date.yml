@@ -1,0 +1,24 @@
+uuid: e7851e1e-b84d-44c5-bac6-623b567ba6d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_retirement_date
+    - profile.type.usps_person_profile
+  module:
+    - datetime
+id: profile.usps_person_profile.field_profile_retirement_date
+field_name: field_profile_retirement_date
+entity_type: profile
+bundle: usps_person_profile
+label: 'Retirement Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+20 years'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

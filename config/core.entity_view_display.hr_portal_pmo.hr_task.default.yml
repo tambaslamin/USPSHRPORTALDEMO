@@ -125,7 +125,7 @@ content:
     type: list_default
     region: content
   title:
-    label: above
+    label: hidden
     type: string
     weight: 0
     region: content
@@ -139,4 +139,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

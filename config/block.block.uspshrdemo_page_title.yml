@@ -2,6 +2,8 @@ uuid: 890474d9-21ec-4b47-830e-9f531d409db5
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - uspshrdemo
 _core:
@@ -9,7 +11,7 @@ _core:
 id: uspshrdemo_page_title
 theme: uspshrdemo
 region: content
-weight: -50
+weight: -11
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

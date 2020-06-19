@@ -1,0 +1,29 @@
+uuid: 451fb136-75bf-48c2-bbce-3ddb486b0375
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.pantheon_search
+  module:
+    - system
+    - views
+  theme:
+    - uspshrdemo
+id: exposedformpantheon_searchsearch_api_page
+theme: uspshrdemo
+region: highlighted
+weight: -12
+provider: null
+plugin: 'views_exposed_filter_block:pantheon_search-search_api_page'
+settings:
+  id: 'views_exposed_filter_block:pantheon_search-search_api_page'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

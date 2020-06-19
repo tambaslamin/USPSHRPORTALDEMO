@@ -1,0 +1,31 @@
+uuid: bf971fde-ed3b-4885-b74b-6cd5fe81e0b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.task_management
+  module:
+    - system
+    - views
+  theme:
+    - uspshrdemo
+id: views_block__task_management_block_my_to_do_tasks_2
+theme: uspshrdemo
+region: content_top_right
+weight: -17
+provider: null
+plugin: 'views_block:task_management-block_my_to_do_tasks'
+settings:
+  id: 'views_block:task_management-block_my_to_do_tasks'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,37 +1,294 @@
 uuid: c9139318-907d-4dc5-a42b-99326203f6a4
 langcode: en
-status: false
+status: true
 dependencies:
   config:
+    - field.storage.hr_portal_pmo.field_hr_assigned_to
+    - field.storage.hr_portal_pmo.field_hr_est_hours
+    - field.storage.hr_portal_pmo.field_hr_description
+    - field.storage.hr_portal_pmo.field_hr_end_date
+    - field.storage.hr_portal_pmo.field_hr_priority
+    - field.storage.hr_portal_pmo.field_hr_task_status
+    - field.storage.hr_portal_pmo.field_hr_type
+    - field.storage.node.body
+    - field.storage.node.field_category
+    - field.storage.node.field_form_category
+    - field.storage.node.field_tags
+    - field.storage.profile.field_profile_first_name
+    - field.storage.profile.field_profile_last_name
+    - field.storage.profile.field_profile_retirement_date
+    - field.storage.profile.field_profile_start_date
+    - field.storage.profile.field_profile_title
+    - field.storage.profile.field_profile_your_apps
+    - field.storage.profile.field_profile_your_links
     - search_api.server.pantheon_search
   module:
-    - search_api
-    - node
-    - file
-    - group
     - eck
+    - taxonomy
+    - node
+    - search_api
     - profile
 id: primary_hr_search
 name: 'Primary Search'
 description: ''
 read_only: false
-field_settings: {  }
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  category_name:
+    label: 'Category » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_category:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_category
+      module:
+        - taxonomy
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  field_category:
+    label: Category
+    datasource_id: 'entity:node'
+    property_path: field_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_category
+  field_form_category:
+    label: 'Form Category'
+    datasource_id: 'entity:node'
+    property_path: field_form_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_form_category
+  field_profile_first_name:
+    label: 'First Name'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_first_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_first_name
+  field_profile_last_name:
+    label: 'Last Name'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_last_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_last_name
+  field_profile_retirement_date:
+    label: 'Retirement Date'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_retirement_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_retirement_date
+  field_profile_start_date:
+    label: 'Start Date'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_start_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_start_date
+  field_profile_title:
+    label: Title
+    datasource_id: 'entity:profile'
+    property_path: field_profile_title
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_title
+  field_profile_your_apps:
+    label: 'Your Apps'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_your_apps
+    type: string
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_your_apps
+  field_profile_your_links:
+    label: 'Your Links'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_your_links
+    type: string
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_your_links
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  form_category_name:
+    label: 'Form Category » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_form_category:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_form_category
+      module:
+        - taxonomy
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  pmo_changed_1:
+    label: Changed
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - eck
+  pmo_created:
+    label: 'Authored on'
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - eck
+  pmo_field_hr_assigned_to:
+    label: 'Assigned to'
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_assigned_to
+    type: integer
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_assigned_to
+  pmo_field_hr_description:
+    label: 'HR Description'
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_description
+  pmo_field_hr_end_date:
+    label: 'HR End Date'
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_end_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_end_date
+  pmo_field_hr_est_hours:
+    label: 'Est. Hours'
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_est_hours
+    type: string
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_est_hours
+  pmo_field_hr_priority:
+    label: Priority
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_priority
+    type: string
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_priority
+  pmo_field_hr_task_status:
+    label: Status
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_task_status
+    type: string
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_task_status
+  pmo_field_hr_type:
+    label: Type
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: field_hr_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.hr_portal_pmo.field_hr_type
+  pmo_title:
+    label: Title
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - eck
+  pmo_type:
+    label: Type
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - eck
+  pmo_uid:
+    label: 'Authored by'
+    datasource_id: 'entity:hr_portal_pmo'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - eck
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
 datasource_settings:
-  'entity:file': {  }
-  'entity:group':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
-      default: true
-      selected: {  }
-  'entity:group_content':
-    bundles:
-      default: true
-      selected: {  }
-    languages:
-      default: true
-      selected: {  }
   'entity:hr_portal_pmo':
     bundles:
       default: true
@@ -45,8 +302,7 @@ datasource_settings:
       selected: {  }
     languages:
       default: true
-      selected:
-        - en
+      selected: {  }
   'entity:profile':
     bundles:
       default: true
@@ -54,8 +310,69 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  hierarchy:
+    fields:
+      field_category: taxonomy_term-parent
+      field_form_category: taxonomy_term-parent
+      field_tags: taxonomy_term-parent
+      pmo_field_hr_assigned_to: hr_portal_pmo-field_hr_assigned_to
+    weights:
+      preprocess_index: -45
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  ignorecase:
+    all_fields: false
+    fields:
+      - body
+      - field_profile_first_name
+      - field_profile_last_name
+      - field_profile_title
+      - field_profile_your_apps
+      - field_profile_your_links
+      - pmo_field_hr_description
+      - pmo_field_hr_est_hours
+      - pmo_field_hr_priority
+      - pmo_field_hr_task_status
+      - pmo_field_hr_type
+      - pmo_title
+      - pmo_type
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   language_with_fallback: {  }
   rendered_item: {  }
+  transliteration:
+    all_fields: false
+    fields:
+      - body
+      - field_profile_first_name
+      - field_profile_last_name
+      - field_profile_title
+      - field_profile_your_apps
+      - field_profile_your_links
+      - pmo_field_hr_description
+      - pmo_field_hr_est_hours
+      - pmo_field_hr_priority
+      - pmo_field_hr_task_status
+      - pmo_field_hr_type
+      - pmo_title
+      - pmo_type
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
 tracker_settings:
   default:
     indexing_order: fifo

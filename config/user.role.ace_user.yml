@@ -1,0 +1,9 @@
+uuid: 996d9961-8566-4faa-b134-36db0769851b
+langcode: en
+status: true
+dependencies: {  }
+id: ace_user
+label: 'ACE Authenticated user'
+weight: -7
+is_admin: null
+permissions: {  }

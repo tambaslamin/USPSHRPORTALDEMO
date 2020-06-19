@@ -1,0 +1,73 @@
+uuid: 999be059-ad1b-4c42-a2d5-8591fb3a8766
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.forms.body
+    - field.field.node.forms.field_form_category
+    - node.type.forms
+  module:
+    - node
+id: form_feed
+label: 'Form Feed'
+description: ''
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: ''
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  langcode: en
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: forms
+custom_sources:
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  body:
+    label: Body
+    value: Body
+    machine_name: body
+  form_category:
+    label: 'Form Category'
+    value: 'Form Category'
+    machine_name: form_category
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: body
+    map:
+      value: body
+      summary: '----'
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_form_category
+    map:
+      target_id: form_category
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false

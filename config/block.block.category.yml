@@ -1,0 +1,29 @@
+uuid: 05c1bb1e-1ab1-4e54-b0ea-d2bb9561d1d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.category
+  module:
+    - facets
+    - system
+  theme:
+    - uspshrdemo
+id: category
+theme: uspshrdemo
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'facet_block:category'
+settings:
+  id: 'facet_block:category'
+  label: Category
+  provider: facets
+  label_display: visible
+  block_id: category
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: false
+    context_mapping: {  }

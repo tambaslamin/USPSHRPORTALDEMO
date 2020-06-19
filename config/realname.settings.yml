@@ -1,0 +1,3 @@
+pattern: '[user:usps_person_profile:field_profile_first_name] [user:usps_person_profile:field_profile_last_name]'
+_core:
+  default_config_hash: g5omwWKI2ZAuCm_ECiSW2OfMsp3P5XtDy2vxPQcck0w

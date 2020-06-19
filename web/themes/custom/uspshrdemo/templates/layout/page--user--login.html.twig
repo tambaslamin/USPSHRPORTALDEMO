@@ -72,7 +72,7 @@
   <div id="page">
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="{{ container }}">
+        <div id="main" class="container-fluid">
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <div class="col login-page-contents">
                 <div class="global-branding">
@@ -103,14 +103,22 @@
     {% endif %}
     <footer class="site-footer">
       {% block footer %}
-       <div class="{{ container }}">
-          <div class="global_footer_first float-left">
-            {{ page.global_footer_first }}
+      <div class="container-fluid">
+          {% if page.global_footer_first or page.global_footer_second %}
+          <div class="row global-footer clearfix">
+              {% if page.global_myaccount_top %}
+              <div class="global_footer_first  col-lg-3 col-md-12">
+                  {{ page.global_footer_first }}
+              </div>
+              {% endif %}
+              {% if page.global_myaccount_top %}
+              <div class="global_footer_second  col-lg-9 col-md-12">
+                  {{ page.global_footer_second }}
+              </div>
+              {% endif %}
           </div>
-          <div class="global_footer_second float-right">
-            {{ page.global_footer_second }}
-          </div>
-        </div>
+          {% endif %}
+      </div>
       {% endblock %}
     </footer>
   </div>

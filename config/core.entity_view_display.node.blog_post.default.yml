@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_category
     - field.field.node.blog_post.field_image
     - node.type.blog_post
@@ -20,6 +21,11 @@ content:
     label: hidden
     type: text_default
     weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -46,6 +52,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  feeds_item: true
+  langcode: true
   private_message_link: true
   search_api_excerpt: true
   shariff_field: true

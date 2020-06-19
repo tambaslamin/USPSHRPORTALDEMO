@@ -1,0 +1,23 @@
+uuid: 07a59bb6-8c74-42ae-9bf2-d89f919f1561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.forms
+  module:
+    - feeds
+id: node.forms.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: forms
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

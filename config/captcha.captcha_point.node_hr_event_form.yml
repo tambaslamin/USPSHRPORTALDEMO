@@ -1,0 +1,7 @@
+uuid: f7eca872-71ee-49b1-83c2-004bf5183d05
+langcode: en
+status: false
+dependencies: {  }
+formId: node_hr_event_form
+captchaType: default
+label: null

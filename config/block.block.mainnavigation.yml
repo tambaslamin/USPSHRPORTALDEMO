@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - superfish
   theme:
     - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: main-menu-header
 id: mainnavigation
 theme: uspshrdemo
 region: primary_menu
@@ -29,7 +33,7 @@ settings:
   speed: fast
   delay: '800'
   slide: vertical
-  supposition: 0
+  supposition: 1
   hoverintent: 1
   touch: '0'
   touchbh: '2'
@@ -65,7 +69,7 @@ settings:
   hide_linkdescription: 0
   add_linkdescription: 0
   link_depth_class: 1
-  custom_list_class: ''
-  custom_item_class: ''
-  custom_link_class: ''
+  custom_list_class: main-menu-ul
+  custom_item_class: main-menu-il
+  custom_link_class: main-menu-a
 visibility: {  }

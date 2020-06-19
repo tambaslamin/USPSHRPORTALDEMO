@@ -2,12 +2,14 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/user-menu.js: {}
   css:
     component:
       css/style.css: {}
       css/colors.css: {}
       css/main-menu.css: {}
       css/header.css: {}
+      css/highlighted.css: {}
       css/footer.css: {}
 bootstrap:
   js:
@@ -36,3 +38,7 @@ login-page:
   css:
     theme:
       css/login-page.css: {}
+home-page:
+  css:
+    theme:
+      css/home-page.css: {}
