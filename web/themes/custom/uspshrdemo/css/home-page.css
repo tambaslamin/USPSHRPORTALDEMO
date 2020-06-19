@@ -1,3 +1,7 @@
+/**
+ * @file
+ * Styles the home page.
+ */
 .view-hr-home-page-profile-components .view-content.row,
 .view-task-management .view-content.row {
   margin-left: 0;
@@ -13,10 +17,97 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #333366;
+  margin-bottom: 40px;
 }
 #block-views-block-hr-home-page-profile-components-your-time-at-usps,
 #block-views-block-hr-home-page-profile-components-my-apps-and-links,
 .region-top-right-contents {
   margin-left: 15px;
   margin-right: 15px;
+}
+#block-views-block-hr-home-page-profile-components-your-time-at-usps .views-row,
+#block-views-block-hr-home-page-profile-components-my-apps-and-links .views-row {
+  width: 100%;
+}
+#block-views-block-hr-home-page-profile-components-your-time-at-usps .view-footer,
+#block-views-block-hr-home-page-profile-components-my-apps-and-links .view-footer,
+.view-task-management .view-footer {
+  margin: 30px 0 15px;
+}
+
+/**
+ * Your Time at USPS styling.
+ */
+#block-views-block-hr-home-page-profile-components-your-time-at-usps .time-at-usps-wrapper .col:first-of-type {
+  border-right: 1px solid #eff1f7;
+}
+#block-views-block-hr-home-page-profile-components-your-time-at-usps .time-at-usps-wrapper {
+  border-top: 1px solid #eff1f7;
+  border-bottom: 1px solid #eff1f7;
+  padding: 15px 0 30px;
+  margin: 0;
+}
+#block-views-block-hr-home-page-profile-components-your-time-at-usps .time-at-usps-number {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 130%;
+  text-align: center;
+  color: #1073ea;
+}
+#block-views-block-hr-home-page-profile-components-your-time-at-usps .time-at-usps-label {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #333366;
+}
+
+/*
+ * My Apps and Links.
+ */
+#block-views-block-hr-home-page-profile-components-my-apps-and-links .list-group {
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-top: 1px solid #eff1f7;
+}
+#block-views-block-hr-home-page-profile-components-my-apps-and-links .list-group-item {
+  width: 50%;
+  padding: 10px 0px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #eff1f7;
+}
+#block-views-block-hr-home-page-profile-components-my-apps-and-links .list-group-item a {
+  padding: 20px 15px;
+  display: block;
+}
+#block-views-block-hr-home-page-profile-components-my-apps-and-links .list-group-item:nth-child(odd) a {
+  border-right: 1px solid #eff1f7;
+}
+
+/*
+ * My Tasks.
+ */
+.view-task-management .view-header {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #333366;
+}
+#block-views-block-task-management-block-my-assigned-tasks-2 {
+  margin-top: 15px;
+  padding-top: 30px;
+  border-top: 1px solid #eff1f7;
 }
