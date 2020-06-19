@@ -22,3 +22,25 @@
   border-radius: 50%;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .region-global-search-top .form-control {
+    width: 380px;
+  }
+}
+@media (max-width: 576px) {
+  .region-global-search-top .form-control {
+    max-width: 242px;
+  }
+  .global-search {
+    width: 70%;
+  }
+  .global-notifications {
+    width: 12%;
+  }
+  .global-myaccount {
+    width: 12%;
+  }
+  .global-branding .navbar-brand {
+    height: 49px;
+  }
+}
