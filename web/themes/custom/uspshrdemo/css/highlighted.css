@@ -42,7 +42,7 @@
   padding-bottom: 34px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .content-hero {
     top: 9%;
     left: 4%;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .content-hero {
     top: 15%;
     left: 7%;
@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
   .content-hero {
     top: 9%;
     left: 6%;
