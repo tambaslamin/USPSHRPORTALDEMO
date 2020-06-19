@@ -252,6 +252,8 @@ display:
         filters: false
         filter_groups: false
         header: false
+        css_class: false
+        footer: false
       relationships:
         field_hr_assigned_to:
           id: field_hr_assigned_to
@@ -625,6 +627,21 @@ display:
           empty: true
           content: 'ASSIGNED TASKS (@total)'
           plugin_id: result
+      css_class: ''
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<a href="/pmo/all-tasks">All Tasks</a>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -662,6 +679,8 @@ display:
         arguments: false
         filters: false
         filter_groups: false
+        css_class: false
+        footer: false
       relationships:
         uid:
           id: uid
@@ -1084,6 +1103,21 @@ display:
         operator: AND
         groups:
           1: AND
+      css_class: ''
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<a href="/pmo/all-tasks">All To Dos</a>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
