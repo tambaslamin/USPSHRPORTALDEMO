@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - ctools
+    - user
   theme:
     - uspshrdemo
 id: entityviewuser
@@ -20,4 +21,19 @@ settings:
   view_mode: compact
   context_mapping:
     entity: '@user.current_user_context:current_user'
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      hr_former_employee: hr_former_employee
+      authenticated: authenticated
+      ace_user: ace_user
+      hr_standard_user: hr_standard_user
+      hr_professional: hr_professional
+      hr_content_owner: hr_content_owner
+      hr_supervisor: hr_supervisor
+      hr_manager: hr_manager
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

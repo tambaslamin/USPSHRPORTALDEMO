@@ -1,0 +1,18 @@
+uuid: 87145a28-4975-4cae-b0e9-78d3971a9d15
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.hr_portal_pmo.hr_org
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: hr_portal_pmo.hr_org
+target_entity_type_id: hr_portal_pmo
+target_bundle: hr_org
+default_langcode: site_default
+language_alterable: true

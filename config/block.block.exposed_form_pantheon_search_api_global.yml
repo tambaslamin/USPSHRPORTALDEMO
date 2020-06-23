@@ -1,0 +1,33 @@
+uuid: 35b84c65-9fdc-4bce-97d5-ed1bc84c7e17
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.pantheon_search
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: top-global-search
+id: exposed_form_pantheon_search_api_global
+theme: uspshrdemo
+region: global_search_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:pantheon_search-search_api_page'
+settings:
+  id: 'views_exposed_filter_block:pantheon_search-search_api_page'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/search/*"
+    negate: true
+    context_mapping: {  }

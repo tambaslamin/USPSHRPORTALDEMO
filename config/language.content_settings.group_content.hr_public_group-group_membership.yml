@@ -1,0 +1,18 @@
+uuid: c0b619ad-5ca5-472d-8665-837615b3fa5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.hr_public_group-group_membership
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group_content.hr_public_group-group_membership
+target_entity_type_id: group_content
+target_bundle: hr_public_group-group_membership
+default_langcode: site_default
+language_alterable: true

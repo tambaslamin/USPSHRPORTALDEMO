@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - system.menu.main
+    - user.role.authenticated
   module:
     - node
     - user
@@ -33,9 +34,10 @@ display:
           query_tags: {  }
       use_ajax: true
       access:
-        type: perm
+        type: role
         options:
-          perm: 'view any page content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -360,7 +362,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       max-age: -1
       tags: {  }
   attachment_1:
@@ -428,7 +430,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       max-age: -1
       tags: {  }
   page_1:
@@ -457,6 +459,6 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       max-age: -1
       tags: {  }

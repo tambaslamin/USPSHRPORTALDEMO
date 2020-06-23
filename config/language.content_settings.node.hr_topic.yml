@@ -1,0 +1,18 @@
+uuid: c11379b6-d56d-426a-97b1-0f125916331c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hr_topic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.hr_topic
+target_entity_type_id: node
+target_bundle: hr_topic
+default_langcode: site_default
+language_alterable: true

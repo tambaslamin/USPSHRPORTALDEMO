@@ -1,0 +1,18 @@
+uuid: b108f90e-6d74-4736-abcd-3e9239fcb21e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hr_landing_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.hr_landing_page
+target_entity_type_id: node
+target_bundle: hr_landing_page
+default_langcode: site_default
+language_alterable: true
