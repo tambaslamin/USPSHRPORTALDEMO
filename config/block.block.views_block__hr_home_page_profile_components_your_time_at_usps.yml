@@ -6,6 +6,7 @@ dependencies:
     - views.view.hr_home_page_profile_components
   module:
     - system
+    - user
     - views
   theme:
     - uspshrdemo
@@ -29,3 +30,10 @@ visibility:
     pages: '<front>'
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

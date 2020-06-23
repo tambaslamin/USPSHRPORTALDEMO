@@ -1,0 +1,18 @@
+uuid: 40905d53-20a7-47d2-893e-5c9f343b3d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_public_group
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.hr_public_group
+target_entity_type_id: group
+target_bundle: hr_public_group
+default_langcode: site_default
+language_alterable: true

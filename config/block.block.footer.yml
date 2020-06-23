@@ -15,7 +15,7 @@ third_party_settings:
 id: footer
 theme: uspshrdemo
 region: global_footer_second
-weight: -10
+weight: -15
 provider: null
 plugin: 'menu_block:footer'
 settings:

@@ -7,6 +7,7 @@ dependencies:
   module:
     - block_class
     - block_content
+    - user
   theme:
     - uspshrdemo
 third_party_settings:
@@ -15,15 +16,22 @@ third_party_settings:
 id: copyright
 theme: uspshrdemo
 region: global_footer_second
-weight: -11
+weight: -17
 provider: null
 plugin: 'block_content:ae3e1b2f-7d15-45c5-b74d-b499bf0bb19a'
 settings:
   id: 'block_content:ae3e1b2f-7d15-45c5-b74d-b499bf0bb19a'
-  label: Copyright
+  label: 'Copyright - Public'
   provider: block_content
   label_display: '0'
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
