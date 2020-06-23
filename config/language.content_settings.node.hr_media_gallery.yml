@@ -1,0 +1,18 @@
+uuid: 08c4218b-f27c-4c1f-bae5-74889ba3c881
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hr_media_gallery
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.hr_media_gallery
+target_entity_type_id: node
+target_bundle: hr_media_gallery
+default_langcode: site_default
+language_alterable: true

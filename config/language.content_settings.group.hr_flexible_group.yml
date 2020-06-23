@@ -1,0 +1,18 @@
+uuid: 4d55f6b6-37a5-4bfa-8890-6e2f8e22d771
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.hr_flexible_group
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: group.hr_flexible_group
+target_entity_type_id: group
+target_bundle: hr_flexible_group
+default_langcode: site_default
+language_alterable: true

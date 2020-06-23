@@ -6,7 +6,6 @@ module:
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
   adminimal_admin_toolbar: 0
-  auto_entitylabel: 0
   autologout: 0
   automated_cron: 0
   ban: 0
@@ -16,8 +15,6 @@ module:
   block_blacklist: 0
   block_class: 0
   block_content: 0
-  block_content_permissions: 0
-  block_user_info: 0
   breakpoint: 0
   captcha: 0
   chosen: 0
@@ -30,6 +27,7 @@ module:
   config_direct_save: 0
   config_translation: 0
   contact: 0
+  content_lock: 0
   content_moderation: 0
   content_moderation_notifications: 0
   contextual: 0
@@ -48,9 +46,6 @@ module:
   entity_browser: 0
   entity_browser_enhanced: 0
   entity_browser_entity_form: 0
-  entity_browser_example: 0
-  entity_clone: 0
-  entity_embed: 0
   entity_reference_revisions: 0
   facets: 0
   feeds: 0
@@ -59,7 +54,6 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  flag: 0
   gnode: 0
   google_analytics: 0
   group: 0
@@ -70,7 +64,6 @@ module:
   inline_entity_form: 0
   language: 0
   layout_builder: 0
-  layout_builder_restrictions: 0
   layout_builder_styles: 0
   layout_discovery: 0
   layout_library: 0
@@ -83,19 +76,16 @@ module:
   media_library: 0
   menu_block: 0
   menu_ui: 0
-  message: 0
-  message_ui: 0
   metatag: 0
   metatag_views: 0
   moderation_dashboard: 0
   node: 0
   node_view_permissions: 0
   options: 0
-  override_node_options: 0
   page_cache: 0
   page_manager: 0
   panels: 0
-  paragraph_blocks: 0
+  pantheon_advanced_page_cache: 0
   path: 0
   path_alias: 0
   private_message: 0
@@ -121,15 +111,11 @@ module:
   search_autocomplete: 0
   serialization: 0
   settings_tray: 0
-  shariff: 0
   shortcut: 0
-  sitemap: 0
   smtp: 0
   superfish: 0
-  syslog: 0
   system: 0
   taxonomy: 0
-  taxonomy_menu: 0
   telephone: 0
   text: 0
   token: 0
@@ -146,14 +132,10 @@ module:
   webform: 0
   webform_ui: 0
   workflows: 0
-  xmlsitemap_custom: 0
-  xmlsitemap_engines: 0
   menu_link_content: 1
   pathauto: 1
-  xmlsitemap: 1
   content_translation: 10
   views: 10
-  paragraphs: 11
   standard: 1000
 theme:
   stable: 0
