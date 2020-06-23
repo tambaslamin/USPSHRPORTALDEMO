@@ -45,7 +45,7 @@ class Retirement implements RetirementInterface {
    * {@inheritDoc}
    */
   public function retirementEligibility() {
-    $list = \Drupal::entityTypeManager()
+    $list = $this->entityTypeManager
       ->getStorage('profile')
       ->loadByProperties([
         'uid' => $this->account->id(),
