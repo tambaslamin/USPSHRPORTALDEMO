@@ -18,6 +18,7 @@
 /web/profiles/README.txt
 /web/private/scripts/quicksilver
 /console/
+/config/smtp.settings.yml
 
 # Ignore scaffold files
 .drush-lock-update
