@@ -14,6 +14,7 @@ dependencies:
     - field.field.profile.usps_person_profile.field_profile_notifications_pref
     - field.field.profile.usps_person_profile.field_profile_primary_location
     - field.field.profile.usps_person_profile.field_profile_retirement_date
+    - field.field.profile.usps_person_profile.field_profile_retirement_eligibl
     - field.field.profile.usps_person_profile.field_profile_start_date
     - field.field.profile.usps_person_profile.field_profile_task_preferences
     - field.field.profile.usps_person_profile.field_profile_telephone
@@ -68,6 +69,7 @@ third_party_settings:
       label: General
     group_profile_retirement_eligibi:
       children:
+        - field_profile_retirement_eligibl
         - field_profile_retirement_date
       parent_name: group_profile_user_settings
       weight: 8
@@ -199,7 +201,7 @@ content:
     type: text_default
     region: content
   field_profile_notifications_pref:
-    weight: 20
+    weight: 21
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -214,13 +216,23 @@ content:
     type: string
     region: content
   field_profile_retirement_date:
-    weight: 21
+    weight: 17
     label: above
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_profile_retirement_eligibl:
+    weight: 16
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_profile_start_date:
     weight: 27
@@ -232,7 +244,7 @@ content:
     type: datetime_default
     region: content
   field_profile_task_preferences:
-    weight: 19
+    weight: 20
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -262,7 +274,7 @@ content:
     type: list_default
     region: content
   field_profile_your_links:
-    weight: 16
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
