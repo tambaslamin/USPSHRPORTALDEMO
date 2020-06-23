@@ -2,6 +2,8 @@
 
 namespace Drupal\usps_hr\Services;
 
+use Drupal\Core\Datetime\DateFormatter;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Session\AccountProxy;
 
 /**
@@ -17,10 +19,26 @@ class Retirement implements RetirementInterface {
   protected $account;
 
   /**
+   * The Date Fromatter.
+   *
+   * @var Drupal\Core\Datetime\DateFormatter
+   */
+  protected $dateFormatter;
+
+  /**
+   * The entity type manager.
+   *
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+  /**
    * Class constructor.
    */
-  public function __construct(AccountProxy $account) {
+  public function __construct(AccountProxy $account, DateFormatter $date_formatter, EntityTypeManagerInterface $entity_type_manager) {
     $this->account = $account;
+    $this->dateFormatter = $date_formatter;
+    $this->entityTypeManager = $entity_type_manager;
   }
 
   /**
@@ -45,8 +63,7 @@ class Retirement implements RetirementInterface {
       $retirement_date_timestamp = $retirement_date->date->getTimestamp();
       if (REQUEST_TIME < $retirement_date_timestamp) {
         $retirement_date_diff =
-          \Drupal::service('date.formatter')
-            ->formatDiff(REQUEST_TIME, $retirement_date_timestamp, $options);
+          $this->dateFormatter->formatDiff(REQUEST_TIME, $retirement_date_timestamp, $options);
         $return['date'] = $retirement_date->date->format('F d, Y');
         $return['diff'] = $retirement_date_diff;
       }

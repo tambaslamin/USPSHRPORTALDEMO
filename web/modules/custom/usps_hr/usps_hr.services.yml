@@ -5,4 +5,4 @@ services:
       - { name: event_subscriber }
   usps_hr.retirement:
     class: Drupal\usps_hr\Services\Retirement
-    arguments: ['@current_user']
+    arguments: ['@current_user', '@date.formatter', '@entity_type.manager']
