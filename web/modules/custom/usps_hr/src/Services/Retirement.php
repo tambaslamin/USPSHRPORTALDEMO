@@ -3,7 +3,6 @@
 namespace Drupal\usps_hr\Services;
 
 use Drupal\Core\Session\AccountProxy;
-use Drupal\Core\Datetime\DrupalDateTime;
 
 /**
  * Class Retirement.
@@ -11,7 +10,9 @@ use Drupal\Core\Datetime\DrupalDateTime;
 class Retirement implements RetirementInterface {
 
   /**
-   * @var AccountInterface $account
+   * Account Interface.
+   *
+   * @var AccountInterface
    */
   protected $account;
 
@@ -34,23 +35,23 @@ class Retirement implements RetirementInterface {
       ]);
 
     $profile = reset($list);
+    $retirement_eligible = (!empty($profile->get('field_profile_retirement_eligibl')->getValue()[0]['value']))
+      ? $profile->get('field_profile_retirement_eligibl')->getValue()[0]['value']
+      : FALSE;
+    $return['eligibility'] = $retirement_eligible;
     if (!empty($profile->get('field_profile_retirement_date')->getValue()[0]['value'])) {
       $retirement_date = $profile->get('field_profile_retirement_date');
       $options['granularity'] = 3;
       $retirement_date_timestamp = $retirement_date->date->getTimestamp();
       if (REQUEST_TIME < $retirement_date_timestamp) {
-        $retirement_date_diff = 
+        $retirement_date_diff =
           \Drupal::service('date.formatter')
-          ->formatDiff(REQUEST_TIME, $retirement_date_timestamp, $options);
+            ->formatDiff(REQUEST_TIME, $retirement_date_timestamp, $options);
         $return['date'] = $retirement_date->date->format('F d, Y');
-        $return['eligibility'] = 'future';
         $return['diff'] = $retirement_date_diff;
-      } else {
-        $return['eligibility'] = 'now';      
       }
-      return $return;
     }
-    return false;
+    return $return;
   }
 
 }

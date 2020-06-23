@@ -1,0 +1,23 @@
+uuid: 3d08fb71-e534-4d81-bdb7-cf582fd7d8d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_retirement_eligibl
+    - profile.type.usps_person_profile
+id: profile.usps_person_profile.field_profile_retirement_eligibl
+field_name: field_profile_retirement_eligibl
+entity_type: profile
+bundle: usps_person_profile
+label: 'Retirement Eligible'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
