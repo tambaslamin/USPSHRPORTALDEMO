@@ -46,6 +46,8 @@ web/sites/development.services.yml
 web/sites/example.settings.local.php
 web/sites/example.sites.php
 web/sites/README.txt
+web/sites.php
+web/default/sites.php
 web/update.php
 web/web.config
 

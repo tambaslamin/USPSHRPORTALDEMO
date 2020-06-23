@@ -5,7 +5,6 @@ dependencies:
   config:
     - node.type.article
     - node.type.blog_post
-    - node.type.entity_browser_test
     - node.type.forms
     - node.type.hr_announcement
     - node.type.hr_event
@@ -95,7 +94,6 @@ type_settings:
     node:
       - article
       - blog_post
-      - entity_browser_test
       - forms
       - hr_announcement
       - hr_event
