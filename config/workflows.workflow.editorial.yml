@@ -5,7 +5,6 @@ dependencies:
   config:
     - node.type.article
     - node.type.blog_post
-    - node.type.entity_browser_test
     - node.type.forms
     - node.type.hr_announcement
     - node.type.hr_event
@@ -48,43 +47,53 @@ type_settings:
       default_revision: true
       weight: 0
   transitions:
+    approved_to_be_published:
+      label: 'Approved to be Published'
+      from:
+        - approved_to_be_published
+        - archived
+        - draft
+        - in_review
+      to: approved_to_be_published
+      weight: -2
     archive:
       label: Archive
       from:
         - published
       to: archived
-      weight: 2
+      weight: 0
     archived_draft:
       label: 'Restore to Draft'
       from:
         - archived
       to: draft
-      weight: 3
+      weight: 1
     archived_published:
       label: Restore
       from:
         - archived
       to: published
-      weight: 4
+      weight: 2
     create_new_draft:
       label: 'Create New Draft'
       to: draft
-      weight: 0
+      weight: -3
       from:
         - draft
         - published
     publish:
       label: Publish
       to: published
-      weight: 1
+      weight: -1
       from:
+        - approved_to_be_published
         - draft
+        - in_review
         - published
   entity_types:
     node:
       - article
       - blog_post
-      - entity_browser_test
       - forms
       - hr_announcement
       - hr_event

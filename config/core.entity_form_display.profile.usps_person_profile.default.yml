@@ -14,6 +14,7 @@ dependencies:
     - field.field.profile.usps_person_profile.field_profile_notifications_pref
     - field.field.profile.usps_person_profile.field_profile_primary_location
     - field.field.profile.usps_person_profile.field_profile_retirement_date
+    - field.field.profile.usps_person_profile.field_profile_retirement_eligibl
     - field.field.profile.usps_person_profile.field_profile_start_date
     - field.field.profile.usps_person_profile.field_profile_task_preferences
     - field.field.profile.usps_person_profile.field_profile_telephone
@@ -68,6 +69,7 @@ third_party_settings:
       label: General
     group_profile_retirement_eligib:
       children:
+        - field_profile_retirement_eligibl
         - field_profile_retirement_date
       parent_name: group_profile_user_settings
       weight: 6
@@ -160,7 +162,7 @@ content:
     type: email_default
     region: content
   field_profile_email_frequenc:
-    weight: 30
+    weight: 31
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -202,7 +204,7 @@ content:
     type: text_textfield
     region: content
   field_profile_notifications_pref:
-    weight: 32
+    weight: 33
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -216,10 +218,17 @@ content:
     type: string_textfield
     region: content
   field_profile_retirement_date:
-    weight: 26
+    weight: 44
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_profile_retirement_eligibl:
+    weight: 43
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_profile_start_date:
     weight: 36
@@ -228,7 +237,7 @@ content:
     type: datetime_default
     region: content
   field_profile_task_preferences:
-    weight: 31
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -249,13 +258,13 @@ content:
     type: string_textfield
     region: content
   field_profile_your_apps:
-    weight: 27
+    weight: 31
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_profile_your_links:
-    weight: 28
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: options_buttons

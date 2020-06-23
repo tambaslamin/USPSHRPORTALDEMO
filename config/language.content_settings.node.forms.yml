@@ -1,0 +1,18 @@
+uuid: 886e1723-e89d-4aa4-915d-35b474ca16ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.forms
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: node.forms
+target_entity_type_id: node
+target_bundle: forms
+default_langcode: site_default
+language_alterable: true

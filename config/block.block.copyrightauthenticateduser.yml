@@ -1,0 +1,37 @@
+uuid: bb0f0b06-4eff-4a73-b62a-d486bd58bb5c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b6da9415-feb2-4fc7-a041-94fd91222745'
+  module:
+    - block_class
+    - block_content
+    - user
+  theme:
+    - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: copyright
+id: copyrightauthenticateduser
+theme: uspshrdemo
+region: global_footer_second
+weight: -16
+provider: null
+plugin: 'block_content:b6da9415-feb2-4fc7-a041-94fd91222745'
+settings:
+  id: 'block_content:b6da9415-feb2-4fc7-a041-94fd91222745'
+  label: 'Copyright - Authenticated User'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

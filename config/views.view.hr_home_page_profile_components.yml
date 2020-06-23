@@ -212,6 +212,22 @@ display:
       display_extenders:
         metatag_display_extender: {  }
       display_description: ''
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<a href="#">Manage My Apps & Links</a>'
+            format: basic_html
+          plugin_id: text
+      defaults:
+        footer: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -234,6 +250,7 @@ display:
       defaults:
         title: false
         fields: false
+        footer: false
       fields:
         field_profile_start_date:
           id: field_profile_start_date
@@ -300,6 +317,20 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<a href="/user">Full Employment Information</a>'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:

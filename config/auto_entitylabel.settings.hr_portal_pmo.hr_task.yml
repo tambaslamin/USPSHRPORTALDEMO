@@ -1,6 +1,0 @@
-status: 0
-pattern: ''
-escape: false
-dependencies:
-  config:
-    - eck.eck_type.hr_portal_pmo.hr_task
