@@ -8,6 +8,7 @@ weight: -4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content overview'
   - 'access files overview'
   - 'access group overview'
   - 'access site in maintenance mode'
@@ -17,6 +18,7 @@ permissions:
   - 'access test_nodes entity browser pages'
   - 'access toolbar'
   - 'access tour'
+  - 'create blog_post content'
   - 'create hr_closed_group group'
   - 'create hr_flexible_group group'
   - 'create hr_open_group group'
