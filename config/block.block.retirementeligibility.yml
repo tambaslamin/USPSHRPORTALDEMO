@@ -1,0 +1,26 @@
+uuid: ec465934-800d-4e89-ac4e-b378b3233867
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - usps_hr
+  theme:
+    - uspshrdemo
+id: retirementeligibility
+theme: uspshrdemo
+region: content_top_left
+weight: 0
+provider: null
+plugin: retirement_eligibility
+settings:
+  id: retirement_eligibility
+  label: 'Retirement Eligibility'
+  provider: usps_hr
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

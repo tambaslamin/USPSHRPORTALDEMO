@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.hr_home_page_profile_components
   module:
+    - system
     - views
   theme:
     - uspshrdemo
@@ -22,4 +23,9 @@ settings:
   views_label: ''
   items_per_page: none
   context_mapping: {  }
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
