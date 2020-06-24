@@ -1,0 +1,31 @@
+uuid: 0f8a25b1-c138-4359-83c8-9f05efade54e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hr_app_pages.body
+    - node.type.hr_app_pages
+  module:
+    - text
+    - user
+id: node.hr_app_pages.default
+targetEntityType: node
+bundle: hr_app_pages
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  private_message_link: true
+  search_api_excerpt: true

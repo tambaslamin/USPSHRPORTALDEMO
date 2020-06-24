@@ -8,4 +8,7 @@ weight: -5
 is_admin: null
 permissions:
   - 'access files overview'
+  - 'create blog_post content'
   - 'dropzone upload files'
+  - 'view any hr_app_pages content'
+  - 'view own hr_app_pages content'

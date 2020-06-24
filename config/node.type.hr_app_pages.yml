@@ -1,0 +1,19 @@
+uuid: 76c240d8-3a8b-41e4-a3a2-4860bc0f29e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: 'HR App Pages'
+type: hr_app_pages
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

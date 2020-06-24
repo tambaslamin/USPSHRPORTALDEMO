@@ -1,0 +1,16 @@
+uuid: 750dfe76-ef88-441b-9ff6-600eafd0e15f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.hr_app_pages
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.hr_app_pages
+target_entity_type_id: node
+target_bundle: hr_app_pages
+default_langcode: site_default
+language_alterable: false

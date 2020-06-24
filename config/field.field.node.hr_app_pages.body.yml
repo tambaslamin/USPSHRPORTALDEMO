@@ -1,0 +1,23 @@
+uuid: 7e34e4ff-79b5-4dd7-904e-5a4467949331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hr_app_pages
+  module:
+    - text
+id: node.hr_app_pages.body
+field_name: body
+entity_type: node
+bundle: hr_app_pages
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
