@@ -1,0 +1,33 @@
+uuid: ec673d30-c569-4fd7-9f80-f0faab7eefe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hr_app_pages.body
+    - node.type.hr_app_pages
+  module:
+    - text
+    - user
+id: node.hr_app_pages.teaser
+targetEntityType: node
+bundle: hr_app_pages
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  private_message_link: true
+  search_api_excerpt: true
