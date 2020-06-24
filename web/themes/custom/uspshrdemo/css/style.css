@@ -15,7 +15,7 @@ body.node--type-landing-page-publicly-accessible #main-wrapper {
   background: #f3f3f3;
 }
 body:not(.path-frontpage) .region-global-page-title-wrapper {
-  background: #3573B1;
+  background: #3573b1;
   padding-top: 3em;
   padding-bottom: 3em;
   color: #fff;
@@ -48,8 +48,8 @@ body:not(.path-frontpage) .region-global-page-title-wrapper {
 /**
  * Node type: HR landing page.
  */
- body.node--type-hr-landing-page:not(.path-frontpage) #block-uspshrdemo-content,
- body.node--type-landing-page-publicly-accessible #block-uspshrdemo-content {
+body.node--type-hr-landing-page:not(.path-frontpage) #block-uspshrdemo-content,
+body.node--type-landing-page-publicly-accessible #block-uspshrdemo-content {
   margin-top: -3em;
 }
 
