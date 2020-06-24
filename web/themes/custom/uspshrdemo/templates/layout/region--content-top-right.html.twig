@@ -20,8 +20,10 @@
 %}
 {% if content %}
   <section{{ attributes.addClass(classes) }}>
-    <div class="region-top-right-contents card card-body">
-      {{ content }}
+    <div class="col-12">
+      <div class="region-top-right-contents card card-body">
+        {{ content }}
+      </div>
     </div>
   </section>
 {% endif %}

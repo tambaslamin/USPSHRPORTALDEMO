@@ -3,15 +3,19 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: col-12
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: uspshrdemo_page_title
 theme: uspshrdemo
-region: content
-weight: -11
+region: global_page_title
+weight: -17
 provider: null
 plugin: page_title_block
 settings:
