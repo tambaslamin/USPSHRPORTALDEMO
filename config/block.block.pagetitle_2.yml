@@ -1,15 +1,15 @@
-uuid: 6d424e52-1785-4934-85ca-bfd49aa0cae1
+uuid: 50488ad0-bfa6-4444-9ba3-60b0759f6d8e
 langcode: en
 status: true
 dependencies:
   module:
-    - ctools
+    - system
   theme:
     - uspshrdemo
-id: pagetitle
+id: pagetitle_2
 theme: uspshrdemo
 region: content
-weight: -18
+weight: -19
 provider: null
 plugin: page_title_block
 settings:
@@ -18,10 +18,8 @@ settings:
   provider: core
   label_display: '0'
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      page: page
+  request_path:
+    id: request_path
+    pages: /user/login
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }

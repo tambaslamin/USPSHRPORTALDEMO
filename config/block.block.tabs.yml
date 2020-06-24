@@ -1,4 +1,4 @@
-uuid: 6d424e52-1785-4934-85ca-bfd49aa0cae1
+uuid: 4cee70b8-e1f1-4470-b2e4-d2098ec900d7
 langcode: en
 status: true
 dependencies:
@@ -6,17 +6,19 @@ dependencies:
     - ctools
   theme:
     - uspshrdemo
-id: pagetitle
+id: tabs
 theme: uspshrdemo
 region: content
-weight: -18
+weight: -17
 provider: null
-plugin: page_title_block
+plugin: local_tasks_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: local_tasks_block
+  label: Tabs
   provider: core
   label_display: '0'
+  primary: true
+  secondary: true
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
