@@ -11,4 +11,5 @@ is_admin: false
 permissions:
   - 'access content'
   - 'use text format restricted_html'
+  - 'view any landing_page_publicly_accessible content'
   - 'view any page content'

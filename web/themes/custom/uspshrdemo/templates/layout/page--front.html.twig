@@ -101,7 +101,6 @@
   <nav{{ navbar_top_attributes }}>
     {% if container_navbar %}
       <div class="container">
-        <div>HOla 2</div>
     {% endif %}
     {{ page.secondary_menu }}
     {{ page.top_header }}
@@ -120,7 +119,6 @@
 <nav{{ navbar_attributes }}>
 {% if container_navbar %}
   <div class="container-fuid">
-      <div>HOla 1</div>
       {% endif %}
       {{ page.header }}
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -147,13 +145,13 @@
 <div id="main">
     {{ page.breadcrumb }}
     <div class="row-offcanvas row-offcanvas-left clearfix">
-        {% if page.global_page_title %}
-        <div class="region-global-page-title">
+        <div class="region-global-page-title-wrapper">
+          {% if page.global_page_title %}
           <div class="container">
             {{ page.global_page_title }}
           </div>
+          {% endif %}
         </div>
-        {% endif %}
         {% if page.content_top_left or page.content_top_middle or page.content_top_right %}
         <div class="container">
           <div class="global-content-top row">
