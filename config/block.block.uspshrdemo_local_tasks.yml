@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - block_class
+    - ctools
     - system
   theme:
     - uspshrdemo
@@ -15,7 +16,7 @@ _core:
 id: uspshrdemo_local_tasks
 theme: uspshrdemo
 region: global_page_title
-weight: -16
+weight: -17
 provider: null
 plugin: local_tasks_block
 settings:
@@ -31,3 +32,11 @@ visibility:
     pages: "/user/login\r\n<front>"
     negate: true
     context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      hr_landing_page: hr_landing_page
+      landing_page_publicly_accessible: landing_page_publicly_accessible
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

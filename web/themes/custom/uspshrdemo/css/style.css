@@ -5,75 +5,78 @@
 #page-wrapper {
   overflow: hidden;
 }
-body.node--type-page #main-wrapper {
+.row-offcanvas {
+  overflow: auto;
+}
+
+body.node--type-page #main-wrapper,
+body.node--type-hr-landing-page #main-wrapper,
+body.node--type-landing-page-publicly-accessible #main-wrapper {
   background: #f3f3f3;
 }
-body.node--type-page #block-uspshrdemo-page-title,
-body.node--type-page main > section.section > nav.tabs .nav-link:not(.active) {
+body:not(.path-frontpage) .region-global-page-title-wrapper {
+  background: #3573b1;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: #fff;
+  min-height: 200px;
+}
+.region-global-page-title #block-uspshrdemo-page-title,
+.region-global-page-title nav.tabs .nav-link:not(.active) {
   color: #fff;
 }
-body.node--type-page main > section.section > nav.tabs .nav-link {
+.region-global-page-title nav.tabs .nav-link {
   margin-right: .25em;
 }
-body.node--type-page main > section.section > nav.tabs {
-  margin-bottom: 0;
-  padding-bottom: 6em;
+.region-global-page-title nav.tabs {
+  margin: 15px 15px 0;
 }
-body.node--type-page main > section.section > nav.tabs ul.nav {
+.region-global-page-title nav.tabs ul.nav {
   border-bottom: none;
 }
-body.node--type-page main > section.section > nav.tabs .nav-link {
+.region-global-page-title nav.tabs .nav-link {
   border: 1px solid #fff;
 }
-body.node--type-page #block-uspshrdemo-page-title > .content,
-body.node--type-page #block-uspshrdemo-breadcrumbs nav {
-  overflow: auto; /* prevents margin issues in breadcrumb with background color */
-}
-body.node--type-page #block-uspshrdemo-page-title {
-  padding-bottom: 6em;;
-}
-body.node--type-page #block-uspshrdemo-page-title ~ nav.tabs {
-  margin-top: -6em;
-}
-body.node--type-page #block-uspshrdemo-page-title,
-body.node--type-page #block-uspshrdemo-breadcrumbs,
-body.node--type-page main > section.section > nav.tabs {
-  background: #3573b1;
-  position: relative;
-  z-index: 0;
-}
-body.node--type-page #block-uspshrdemo-page-title:before,
-body.node--type-page #block-uspshrdemo-breadcrumbs:before,
-body.node--type-page main > section.section > nav.tabs:before,
-body.node--type-page #block-uspshrdemo-page-title:after,
-body.node--type-page #block-uspshrdemo-breadcrumbs:after,
-body.node--type-page main > section.section > nav.tabs:after {
-  background: #3573b1;
-  position: absolute;
-  height: 100%;
-  width: 150vw;
-  top: 0;
-  display: block;
-  content: " ";
-  z-index: -1;
-}
-body.node--type-page #block-uspshrdemo-page-title:before,
-body.node--type-page #block-uspshrdemo-breadcrumbs:before,
-body.node--type-page main > section.section > nav.tabs:before {
-  right: 0;
-}
-body.node--type-page #block-uspshrdemo-page-title:after,
-body.node--type-page #block-uspshrdemo-breadcrumbs:after,
-body.node--type-page main > section.section > nav.tabs:after {
-  left: 0;
-}
-body.node--type-page #block-uspshrdemo-content {
-  margin-top: -3em;
-}
-body.node--type-page #block-uspshrdemo-content .card {
+#block-uspshrdemo-content .card {
   border: none;
   color: #595959;
 }
-body.node--type-page #block-uspshrdemo-content .card h2 {
+#block-uspshrdemo-content .card h2 {
   color: #1073ea;
+}
+
+/**
+ * Node type: HR landing page.
+ */
+body.node--type-hr-landing-page:not(.path-frontpage) #block-uspshrdemo-content,
+body.node--type-landing-page-publicly-accessible #block-uspshrdemo-content {
+  margin-top: -3em;
+}
+
+/**
+ * Node type: page.
+ */
+body.node--type-page {
+  background: #fff;
+  border-radius: 16px;
+  padding-top: 40px;
+}
+body.node--type-page #block-pagetitle {
+  text-align: center;
+}
+body.node--type-page #block-pagetitle h1 {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+body.node--type-page .main-content {
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  margin-top: -100px;
+  padding: 100px;
 }
