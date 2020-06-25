@@ -43,7 +43,7 @@
 .vertical-tabs__menu-item a {
   font-family: Helvetica Neue;
   font-size: 16px;
-  color: #1073EA;
+  color: #1073ea;
 }
 
 .vertical-tabs__menu-item a:hover {
@@ -51,7 +51,7 @@
 }
 
 .vertical-tabs__menu-item.is-selected a {
-  color: #161C2D;
+  color: #161c2d;
 }
 
 .field--name-field-profile-first-name {
@@ -62,7 +62,7 @@
 .field--name-field-profile-last-name {
   font-family: Helvetica Neue;
   font-size: 31px;
-  color: #161C2D;
+  color: #161c2d;
   margin-top: 76px;
   float: left;
 }
@@ -78,7 +78,7 @@
 }
 
 .field--name-field-profile-start-date {
-  border-top: 1px solid #EDEDED;
+  border-top: 1px solid #ededed;
   padding-top: 30px;
   margin-top: 62px;
 }
@@ -117,7 +117,7 @@
 .field--name-field-profile-primary-location .field__item,
 .field--name-field-profile-language .field__item {
   font-size: 16px;
-  color: #161C2D;
+  color: #161c2d;
 }
 
 .main-content .profile .address,
@@ -163,7 +163,7 @@
 
   .field--name-field-profile-first-name,
   .field--name-field-profile-title {
-    margin-left: 0  ;
+    margin-left: 0;
   }
 
   .field--name-field-profile-first-name,
@@ -207,9 +207,6 @@
   }
 }
 
-
-
-
 /* configure dashboard tab */
 
 .field--name-field-profile-your-apps .field__label,
@@ -238,7 +235,7 @@
 
 .field--name-field-profile-your-apps  .field__item:checked,
 .field--name-field-profile-your-links .field__item:checked {
-  color: #161C2D;
+  color: #161c2d;
 }
 
 .field--name-field-profile-your-links .field__label {
@@ -252,7 +249,7 @@
 .field--name-field-profile-email-preferences,
 .field--name-field-profile-task-preferences,
 .field--name-field-profile-notifications-pref {
-  border-top: 1px solid #EDEDED;
+  border-top: 1px solid #ededed;
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -273,7 +270,7 @@
 .field--name-field-profile-email-preferences .field__item,
 .field--name-field-profile-email-frequenc .field__item {
   font-size: 15px;
-  color: #161C2D;
+  color: #161c2d;
   padding-top: 30px;
   position: absolute;
 }
@@ -302,7 +299,7 @@
 
 .field--name-field-profile-task-preferences .field__item:checked,
 .field--name-field-profile-notifications-pref .field__item:checked {
-  color: #161C2D;
+  color: #161c2d;
 }
 
 @media (max-width: 1200px) {
@@ -324,4 +321,3 @@
     padding-left: 0;
   }
 }
-
