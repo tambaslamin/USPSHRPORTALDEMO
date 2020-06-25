@@ -8,20 +8,16 @@
 .row-offcanvas {
   overflow: auto;
 }
-
-body.node--type-page #main-wrapper,
-body.node--type-hr-landing-page #main-wrapper,
-body.node--type-landing-page-publicly-accessible #main-wrapper {
+.main-content-wrapper {
+  padding-bottom: 3em;
+}
+body:not(.page-user-login) #main-wrapper {
   background: #f3f3f3;
 }
-body:not(.path-frontpage) .region-global-page-title-wrapper {
-  background: #3573b1;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  color: #fff;
-  min-height: 200px;
-}
-.region-global-page-title #block-uspshrdemo-page-title,
+
+/**
+ * Nav Tabs.
+ */
 .region-global-page-title nav.tabs .nav-link:not(.active) {
   color: #fff;
 }
@@ -29,7 +25,7 @@ body:not(.path-frontpage) .region-global-page-title-wrapper {
   margin-right: .25em;
 }
 .region-global-page-title nav.tabs {
-  margin: 15px 15px 0;
+  margin: 15px 15px;
 }
 .region-global-page-title nav.tabs ul.nav {
   border-bottom: none;
@@ -46,25 +42,33 @@ body:not(.path-frontpage) .region-global-page-title-wrapper {
 }
 
 /**
- * Node type: HR landing page.
+ * Page Title: Blue Background.
  */
-body.node--type-hr-landing-page:not(.path-frontpage) #block-uspshrdemo-content,
-body.node--type-landing-page-publicly-accessible #block-uspshrdemo-content {
-  margin-top: -3em;
+body:not(.path-frontpage) .region-global-page-title-wrapper {
+  background: #3573b1;
+  padding-top: 3em;
+  color: #fff;
+}
+body:not(.node--type-page) .block-page-title-block h1 ,
+body.transparent-background .block-page-title-block h1 {
+  margin-bottom: 1em;
 }
 
 /**
- * Node type: page.
+ * Page Title: White Background / Centered.
  */
-body.node--type-page {
+body.node--type-page:not(.transparent-background) .block-page-title-block > .content,
+body.white-background .block-page-title-block > .content {
   background: #fff;
-  border-radius: 16px;
-  padding-top: 40px;
-}
-body.node--type-page #block-pagetitle {
   text-align: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: auto;
 }
-body.node--type-page #block-pagetitle h1 {
+body.node--type-page:not(.transparent-background) .block-page-title-block h1,
+body.white-background .block-page-title-block h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: normal;
@@ -72,11 +76,22 @@ body.node--type-page #block-pagetitle h1 {
   line-height: 62px;
   text-align: center;
   letter-spacing: -0.01em;
+  color: #333366;
 }
-body.node--type-page .main-content {
+body.transparent-background .block-page-title-block h1,
+body.node--type-hr-landing-page .block-page-title-block h1 {
+  margin-bottom: 2.5em;
+}
+
+/**
+ * Main Content: White Background / Centered.
+ */
+body.transparent-background #content.main-content,
+body.node--type-hr-landing-page #content.main-content {
+  margin-top: -3em;
+}
+body:not(.transparent-background) #block-uspshrdemo-content.white-background,
+body.white-background #content article {
   background: #fff;
-  border-radius: 4px;
-  margin-bottom: 100px;
-  margin-top: -100px;
-  padding: 100px;
+  padding: 15px 100px 50px;
 }

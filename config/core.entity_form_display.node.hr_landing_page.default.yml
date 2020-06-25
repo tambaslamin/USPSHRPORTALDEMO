@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.hr_landing_page.body
+    - field.field.node.hr_landing_page.field_page_style
     - field.field.node.hr_landing_page.layout_builder__layout
     - node.type.hr_landing_page
     - workflows.workflow.editorial
@@ -32,6 +33,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_page_style:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -80,6 +87,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -92,8 +104,8 @@ content:
     third_party_settings: {  }
   url_redirects:
     weight: 50
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   layout_builder__layout: true

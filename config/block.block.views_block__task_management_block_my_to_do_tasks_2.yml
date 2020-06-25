@@ -12,7 +12,7 @@ dependencies:
 id: views_block__task_management_block_my_to_do_tasks_2
 theme: uspshrdemo
 region: content_top_right
-weight: -17
+weight: -20
 provider: null
 plugin: 'views_block:task_management-block_my_to_do_tasks'
 settings:

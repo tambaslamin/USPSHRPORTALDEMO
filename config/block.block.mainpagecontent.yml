@@ -1,34 +1,33 @@
-uuid: 11d5a0be-2b55-490d-a628-89c2f3d13c31
+uuid: 1ef8dcc2-19ca-4cdc-8340-d0c5225b5749
 langcode: en
 status: true
 dependencies:
   module:
-    - block_class
     - ctools
     - system
   theme:
     - uspshrdemo
-third_party_settings:
-  block_class:
-    classes: white-background
-_core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: uspshrdemo_content
+id: mainpagecontent
 theme: uspshrdemo
 region: content
-weight: -14
+weight: -15
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content (White Background)'
+  label: 'Main page content (Transparent Background)'
   provider: system
   label_display: '0'
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      page: page
+      hr_landing_page: hr_landing_page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /user-feedback
+    negate: true
+    context_mapping: {  }

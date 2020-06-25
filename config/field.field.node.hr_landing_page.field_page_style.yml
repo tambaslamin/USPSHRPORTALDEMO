@@ -1,0 +1,21 @@
+uuid: 46a71510-d87a-44a9-98e4-2e1d59f860a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_style
+    - node.type.hr_landing_page
+  module:
+    - options
+id: node.hr_landing_page.field_page_style
+field_name: field_page_style
+entity_type: node
+bundle: hr_landing_page
+label: 'Page Style Override'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
