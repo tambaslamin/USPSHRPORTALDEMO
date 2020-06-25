@@ -1,0 +1,35 @@
+uuid: d70af623-01fe-48e8-9dba-a9c811918431
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hr_home_page_profile_components
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: col-12
+id: views_block__hr_home_page_profile_components_page_title
+theme: uspshrdemo
+region: global_page_title
+weight: -18
+provider: null
+plugin: 'views_block:hr_home_page_profile_components-page_title'
+settings:
+  id: 'views_block:hr_home_page_profile_components-page_title'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -101,7 +101,6 @@
   <nav{{ navbar_top_attributes }}>
     {% if container_navbar %}
       <div class="container">
-        <div>HOla 2</div>
     {% endif %}
     {{ page.secondary_menu }}
     {{ page.top_header }}
@@ -120,7 +119,6 @@
 <nav{{ navbar_attributes }}>
 {% if container_navbar %}
   <div class="container-fuid">
-      <div>HOla 1</div>
       {% endif %}
       {{ page.header }}
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -144,9 +142,16 @@
 {% endblock %}
 
 {% block content %}
-<div id="main" class="container">
+<div id="main">
     {{ page.breadcrumb }}
-    <div class="row row-offcanvas row-offcanvas-left clearfix">
+    <div class="row-offcanvas row-offcanvas-left clearfix">
+        <div class="region-global-page-title-wrapper">
+          {% if page.global_page_title %}
+          <div class="container">
+            {{ page.global_page_title }}
+          </div>
+          {% endif %}
+        </div>
         {% if page.content_top_left or page.content_top_middle or page.content_top_right %}
         <div class="container">
           <div class="global-content-top row">
@@ -168,7 +173,7 @@
           </div>
         </div>
         {% endif %}
-        <main{{ content_attributes }}>
+        <main{{ content_attributes.addClass('container')  }}>
           <section class="section">
               <a id="main-content" tabindex="-1"></a>
               {{ page.content }}
@@ -215,12 +220,12 @@
 <div class="container-fluid">
     {% if page.global_footer_first or page.global_footer_second %}
     <div class="row global-footer clearfix">
-        {% if page.global_myaccount_top %}
+        {% if page.global_footer_first %}
         <div class="global_footer_first  col-lg-3 col-md-12">
             {{ page.global_footer_first }}
         </div>
         {% endif %}
-        {% if page.global_myaccount_top %}
+        {% if page.global_footer_second %}
         <div class="global_footer_second  col-lg-9 col-md-12">
             {{ page.global_footer_second }}
         </div>

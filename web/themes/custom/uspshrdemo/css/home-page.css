@@ -2,11 +2,30 @@
  * @file
  * Styles the home page.
  */
-.view-hr-home-page-profile-components .view-content.row,
-.view-task-management .view-content.row {
-  margin-left: 0;
-  margin-right: 0;
+
+/**
+ * Profile page title (view).
+ */
+#block-views-block-hr-home-page-profile-components-page-title {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
+#block-views-block-hr-home-page-profile-components-page-title .views-field-user-picture {
+  float: left;
+  margin-right: 15px;
+}
+#block-views-block-hr-home-page-profile-components-page-title .current-time,
+#block-views-block-hr-home-page-profile-components-page-title .manage-settings {
+  float: left;
+}
+#block-views-block-hr-home-page-profile-components-page-title .current-time {
+  color: #595959;
+  margin-right: 30px;
+}
+
+/**
+ * Profile components.
+ */
 #block-views-block-hr-home-page-profile-components-your-time-at-usps h2,
 #block-views-block-hr-home-page-profile-components-my-apps-and-links h2,
 #block-retirementeligibility h2,
@@ -24,7 +43,7 @@
 #block-views-block-hr-home-page-profile-components-my-apps-and-links,
 #block-retirementeligibility,
 .region-top-right-contents {
-  margin: 0 15px 15px;
+  margin-bottom: 15px;
 }
 #block-views-block-hr-home-page-profile-components-your-time-at-usps .views-row,
 #block-views-block-hr-home-page-profile-components-my-apps-and-links .views-row {
