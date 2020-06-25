@@ -1,17 +1,19 @@
-uuid: 11d5a0be-2b55-490d-a628-89c2f3d13c31
+uuid: 2ded86bd-2e06-43ae-a22b-2270310e2e81
 langcode: en
 status: true
 dependencies:
   module:
+    - block_class
     - system
   theme:
     - uspshrdemo
-_core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: uspshrdemo_content
+third_party_settings:
+  block_class:
+    classes: bg-light
+id: mainpagecontent
 theme: uspshrdemo
 region: content
-weight: -13
+weight: 0
 provider: null
 plugin: system_main_block
 settings:
@@ -23,5 +25,5 @@ visibility:
   request_path:
     id: request_path
     pages: /retirees_former_employees
-    negate: true
+    negate: false
     context_mapping: {  }
