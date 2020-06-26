@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_page_style
     - node.type.page
   module:
     - text
@@ -26,6 +27,7 @@ content:
     third_party_settings: {  }
 hidden:
   content_moderation_control: true
+  field_page_style: true
   flag_email_node: true
   flag_subscribe_node: true
   langcode: true

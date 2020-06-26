@@ -11,7 +11,7 @@ _core:
 id: uspshrdemo_content
 theme: uspshrdemo
 region: content
-weight: -13
+weight: -14
 provider: null
 plugin: system_main_block
 settings:
@@ -19,9 +19,4 @@ settings:
   label: 'Main page content'
   provider: system
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: /retirees_former_employees
-    negate: true
-    context_mapping: {  }
+visibility: {  }
