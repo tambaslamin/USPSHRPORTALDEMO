@@ -21,15 +21,31 @@
 }
 
 aside,
-main section {
+main section .view-content {
   background: #ffffff;
   box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.05);
   border-radius: 5px;
+}
+
+aside {
   padding: 30px 28px;
+}
+
+.node--unpublished,
+.node--view-mode-teaser,
+.eck-entity,
+.node--view-mode-default  {
+  padding: 30px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 0;
 }
 
 .view-content {
   margin: 0;
+}
+
+.views-row {
+  width: 100%;
 }
 
 /* facets */
@@ -37,7 +53,8 @@ main section {
   display: none;
 }
 
-.block-facet--checkbox {
+.block-facet--checkbox,
+.sidebar .block {
   margin: 0;
   padding: 0;
 }
@@ -61,4 +78,32 @@ main section {
   color: #1073ea;
   font-size: 16px;
   font-family: Helvetica Neue;
+}
+
+/* search results */
+.field--name-body h2 {
+  display: none;
+}
+
+.field--name-title,
+.node__title {
+  color: #161c2d;
+  font-size: 17px;
+  font-family: Helvetica Neue;
+  font-weight: normal;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.field--name-body p {
+  color: #595959;
+  font-size: 15px;
+  font-family: Helvetica Neue;
+  margin: 0;
+}
+
+.pagination {
+  max-width: 54%;
+  margin: 30px auto 0;
 }
