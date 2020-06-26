@@ -41,7 +41,7 @@ aside {
 }
 
 .view-content {
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
 .views-row {
@@ -105,5 +105,5 @@ aside {
 
 .pagination {
   max-width: 54%;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
