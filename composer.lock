@@ -1561,7 +1561,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-2.3",
-                    "datestamp": "1592535714",
+                    "datestamp": "1592535597",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4408,29 +4408,26 @@
         },
         {
             "name": "drupal/entity_block",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_block.git",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_block-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "626c2ac5d471383d068b06a24ff2e4fd842d9887"
+                "url": "https://ftp.drupal.org/files/projects/entity_block-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "523a66fd1089117fc857fb6e719ae4333d30e46d"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1580800935",
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1593050227",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -10068,17 +10065,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.17.0",
+            "version": "5.18.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.17"
+                "reference": "8.x-5.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.17.zip",
-                "reference": "8.x-5.17",
-                "shasum": "05ad1c707119279a11680751b8ca39fc2e331532"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.18.zip",
+                "reference": "8.x-5.18",
+                "shasum": "539d0ba5bacc402cf6ea2a3419ae164703a09aa0"
             },
             "require": {
                 "drupal/core": "^8.8"
@@ -10117,8 +10114,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.17",
-                    "datestamp": "1592841189",
+                    "version": "8.x-5.18",
+                    "datestamp": "1593034084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
