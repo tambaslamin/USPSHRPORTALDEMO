@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -31,4 +32,25 @@ function uspshrdemo_form_system_theme_settings_alter(&$form, FormStateInterface 
     'bg-white' => t('White'),
     'bg-transparent' => t('Transparent'),
   ];
+}
+
+/**
+ * Implements template_preprocess_html().
+ *
+ * Enable the override of page styles.
+ */
+function uspshrdemo_preprocess_html(&$variables) {
+  if (!empty($variables['node_type'])) {
+    if (($variables['node_type'] == 'hr_landing_page' || $variables['node_type'] == 'page')
+      && ($node = \Drupal::routeMatch()->getParameter('node'))
+      && $node instanceof NodeInterface) {
+      if (!empty($node->get('field_page_style')->getValue())) {
+        foreach ($node->get('field_page_style')->getValue() as $class) {
+          $classes[] = $class['value'];
+        }
+        $additional_usps_class = implode(' ', $classes);
+        $variables['usps_additional_classes'] = $additional_usps_class;
+      }
+    }
+  }
 }

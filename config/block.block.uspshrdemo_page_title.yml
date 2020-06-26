@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - block_class
-    - ctools
     - system
   theme:
     - uspshrdemo
@@ -16,7 +15,7 @@ _core:
 id: uspshrdemo_page_title
 theme: uspshrdemo
 region: global_page_title
-weight: -16
+weight: -17
 provider: null
 plugin: page_title_block
 settings:
@@ -27,13 +26,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/search\r\n/search/*"
     negate: true
     context_mapping: {  }
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      page: page
-    negate: true
-    context_mapping:
-      node: '@node.node_route_context:node'
+    

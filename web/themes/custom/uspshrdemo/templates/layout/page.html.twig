@@ -69,28 +69,34 @@
 {% block head %}
 
 {% if page.global_branding_top or page.global_search_top or page.global_notifications_top or page.global_myaccount_top %}
-  <div class="row global_header h-100 justify-content-end align-items-center">
+  <div class="row global-header h-100 justify-content-end align-items-center">
       {% if page.global_branding_top %}
       <div class="col-lg-6 col-md-6 col-sm-12 global-branding float-left">
           {{ page.global_branding_top }}
       </div>
       {% endif %}
-      <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class= "row m-0">
-              {% if page.global_search_top %}
-              <div class="col-lg-10 col-md-8 global-search d-flex justify-content-end">
-                  {{ page.global_search_top }}
-              </div>
-              {% endif %}
-              {% if page.global_notifications_top %}
-              <div class="col-lg-1 col-md-2 global-notifications  d-flex justify-content-center align-items-center">
-                  {{ page.global_notifications_top }}
-              </div>
-              {% endif %}
-              {% if page.global_myaccount_top %}
-              <div class="col-lg-1 col-md-2 global-myaccount d-flex justify-content-center align-items-center">
-                  {{ page.global_myaccount_top }}
-              </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 global-header-utilities">
+          <div class= "row m-0 justify-content-end">
+              {% if logged_in %}
+                {% if page.global_search_top %}
+                <div class="col-lg-10 col-md-8 global-search d-flex justify-content-end">
+                    {{ page.global_search_top }}
+                </div>
+                {% endif %}
+                {% if page.global_notifications_top %}
+                <div class="col-lg-1 col-md-2 global-notifications  d-flex justify-content-center align-items-center">
+                    {{ page.global_notifications_top }}
+                </div>
+                {% endif %}
+                {% if page.global_myaccount_top %}
+                <div class="col-lg-1 col-md-2 global-myaccount d-flex justify-content-center align-items-center">
+                    {{ page.global_myaccount_top }}
+                </div>
+                {% endif %}
+              {% else %}
+                <div class="col justify-content-center align-items-right">
+                    {{ page.global_myaccount_top }}
+                </div>
               {% endif %}
           </div>
       </div>
@@ -173,26 +179,30 @@
           </div>
         </div>
         {% endif %}
-        <main{{ content_attributes.addClass('container').removeClass('col')  }}>
-          <section class="section">
-              <a id="main-content" tabindex="-1"></a>
-              {{ page.content }}
-          </section>
-        </main>
-        {% if page.sidebar_first %}
-          <div{{ sidebar_first_attributes }}>
-          <aside class="section" role="complementary">
-              {{ page.sidebar_first }}
-          </aside>
+        <div class="container main-content-wrapper">
+          <div class="row">
+            <main{{ content_attributes }}>
+              <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+              </section>
+            </main>
+            {% if page.sidebar_first %}
+              <div{{ sidebar_first_attributes }}>
+              <aside class="section" role="complementary">
+                  {{ page.sidebar_first }}
+              </aside>
+              </div>
+            {% endif %}
+            {% if page.sidebar_second %}
+              <div{{ sidebar_second_attributes }}>
+              <aside class="section" role="complementary">
+                  {{ page.sidebar_second }}
+              </aside>
+              </div>
+            {% endif %}
           </div>
-        {% endif %}
-        {% if page.sidebar_second %}
-          <div{{ sidebar_second_attributes }}>
-          <aside class="section" role="complementary">
-              {{ page.sidebar_second }}
-          </aside>
-          </div>
-        {% endif %}
+        </div>
       </div>
   </div>
   {% if page.content_bottom_left or page.content_bottom_middle or page.content_bottom_right %}
