@@ -1,3 +1,13 @@
+body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page)
+#block-uspshrdemo-content {
+  padding: 0;
+  background: none;
+}
+
+.region-global-page-title-wrapper {
+  min-height: 248px;
+}
+
 /* General Tab */
 .main-content .profile .field--name-user-picture {
   left: 300px;
@@ -17,6 +27,12 @@
 .vertical-tabs__panes,
 .vertical-tabs__menu {
   box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.05);
+  margin-top: -40px;
+}
+
+.vertical-tabs__panes {
+  background: #fff;
+  border-radius: 5px;
 }
 
 .vertical-tabs__menu,
@@ -34,6 +50,7 @@
   margin-right: 40px;
   max-height: 286px;
   width: 230px;
+  border-radius: 5px;
 }
 
 .vertical-tabs__menu-item {
