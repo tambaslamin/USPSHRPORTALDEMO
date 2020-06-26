@@ -1,12 +1,16 @@
-jQuery(document).ready(function() {
-    jQuery('.field--name-user-picture a').hover(function () {
-        jQuery('.user-menu-global').show();//hover on
-    });
-    jQuery(document).mouseup(function(e) {
-        var container = jQuery(".user-menu-global");
-        if (!".user-menu-global".is(e.target) && container.has(e.target).length === 0) 
-        {
-            container.hide();
-        }
-    });
-});
+(function ($, Drupal) {
+  Drupal.behaviors.myModuleBehavior = {
+    attach: function (context, settings) {
+      jQuery(document).ready(function() {
+        jQuery('.region-global-myaccount-top .field--name-user-picture', context).hover(
+          function () {
+            jQuery('.user-menu-global').show();//hover on
+          },
+          function () {
+            jQuery('.user-menu-global').hide();//hover off
+          }
+        );
+      });
+    }
+  };
+})(jQuery, Drupal);
