@@ -1,0 +1,27 @@
+uuid: c560d857-a050-4a60-8e84-c34ae483236d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_page_style
+field_name: field_page_style
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: white-background
+      label: 'White Background with Page Title Centered Over White Background'
+    -
+      value: transparent-background
+      label: 'Transparent Background / Left Aligned Title in Blue Region'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

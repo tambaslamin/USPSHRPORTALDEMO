@@ -1,0 +1,21 @@
+uuid: 8aa64a2c-ea2b-479e-b51a-a916e4f3fd1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_style
+    - node.type.page
+  module:
+    - options
+id: node.page.field_page_style
+field_name: field_page_style
+entity_type: node
+bundle: page
+label: 'Page Style Override'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

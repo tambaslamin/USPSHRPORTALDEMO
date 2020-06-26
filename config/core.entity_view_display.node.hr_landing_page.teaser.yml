@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.hr_landing_page.body
+    - field.field.node.hr_landing_page.field_page_style
     - field.field.node.hr_landing_page.layout_builder__layout
     - node.type.hr_landing_page
   module:
@@ -25,6 +26,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_page_style: true
   flag_email_node: true
   flag_subscribe_node: true
   langcode: true
