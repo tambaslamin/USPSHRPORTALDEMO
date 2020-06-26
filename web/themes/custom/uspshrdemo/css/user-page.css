@@ -1,0 +1,323 @@
+/* General Tab */
+.main-content .profile .field--name-user-picture {
+  left: 300px;
+  top: 106px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.vertical-tabs {
+  border: 0;
+}
+
+.vertical-tabs__panes,
+.vertical-tabs__menu {
+  box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.05);
+}
+
+.vertical-tabs__menu,
+.vertical-tabs__menu-item {
+  background: #fff;
+  border: 0;
+}
+
+.vertical-tabs-item.fiert {
+  margin-top: 31px;
+}
+
+.vertical-tabs__menu {
+  padding-top: 30px;
+  margin-right: 40px;
+  max-height: 286px;
+  width: 230px;
+}
+
+.vertical-tabs__menu-item {
+  padding: 0 0 0 30px;
+}
+
+.vertical-tabs__menu-item a {
+  font-family: Helvetica Neue;
+  font-size: 16px;
+  color: #1073ea;
+}
+
+.vertical-tabs__menu-item a:hover {
+  outline: none;
+}
+
+.vertical-tabs__menu-item.is-selected a {
+  color: #161c2d;
+}
+
+.field--name-field-profile-first-name {
+  margin-right: 5px;
+}
+
+.field--name-field-profile-first-name,
+.field--name-field-profile-last-name {
+  font-family: Helvetica Neue;
+  font-size: 31px;
+  color: #161c2d;
+  margin-top: 76px;
+  float: left;
+}
+
+.field--name-field-profile-first-name,
+.field--name-field-profile-title {
+  margin-left: 161px;
+}
+
+.field--name-field-profile-title {
+  clear: left;
+  padding-bottom: 34px;
+}
+
+.field--name-field-profile-start-date {
+  border-top: 1px solid #ededed;
+  padding-top: 30px;
+  margin-top: 62px;
+}
+
+.field--name-field-profile-start-date,
+.field--name-field-profile-primary-location {
+  margin-bottom: 47px;
+}
+
+.field--name-field-profile-start-date .field__label,
+.field--name-field-profile-primary-location .field__label,
+.field--name-field-profile-language .field__label,
+.vertical-tabs__panes .form-group .fieldset-legend,
+.details-wrapper .form-group .fieldset-legend {
+  color: #333366;
+  font-size: 12px;
+  font-family: Helvetica Neue;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 165px;
+  margin-right: 45px;
+  float: left;
+}
+
+.vertical-tabs__panes .form-group legend {
+  width: 165px;
+  margin-right: 45px;
+  float: left;
+}
+
+.vertical-tabs__panes {
+  padding: 30px 30px 60px 30px;
+}
+
+.field--name-field-profile-start-date .field__item,
+.field--name-field-profile-primary-location .field__item,
+.field--name-field-profile-language .field__item {
+  font-size: 16px;
+  color: #161c2d;
+}
+
+.main-content .profile .address,
+.field--name-field-profile-telephone,
+.field--name-field-profile-email {
+  margin-left: 210px;
+}
+
+.field--name-field-profile-email {
+  word-break: break-all;
+}
+
+.profile .address,
+.field--name-field-profile-telephone {
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: 992px) {
+  .field--name-field-profile-start-date .field__label,
+  .field--name-field-profile-primary-location .field__label,
+  .field--name-field-profile-language .field__label,
+  .vertical-tabs__panes .form-group .fieldset-legend,
+  .vertical-tabs__panes .form-group legend {
+    width: 150px;
+  }
+
+  .main-content .profile .address,
+  .field--name-field-profile-telephone,
+  .field--name-field-profile-email {
+    margin-left: 195px;
+  }
+}
+
+@media (max-width: 767px) {
+  .details-wrapper {
+    padding-bottom: 60px;
+  }
+
+  .main-content .profile .field--name-user-picture {
+    position: initial;
+  }
+
+  .field--name-field-profile-first-name,
+  .field--name-field-profile-title {
+    margin-left: 0;
+  }
+
+  .field--name-field-profile-first-name,
+  .field--name-field-profile-last-name {
+    font-size: 26px;
+  }
+
+  .field--name-field-profile-start-date .field__label,
+  .field--name-field-profile-primary-location .field__label,
+  .field--name-field-profile-language .field__label,
+  .details-wrapper .form-group .fieldset-legend,
+  .details-wrapper .form-group legend {
+    width: 145px;
+    margin-right: auto;
+  }
+
+  .details-wrapper .form-group legend {
+    float: left;
+  }
+
+  .main-content .profile .address,
+  .field--name-field-profile-telephone,
+  .field--name-field-profile-email {
+    margin-left: 145px;
+  }
+}
+
+@media (max-width: 576px) {
+  .field--name-field-profile-start-date .field__label,
+  .field--name-field-profile-primary-location .field__label,
+  .field--name-field-profile-language .field__label,
+  .details-wrapper .form-group .fieldset-legend,
+  .details-wrapper .form-group legend {
+    float: none;
+  }
+
+  .main-content .profile .address,
+  .field--name-field-profile-telephone,
+  .field--name-field-profile-email {
+    margin-left: 0;
+  }
+}
+
+/* configure dashboard tab */
+
+.field--name-field-profile-your-apps .field__label,
+.field--name-field-profile-your-links .field__label {
+  color: #333366;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.field--name-field-profile-your-apps  .field__items,
+.field--name-field-profile-your-links .field__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.field--name-field-profile-your-apps  .field__item,
+.field--name-field-profile-your-links .field__item {
+  flex: 0 0 33%;
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: 15px;
+  padding-left: 32px;
+}
+
+.field--name-field-profile-your-apps  .field__item:checked,
+.field--name-field-profile-your-links .field__item:checked {
+  color: #161c2d;
+}
+
+.field--name-field-profile-your-links .field__label {
+  margin-top: 60px;
+}
+
+/* Preferences tab */
+.field--name-field-profile-email-frequenc .field__label {
+  display: none;
+}
+.field--name-field-profile-email-preferences,
+.field--name-field-profile-task-preferences,
+.field--name-field-profile-notifications-pref {
+  border-top: 1px solid #ededed;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.field--name-field-profile-email-preferences .field__label,
+.field--name-field-profile-task-preferences .field__label,
+.field--name-field-profile-notifications-pref .field__label {
+  color: #333366;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 32px;
+  flex: 0 0 40%;
+}
+
+.field--name-field-profile-email-preferences .field__item,
+.field--name-field-profile-email-frequenc .field__item {
+  font-size: 15px;
+  color: #161c2d;
+  padding-top: 30px;
+  position: absolute;
+}
+
+.field--name-field-profile-email-preferences .field__item {
+  left: 41%;
+}
+.field--name-field-profile-email-frequenc .field__item {
+  right: 20%;
+  top: 60px;
+}
+
+.field--name-field-profile-task-preferences .field__items,
+.field--name-field-profile-notifications-pref .field__items {
+  flex: 0 0 60%;
+  padding-top: 30px;
+}
+
+.field--name-field-profile-task-preferences .field__item,
+.field--name-field-profile-notifications-pref .field__item {
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: 12px;
+  padding-left: 32px;
+}
+
+.field--name-field-profile-task-preferences .field__item:checked,
+.field--name-field-profile-notifications-pref .field__item:checked {
+  color: #161c2d;
+}
+
+@media (max-width: 1200px) {
+  .field--name-field-profile-email-frequenc .field__item {
+    position: static;
+    padding-left: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .field--name-field-profile-your-apps  .field__item,
+  .field--name-field-profile-your-links .field__item {
+    flex: 0 0 50%;
+  }
+
+  .field--name-field-profile-email-preferences .field__item,
+  .field--name-field-profile-email-frequenc .field__item {
+    position: static;
+    padding-left: 0;
+  }
+}

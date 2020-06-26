@@ -3,6 +3,7 @@ global-styling:
   js:
     js/global.js: {}
     js/user-menu.js: {}
+    js/user-profile.js: {}
   css:
     component:
       css/style.css: {}
@@ -42,3 +43,7 @@ home-page:
   css:
     theme:
       css/home-page.css: {}
+user:
+  css:
+    theme:
+      css/user-page.css: {}
