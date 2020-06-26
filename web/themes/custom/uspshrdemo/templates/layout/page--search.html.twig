@@ -17,7 +17,6 @@
 * - logged_in: A flag indicating if the user is registered and signed in.
 * - is_admin: A flag indicating if the user has permission to access
 *   administration pages.
-
 *
 * Site identity:
 * - front_page: The URL of the front page. Use this instead of base_path when
@@ -159,51 +158,49 @@
           </div>
           {% endif %}
         </div>
-        <div class="main-content-wrapper">
-          {% if page.content_top_left or page.content_top_middle or page.content_top_right %}
-          <div class="container">
-            <div class="global-content-top row">
-                <div class="content_top_left col-xs-12 col-sm-4">
-                  {% if page.content_top_left %}
-                    {{ page.content_top_left }}
-                  {% endif %}
-                </div>
-                <div class="content_top_middle col-xs-12 col-sm-4">
-                  {% if page.content_top_middle %}
-                    {{ page.content_top_middle }}
-                  {% endif %}
-                </div>
-                <div class="content_top_right col-xs-12 col-sm-4">
-                  {% if page.content_top_right %}
-                    {{ page.content_top_right }}
-                  {% endif %}
-                </div>
-            </div>
+        {% if page.content_top_left or page.content_top_middle or page.content_top_right %}
+        <div class="container">
+          <div class="global-content-top row">
+              <div class="content_top_left col-xs-12 col-sm-4">
+                {% if page.content_top_left %}
+                  {{ page.content_top_left }}
+                {% endif %}
+              </div>
+              <div class="content_top_middle col-xs-12 col-sm-4">
+                {% if page.content_top_middle %}
+                  {{ page.content_top_middle }}
+                {% endif %}
+              </div>
+              <div class="content_top_right col-xs-12 col-sm-4">
+                {% if page.content_top_right %}
+                  {{ page.content_top_right }}
+                {% endif %}
+              </div>
           </div>
-          {% endif %}
-          <div class="container">
-            <div class="row">
-              <main{{ content_attributes }}>
-                <section class="section">
-                    <a id="main-content" tabindex="-1"></a>
-                    {{ page.content }}
-                </section>
-              </main>
-              {% if page.sidebar_first %}
-                <div{{ sidebar_first_attributes }}>
-                <aside class="section" role="complementary">
-                    {{ page.sidebar_first }}
-                </aside>
-                </div>
-              {% endif %}
-              {% if page.sidebar_second %}
-                <div{{ sidebar_second_attributes }}>
-                <aside class="section" role="complementary">
-                    {{ page.sidebar_second }}
-                </aside>
-                </div>
-              {% endif %}
-            </div>
+        </div>
+        {% endif %}
+        <div class="container main-content-wrapper">
+          <div class="row">
+            <main{{ content_attributes }}>
+              <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                  {{ page.content }}
+              </section>
+            </main>
+            {% if page.sidebar_first %}
+              <div{{ sidebar_first_attributes }}>
+              <aside class="section" role="complementary">
+                  {{ page.sidebar_first }}
+              </aside>
+              </div>
+            {% endif %}
+            {% if page.sidebar_second %}
+              <div{{ sidebar_second_attributes }}>
+              <aside class="section" role="complementary">
+                  {{ page.sidebar_second }}
+              </aside>
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>

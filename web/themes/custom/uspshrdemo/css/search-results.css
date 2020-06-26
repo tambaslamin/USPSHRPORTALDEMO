@@ -14,6 +14,15 @@
 }
 
 /* sidebar facets and main content containers  */
+.page-view-pantheon-search .region-global-page-title-wrapper {
+  min-height: 248px;
+}
+
+body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page)
+#block-uspshrdemo-content {
+  padding: 0;
+  background: none;
+}
 
 .sidebar_first,
 .main-content {
