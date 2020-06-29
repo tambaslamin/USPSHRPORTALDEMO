@@ -1,0 +1,30 @@
+uuid: 38ff041f-20a4-4bbe-ab59-538072b71e16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_other_personalization
+    - taxonomy.vocabulary.hr_other_personalization
+  module:
+    - user
+id: user.user.field_user_other_personalization
+field_name: field_user_other_personalization
+entity_type: user
+bundle: user
+label: 'User Other personalization'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hr_other_personalization: hr_other_personalization
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

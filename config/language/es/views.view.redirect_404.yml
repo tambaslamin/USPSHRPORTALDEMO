@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        path:
+          label: Ruta
+      filters:
+        path:
+          expose:
+            label: Ruta

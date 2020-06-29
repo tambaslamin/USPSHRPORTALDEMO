@@ -1,0 +1,21 @@
+uuid: fffab37c-4def-45bf-9c21-c0853d5bf44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_location
+    - node.type.hr_announcement
+  module:
+    - geolocation
+id: node.hr_announcement.field_hr_content_location
+field_name: field_hr_content_location
+entity_type: node
+bundle: hr_announcement
+label: 'Content Location'
+description: 'Used for personalization'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

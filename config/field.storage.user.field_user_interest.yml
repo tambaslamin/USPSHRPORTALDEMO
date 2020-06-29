@@ -1,0 +1,20 @@
+uuid: 48d79c69-a811-4aa6-b3e4-8315acef5cd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_user_interest
+field_name: field_user_interest
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 2feb570b-5eb6-4370-a2d5-06b34aee09f8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Personalization Preferences'
+vid: hr_personalization_preferences
+description: 'Personalization Interests'
+weight: 0

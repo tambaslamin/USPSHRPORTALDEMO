@@ -1,0 +1,11 @@
+uuid: 3e840c4b-d94e-4abd-855c-cf59fd0b89e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hr_personalization_interests
+id: taxonomy_term.hr_personalization_interests
+target_entity_type_id: taxonomy_term
+target_bundle: hr_personalization_interests
+default_langcode: site_default
+language_alterable: false

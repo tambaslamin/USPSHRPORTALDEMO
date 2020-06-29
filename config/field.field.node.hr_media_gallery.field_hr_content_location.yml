@@ -1,0 +1,21 @@
+uuid: 79c1c326-5c65-4a79-9125-426eee2a5441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_location
+    - node.type.hr_media_gallery
+  module:
+    - geolocation
+id: node.hr_media_gallery.field_hr_content_location
+field_name: field_hr_content_location
+entity_type: node
+bundle: hr_media_gallery
+label: 'Content Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

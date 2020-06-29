@@ -7,7 +7,6 @@ dependencies:
   module:
     - block_class
     - system
-    - user
     - views
   theme:
     - uspshrdemo
@@ -32,10 +31,3 @@ visibility:
     pages: "/search\r\n/search/*"
     negate: true
     context_mapping: {  }
-  user_role:
-    id: user_role
-    roles:
-      authenticated: authenticated
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

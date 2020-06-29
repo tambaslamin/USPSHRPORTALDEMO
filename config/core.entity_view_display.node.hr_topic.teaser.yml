@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.hr_topic.body
+    - field.field.node.hr_topic.field_hr_content_interest
+    - field.field.node.hr_topic.field_hr_content_location
+    - field.field.node.hr_topic.field_hr_content_other_interest
     - node.type.hr_topic
   module:
     - text
@@ -24,6 +27,9 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_hr_content_interest: true
+  field_hr_content_location: true
+  field_hr_content_other_interest: true
   flag_email_node: true
   flag_subscribe_node: true
   langcode: true

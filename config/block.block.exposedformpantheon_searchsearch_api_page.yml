@@ -5,18 +5,14 @@ dependencies:
   config:
     - views.view.pantheon_search
   module:
-    - block_class
     - system
     - views
   theme:
     - uspshrdemo
-third_party_settings:
-  block_class:
-    classes: col
 id: exposedformpantheon_searchsearch_api_page
 theme: uspshrdemo
-region: global_page_title
-weight: -15
+region: highlighted
+weight: -12
 provider: null
 plugin: 'views_exposed_filter_block:pantheon_search-search_api_page'
 settings:

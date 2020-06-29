@@ -8,6 +8,10 @@ dependencies:
     - field.field.node.forms.feeds_item
     - field.field.node.forms.field_file_upload
     - field.field.node.forms.field_form_category
+    - field.field.node.forms.field_hr_content_interest
+    - field.field.node.forms.field_hr_content_location
+    - field.field.node.forms.field_hr_content_other_interest
+    - field.field.node.forms.field_hr_content_preferences
     - field.field.node.forms.field_webform
     - node.type.forms
   module:
@@ -38,6 +42,10 @@ hidden:
   content_moderation_control: true
   feeds_item: true
   field_file_upload: true
+  field_hr_content_interest: true
+  field_hr_content_location: true
+  field_hr_content_other_interest: true
+  field_hr_content_preferences: true
   field_webform: true
   flag_email_node: true
   flag_subscribe_node: true

@@ -1,0 +1,21 @@
+uuid: 7e528ffa-9bcb-476b-a6f9-1366060ef437
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_location
+    - node.type.hr_event
+  module:
+    - geolocation
+id: node.hr_event.field_hr_content_location
+field_name: field_hr_content_location
+entity_type: node
+bundle: hr_event
+label: 'Content Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

@@ -1,0 +1,30 @@
+uuid: fe344600-d8c4-4dff-9975-b8aa8140fe6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_interest
+    - taxonomy.vocabulary.hr_personalization_interests
+  module:
+    - user
+id: user.user.field_user_interest
+field_name: field_user_interest
+entity_type: user
+bundle: user
+label: 'User Interest'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hr_personalization_interests: hr_personalization_interests
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
