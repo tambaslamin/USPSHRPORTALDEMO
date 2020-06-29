@@ -50,15 +50,15 @@
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page #edit-bef-sort-options {
   display: none;
 }
-#block-employeelogin p {
+.employee-login-block p {
   margin: 0;
 }
-#block-employeelogin a.btn-light {
+.employee-login-block a.btn-light {
   border: 1px solid #d8d8d8;
   background: #fff;
   color: #1073ea;
 }
-#block-employeelogin a.btn-light:hover,
-#block-employeelogin a.btn-light:focus {
+.employee-login-block a.btn-light:hover,
+.employee-login-block a.btn-light:focus {
   background: #d8d8d8;
 }
