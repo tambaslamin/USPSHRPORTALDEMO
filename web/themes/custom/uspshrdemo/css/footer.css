@@ -80,12 +80,12 @@
   .site-footer nav {
     justify-content: center;
   }
-  .site-footer .nav > .nav-item, 
+  .site-footer .nav > .nav-item,
   .site-footer .nav > .nav-link {
     width: 100%;
     text-align: center;
   }
-  .site-footer .nav > .nav-item a, 
+  .site-footer .nav > .nav-item a,
   .site-footer .nav > .nav-link a {
     padding: 1em;
     display: block;
