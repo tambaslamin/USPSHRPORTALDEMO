@@ -1,5 +1,7 @@
-/* ---------- Header Section Styles ----------- */
-
+/**
+ * @file
+ * Header Section Styles.
+ */
 .global-branding .navbar-brand {
   width: 302px;
   height: 80px;
@@ -43,4 +45,20 @@
   .global-branding .navbar-brand {
     height: 49px;
   }
+}
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset.form-item-search label,
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page #edit-bef-sort-options {
+  display: none;
+}
+#block-employeelogin p {
+  margin: 0;
+}
+#block-employeelogin a.btn-light {
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  color: #1073ea;
+}
+#block-employeelogin a.btn-light:hover,
+#block-employeelogin a.btn-light:focus {
+  background: #d8d8d8;
 }

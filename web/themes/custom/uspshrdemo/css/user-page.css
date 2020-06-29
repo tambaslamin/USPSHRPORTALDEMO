@@ -206,6 +206,29 @@
     margin-left: 0;
   }
 }
+/* Retirement Eligibility */
+
+.field--name-field-profile-retirement-eligibl,
+.field--name-field-profile-retirement-date {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.field--name-field-profile-retirement-eligibl .field__label,
+.field--name-field-profile-retirement-date .field__label {
+  color: #333366;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex: 0 0 40%;
+}
+
+.field--name-field-profile-retirement-eligibl .field__item,
+.field--name-field-profile-retirement-date .field__item {
+  font-size: 16px;
+  color: #161c2d;
+}
+
 
 /* configure dashboard tab */
 
