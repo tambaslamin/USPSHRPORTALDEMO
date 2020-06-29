@@ -1,0 +1,21 @@
+uuid: 0cab91b1-f9b1-4526-8b03-3ecef2a68e81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_location
+    - node.type.landing_page_publicly_accessible
+  module:
+    - geolocation
+id: node.landing_page_publicly_accessible.field_hr_content_location
+field_name: field_hr_content_location
+entity_type: node
+bundle: landing_page_publicly_accessible
+label: 'Content Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

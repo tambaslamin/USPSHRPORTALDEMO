@@ -67,7 +67,7 @@
 */
 #}
 {% block head %}
-
+{{ attach_library('uspshrdemo/user') }}
 {% if page.global_branding_top or page.global_search_top or page.global_notifications_top or page.global_myaccount_top %}
   <div class="row global-header h-100 justify-content-end align-items-center">
       {% if page.global_branding_top %}

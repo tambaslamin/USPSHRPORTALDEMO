@@ -1,0 +1,21 @@
+uuid: d20b1df0-29a9-4382-81fd-1634bca8b7a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_location
+    - node.type.forms
+  module:
+    - geolocation
+id: node.forms.field_hr_content_location
+field_name: field_hr_content_location
+entity_type: node
+bundle: forms
+label: 'Content Location'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

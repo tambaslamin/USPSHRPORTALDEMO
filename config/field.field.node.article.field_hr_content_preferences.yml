@@ -1,0 +1,29 @@
+uuid: ddcba06d-1349-48bf-aecc-c0f45a3567c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_preferences
+    - node.type.article
+    - taxonomy.vocabulary.hr_personalization_preferences
+id: node.article.field_hr_content_preferences
+field_name: field_hr_content_preferences
+entity_type: node
+bundle: article
+label: 'Content Preferences'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hr_personalization_preferences: hr_personalization_preferences
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: hr_personalization_interests
+field_type: entity_reference

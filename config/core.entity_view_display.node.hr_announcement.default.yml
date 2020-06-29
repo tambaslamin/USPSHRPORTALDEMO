@@ -4,10 +4,34 @@ status: true
 dependencies:
   config:
     - field.field.node.hr_announcement.body
+    - field.field.node.hr_announcement.field_hr_content_interest
+    - field.field.node.hr_announcement.field_hr_content_location
+    - field.field.node.hr_announcement.field_hr_content_other_interest
+    - field.field.node.hr_announcement.field_hr_content_preferences
     - node.type.hr_announcement
   module:
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_personalization:
+      children:
+        - field_hr_content_location
+        - field_hr_content_interest
+        - field_hr_content_preferences
+        - field_hr_content_other_interest
+      parent_name: ''
+      weight: 3
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: false
+      label: Personalization
 id: node.hr_announcement.default
 targetEntityType: node
 bundle: hr_announcement
@@ -16,21 +40,25 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   content_moderation_control:
-    weight: -20
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
-    weight: 100
+    weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  field_hr_content_interest: true
+  field_hr_content_location: true
+  field_hr_content_other_interest: true
+  field_hr_content_preferences: true
   langcode: true
   private_message_link: true
   search_api_excerpt: true

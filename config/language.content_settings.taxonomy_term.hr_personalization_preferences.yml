@@ -1,0 +1,11 @@
+uuid: b4dbe9c4-ea13-4d31-be54-b3b92c0c48af
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hr_personalization_preferences
+id: taxonomy_term.hr_personalization_preferences
+target_entity_type_id: taxonomy_term
+target_bundle: hr_personalization_preferences
+default_langcode: site_default
+language_alterable: false

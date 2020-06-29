@@ -1,0 +1,29 @@
+uuid: 3e6fef2a-e58d-4401-bcc8-1c5db8ec43d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_interest
+    - node.type.hr_event
+    - taxonomy.vocabulary.hr_personalization_interests
+id: node.hr_event.field_hr_content_interest
+field_name: field_hr_content_interest
+entity_type: node
+bundle: hr_event
+label: 'Content Interest'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hr_personalization_interests: hr_personalization_interests
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -29,4 +29,3 @@ visibility:
     pages: "<front>\r\n/search\r\n/search/*"
     negate: true
     context_mapping: {  }
-    

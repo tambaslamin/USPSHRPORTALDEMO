@@ -1,0 +1,8 @@
+uuid: b903b5f7-e4c6-4cdc-af4e-9f24e1632ef8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Other Personalization Interests'
+vid: hr_other_personalization
+description: 'Other Personalization Interests'
+weight: 0

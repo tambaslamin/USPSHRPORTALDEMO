@@ -1,0 +1,29 @@
+uuid: c7bf0bc1-6426-4bf1-9986-a4c509026bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_content_other_interest
+    - node.type.blog_post
+    - taxonomy.vocabulary.hr_other_personalization
+id: node.blog_post.field_hr_content_other_interest
+field_name: field_hr_content_other_interest
+entity_type: node
+bundle: blog_post
+label: 'Other Content Interest'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hr_other_personalization: hr_other_personalization
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
