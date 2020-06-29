@@ -4,12 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.hr_landing_page.body
+    - field.field.node.hr_landing_page.field_hr_content_interest
+    - field.field.node.hr_landing_page.field_hr_content_location
+    - field.field.node.hr_landing_page.field_hr_content_preferences
     - field.field.node.hr_landing_page.field_page_style
     - field.field.node.hr_landing_page.layout_builder__layout
     - node.type.hr_landing_page
     - workflows.workflow.editorial
   module:
     - content_moderation
+    - geolocation
     - path
     - text
 id: node.hr_landing_page.default
@@ -33,6 +37,32 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_hr_content_interest:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_location:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_hr_content_preferences:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_page_style:
     weight: 122
     settings: {  }

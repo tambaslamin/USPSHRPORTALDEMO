@@ -7,6 +7,10 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.feeds_item
+    - field.field.node.article.field_hr_content_interest
+    - field.field.node.article.field_hr_content_location
+    - field.field.node.article.field_hr_content_other_interest
+    - field.field.node.article.field_hr_content_preferences
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.medium
@@ -66,6 +70,10 @@ hidden:
   comment: true
   content_moderation_control: true
   feeds_item: true
+  field_hr_content_interest: true
+  field_hr_content_location: true
+  field_hr_content_other_interest: true
+  field_hr_content_preferences: true
   langcode: true
   private_message_link: true
   search_api_excerpt: true

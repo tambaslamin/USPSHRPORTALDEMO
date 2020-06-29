@@ -7,12 +7,17 @@ dependencies:
     - field.field.node.forms.feeds_item
     - field.field.node.forms.field_file_upload
     - field.field.node.forms.field_form_category
+    - field.field.node.forms.field_hr_content_interest
+    - field.field.node.forms.field_hr_content_location
+    - field.field.node.forms.field_hr_content_other_interest
+    - field.field.node.forms.field_hr_content_preferences
     - field.field.node.forms.field_webform
     - node.type.forms
     - workflows.workflow.editorial
   module:
     - content_moderation
     - file
+    - geolocation
     - path
     - text
     - webform
@@ -46,6 +51,42 @@ content:
     region: content
   field_form_category:
     weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_interest:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_location:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_hr_content_other_interest:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_preferences:
+    weight: 127
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -109,6 +150,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

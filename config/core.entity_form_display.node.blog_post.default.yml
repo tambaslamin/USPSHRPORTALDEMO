@@ -6,15 +6,36 @@ dependencies:
     - field.field.node.blog_post.body
     - field.field.node.blog_post.feeds_item
     - field.field.node.blog_post.field_category
+    - field.field.node.blog_post.field_hr_content_interest
+    - field.field.node.blog_post.field_hr_content_location
+    - field.field.node.blog_post.field_hr_content_other_interest
+    - field.field.node.blog_post.field_hr_content_preferences
     - field.field.node.blog_post.field_image
     - image.style.thumbnail
     - node.type.blog_post
     - workflows.workflow.editorial
   module:
     - content_moderation
+    - field_group
+    - geolocation
     - image
     - path
     - text
+third_party_settings:
+  field_group:
+    group_personalization:
+      children: {  }
+      parent_name: ''
+      weight: 20
+      format_type: details
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Personalization
 id: node.blog_post.default
 targetEntityType: node
 bundle: blog_post
@@ -38,6 +59,42 @@ content:
     third_party_settings: {  }
   field_category:
     weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_interest:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_location:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_hr_content_other_interest:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hr_content_preferences:
+    weight: 124
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -102,6 +159,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
