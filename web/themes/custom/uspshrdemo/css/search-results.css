@@ -1,3 +1,40 @@
+/* Search input */
+.block-views-exposed-filter-blockpantheon-search-search-api-page,
+.block-views-exposed-filter-blockpantheon-search-search-api-page form,
+.block-views-exposed-filter-blockpantheon-search-search-api-page fieldset,
+.block-views-exposed-filter-blockpantheon-search-search-api-page .form-autocomplete {
+  width: 100%;
+}
+
+.block-views-exposed-filter-blockpantheon-search-search-api-page fieldset {
+  padding: 0 20px;
+}
+
+.block-views-exposed-filter-blockpantheon-search-search-api-page fieldset label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Helvetica Neue;
+}
+
+.block-views-exposed-filter-blockpantheon-search-search-api-page .form-autocomplete {
+  height: 60px;
+}
+
+button#edit-submit-pantheon-search--2 {
+  position: absolute;
+  top: 44px;
+  right: 20px;
+  width: 84px;
+  height: 42px;
+}
+
+.block-views-exposed-filter-blockpantheon-search-search-api-page details,
+.block-views-exposed-filter-blockpantheon-search-search-api-page .form-actions #edit-reset--2 {
+  display: none;
+}
+
+
 /* clean facets */
 .sidebar .block {
   background: transparent;
@@ -112,7 +149,9 @@ aside {
   margin: 0;
 }
 
-.pagination {
-  max-width: 54%;
-  margin: 0 auto;
+@media (min-width: 1200px) {
+  .pagination {
+    max-width: 54%;
+    margin: 0 auto;
+  }
 }
