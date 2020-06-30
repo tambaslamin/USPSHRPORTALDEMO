@@ -84,7 +84,6 @@
 
 ul.sf-menu ul {
   position: static;
-
 }
 
 .sf-has-clone-parent .sf-depth-3.sf-no-children:last-child {
@@ -180,7 +179,7 @@ li.sf-depth-2.main-menu-il.menuparent {
     flex-wrap: wrap !important;
   }
 
-  .header #navbar-main li.sf-multicolumn-wrapper  > ol .sf-depth-2{
+  .header #navbar-main li.sf-multicolumn-wrapper  > ol .sf-depth-2 {
     flex: 0 0 33% !important;
   }
 
@@ -188,4 +187,3 @@ li.sf-depth-2.main-menu-il.menuparent {
     padding: 0 0 14px 30px;
   }
 }
-
