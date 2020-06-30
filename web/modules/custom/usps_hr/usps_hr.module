@@ -59,15 +59,15 @@ function _post_save__hr_portal_pmo(EntityInterface $entity, $new = FALSE) {
     $message['content'] = 'Message';
     if ($new) {
       $notification_message = 'You have been assigned a new task: ' . $task_title;
-      $message['content'] = strlen($message) > $character_limit 
-        ? substr($message, 0, $character_limit) . '...' 
+      $message['content'] = strlen($message) > $character_limit
+        ? substr($message, 0, $character_limit) . '...'
         : $message;
     }
     else {
       $notification_message = 'A task that you are assigned to has been updated: ' . $task_title;
-      $message['content'] = strlen($notification_message) > $character_limit 
+      $message['content'] = strlen($notification_message) > $character_limit
         ? substr($notification_message, 0, $character_limit) . '...'
-        : $notification_message ;
+        : $notification_message;
     }
     // For each assigned user.
     foreach ($entity->get('field_hr_assigned_to')->referencedEntities() as $uid => $referenced_user) {
@@ -79,7 +79,7 @@ function _post_save__hr_portal_pmo(EntityInterface $entity, $new = FALSE) {
     if (!$new) {
       $notification_message = 'A task that you created has been updated: ' . $task_title;
       $message['content'] = strlen($notification_message) > $character_limit
-        ? substr($notification_message, 0, $character_limit) . '...' 
+        ? substr($notification_message, 0, $character_limit) . '...'
         : $notification_message;
       $notificationService->logNotification($message, 'create', $entity);
     }
