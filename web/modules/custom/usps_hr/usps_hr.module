@@ -70,7 +70,7 @@ function _post_save__hr_portal_pmo(EntityInterface $entity, $new = FALSE) {
         : $notification_message;
     }
     // For each assigned user.
-    foreach ($entity->get('field_hr_assigned_to')->referencedEntities() as $uid => $referenced_user) {
+    foreach ($entity->get('field_hr_assigned_to')->referencedEntities() as $referenced_user) {
       $referenced_user_id = $referenced_user->get('field_hr_user')->getValue()[0]['target_id'];
       $notificationService->logNotification($message, 'update', $entity, $referenced_user_id);
     }
