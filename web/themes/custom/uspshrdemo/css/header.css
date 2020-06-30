@@ -32,7 +32,7 @@
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page,
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page > .form-row,
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset,
-.region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset input {  
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset input {
   flex: 1;
 }
 .region-global-search-top form {
@@ -128,7 +128,7 @@
 /**
  * Employee login block.
  */
- .employee-login-block p {
+.employee-login-block p {
   margin: 0;
 }
 .employee-login-block a.btn-light {
