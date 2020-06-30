@@ -187,7 +187,7 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 }
 
 @media (max-width: 767px) {
-  .field-group-tabs-wrapper > .col-sm-8v{
+  .field-group-tabs-wrapper > .col-sm-8v {
     background: #ffffff;
     border-radius: 5px;
     padding: 15px;
