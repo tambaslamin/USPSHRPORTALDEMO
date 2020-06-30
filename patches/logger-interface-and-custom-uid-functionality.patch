@@ -1,0 +1,79 @@
+diff --git a/js/notifications.js b/js/notifications.js
+index 2e767dd..539c1d2 100644
+--- a/js/notifications.js
++++ b/js/notifications.js
+@@ -104,6 +104,7 @@
+           revisedSentance = 'You have no unread notifications';
+           $('.fyi-notification').html(revisedSentance);
+           $('#notificationcount').removeClass('notification-icon');
++          $('#notificationcount').parent().removeClass('unread-notifications');
+           $('.clear-all-notification').remove();
+         }
+         else {
+diff --git a/src/Services/NotificationsWidgetService.php b/src/Services/NotificationsWidgetService.php
+index fdf33be..6f47270 100644
+--- a/src/Services/NotificationsWidgetService.php
++++ b/src/Services/NotificationsWidgetService.php
+@@ -6,7 +6,7 @@ use Drupal\Core\Database\Connection;
+ use Drupal\Core\Session\AccountProxy;
+ use Symfony\Component\HttpFoundation\RequestStack;
+ use Drupal\Core\Config\ConfigFactoryInterface;
+-use Drupal\Core\Logger\LoggerChannelFactory;
++use Drupal\Core\Logger\LoggerChannelFactoryInterface;
+ use Drupal\Core\Utility\Token;
+ use Drupal\Component\Datetime\TimeInterface;
+ 
+@@ -71,7 +71,7 @@ class NotificationsWidgetService {
+   Connection $database,
+   RequestStack $request,
+   ConfigFactoryInterface $config_factory,
+-  LoggerChannelFactory $loggerFactory,
++  LoggerChannelFactoryInterface $loggerFactory,
+   Token $token,
+   TimeInterface $time) {
+     $this->currentUser   = $current_user;
+@@ -100,17 +100,19 @@ class NotificationsWidgetService {
+   /**
+    * Stores the data into notification table.
+    */
+-  public function logNotification($message, $userAction, $entity) {
++  public function logNotification($message, $userAction, $entity, $entityUid = NULL) {
+     // Get logged user session.
+     $currentUser = $this->currentUser;
+-    if ($entity->bundle() == 'user') {
+-      $entityUid = $entity->id();
+-    }
+-    elseif (method_exists($entity, 'getOwner')) {
+-      $entityUid = $entity->getOwner()->id();
+-    }
+-    else {
+-      $entityUid = 1;
++    if (empty($entityUid)) {
++      if ($entity->bundle() == 'user') {
++        $entityUid = $entity->id();
++      }
++      elseif (method_exists($entity, 'getOwner')) {
++        $entityUid = $entity->getOwner()->id();
++      }
++      else {
++        $entityUid = 1;
++      }
+     }
+ 
+     // Fetch the excluded entities to notifications.
+diff --git a/templates/notifications-widget.html.twig b/templates/notifications-widget.html.twig
+index 55d0b3a..189beb9 100644
+--- a/templates/notifications-widget.html.twig
++++ b/templates/notifications-widget.html.twig
+@@ -7,7 +7,11 @@
+ 
+ <ul class="nav navbar-nav navbar-right">
+   <li class="dropdown">
++    {% if unread > 0 %}
++    <a href="#notifications-panel" class="dropdown-toggle unread-notifications" data-toggle="dropdown" aria-expanded="false">
++    {% else %}
+     <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
++    {% endif %}
+       {% if unread > 0 %}
+         <i data-count="{{ unread }}" id="notificationcount" class="glyphicon glyphicon-bell notification-icon"></i>
+       {% else %}

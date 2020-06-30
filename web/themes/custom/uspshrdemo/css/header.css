@@ -2,14 +2,44 @@
  * @file
  * Header Section Styles.
  */
+
+/**
+ * Admin toolbar adjustment.
+ */
+#admin-toolbar-search-tab {
+  padding-top: 4px;
+}
+#admin-toolbar-search-tab .form-group {
+  margin: 0;
+}
+
+/**
+ * Logo.
+ */
 .global-branding .navbar-brand {
   width: 302px;
   height: 80px;
   left: 0px;
   top: 0px;
 }
+
+/**
+ * Search.
+ */
+.region-global-search-top,
+.region-global-search-top #block-exposed-form-pantheon-search-api-global,
+.region-global-search-top #block-exposed-form-pantheon-search-api-global > .content,
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page,
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page > .form-row,
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset,
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset input {  
+  flex: 1;
+}
+.region-global-search-top form {
+  display: flex;
+  align-items: center;
+}
 .region-global-search-top .form-control {
-  width: 532px;
   height: 50px;
 }
 .region-global-search-top .form-submit {
@@ -18,21 +48,11 @@
 .region-global-search-top .form-group {
   margin-bottom: 0;
 }
-.region-global-myaccount-top .image-style-thumbnail {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  margin: 0;
-}
-@media (max-width: 768px) {
-  .region-global-search-top .form-control {
-    width: 380px;
-  }
+.region-global-search-top .views-exposed-form .content {
+  display: flex;
+  height: 100%;
 }
 @media (max-width: 576px) {
-  .region-global-search-top .form-control {
-    max-width: 242px;
-  }
   .global-search {
     width: 70%;
   }
@@ -50,7 +70,65 @@
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page #edit-bef-sort-options {
   display: none;
 }
-.employee-login-block p {
+
+/**
+ * Notifications widget.
+ */
+#block-notificationwidgetblock .notification-icon-read,
+#block-notificationwidgetblock .nav {
+  margin: 0;
+}
+#block-notificationwidgetblock a.dropdown-toggle,
+#block-notificationwidgetblock .notification-icon-read::before {
+  display: block;
+  content: "";
+  background-image: url('data:image/svg+xml,<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/><path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/></svg>');
+  background-repeat: no-repeat;
+  -webkit-background-size: 32px;
+  background-size: 32px;
+  background-position: center;
+  width: 42px;
+  height: 42px;
+}
+#block-notificationwidgetblock a.dropdown-toggle.unread-notifications {
+  background-image: url('data:image/svg+xml,<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell-fill" fill="red" xmlns="http://www.w3.org/2000/svg"><path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/></svg>');
+}
+#block-notificationwidgetblock a.dropdown-toggle::after {
+  display: none;
+}
+#block-notificationwidgetblock .notify-drop {
+  left: auto !important;
+  right: 0 !important;
+  transform: none !important;
+  top: unset !important;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+#block-notificationwidgetblock .drop-content {
+  border: none;
+}
+#block-notificationwidgetblock .notification-icon::after {
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background: transparent;
+  right: 0;
+}
+
+/**
+ * My Account.
+ */
+.region-global-myaccount-top .image-style-thumbnail {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+/**
+ * Employee login block.
+ */
+ .employee-login-block p {
   margin: 0;
 }
 .employee-login-block a.btn-light {

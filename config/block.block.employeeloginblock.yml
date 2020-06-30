@@ -2,11 +2,8 @@ uuid: ac74839d-f31d-4d46-b8b9-32ea67b384a9
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:2f193632-b21b-4587-8cdc-a4ea8b2f7f3b'
   module:
     - block_class
-    - block_content
     - user
   theme:
     - uspshrdemo
