@@ -8,15 +8,37 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 }
 
 /* General Tab */
+.profile-group {
+  display: inline-block;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.profile-name {
+  display: inline-block;
+  width: 79%;
+  padding-top: 14px;
+  padding-left: 30px;
+}
+
 .main-content .profile .field--name-user-picture {
-  left: 300px;
-  top: 106px;
   width: 100px;
   height: 100px;
-  position: absolute;
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
+  float: left;
+}
+
+.tabTitle {
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333366;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 .vertical-tabs {
@@ -79,24 +101,16 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   font-family: Helvetica Neue;
   font-size: 31px;
   color: #161c2d;
-  margin-top: 76px;
   float: left;
 }
 
-.field--name-field-profile-first-name,
 .field--name-field-profile-title {
-  margin-left: 161px;
-}
-
-.field--name-field-profile-title {
-  clear: left;
-  padding-bottom: 34px;
+  margin-left: 130px;
 }
 
 .field--name-field-profile-start-date {
   border-top: 1px solid #ededed;
   padding-top: 30px;
-  margin-top: 62px;
 }
 
 .field--name-field-profile-start-date,
@@ -153,6 +167,10 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 
 
 @media (max-width: 992px) {
+  .profile-name {
+    width: 75%;
+  }
+
   .field--name-field-profile-start-date .field__label,
   .field--name-field-profile-primary-location .field__label,
   .field--name-field-profile-language .field__label,
@@ -169,6 +187,17 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 }
 
 @media (max-width: 767px) {
+  .field-group-tabs-wrapper > .col-sm-8v {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .profile-name {
+    width: 60%;
+    padding-left: 15px;
+  }
+
   .details-wrapper {
     padding-bottom: 60px;
   }
@@ -178,13 +207,8 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   }
 
   .field--name-field-profile-first-name,
-  .field--name-field-profile-title {
-    margin-left: 0;
-  }
-
-  .field--name-field-profile-first-name,
   .field--name-field-profile-last-name {
-    font-size: 26px;
+    font-size: 18px;
   }
 
   .field--name-field-profile-start-date .field__label,
