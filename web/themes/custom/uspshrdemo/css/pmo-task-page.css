@@ -1,0 +1,78 @@
+/*  cleaning */
+body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page) #block-uspshrdemo-content {
+  padding: 0;
+  margin-top: -40px;
+  border-radius: 5px;
+}
+
+.row {
+  margin: 0;
+}
+
+.region-global-page-title-wrapper {
+  min-height: 248px;
+}
+
+.view-content table tr,
+.table-striped tbody tr:nth-of-type(odd),
+.table-hover tbody tr:hover,
+.view-content table thead th {
+    border: 0;
+    background: none;
+}
+
+th#view-uid-table-column,
+td.views-field.views-field-uid {
+  display: none;
+}
+
+td.views-field.views-field-field-hr-description {
+  width: 40%;
+}
+
+.js td .dropbutton-multiple,
+.table-responsive {
+  padding: 0
+}
+
+/* theming */
+.view-header,
+.view-filters {
+  padding: 30px;
+}
+
+.js-form-item label,
+.view-content table thead th {
+  font-family: Helvetica Neue;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333366;
+}
+
+.view-content table thead th {
+  padding-bottom: 25px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.view-content tbody td {
+  border-bottom: 1px solid #eff1f7;
+}
+
+th#view-field-hr-description-table-column,
+td.views-field.views-field-field-hr-description {
+  padding-left: 30px;
+}
+
+.view-content {
+  overflow-x: scroll;
+}
+
+@media (min-width: 768px) {
+  .view-content table td {
+    vertical-align: middle;
+  }
+}
