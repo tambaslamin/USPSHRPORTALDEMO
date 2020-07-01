@@ -17,8 +17,8 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 .table-striped tbody tr:nth-of-type(odd),
 .table-hover tbody tr:hover,
 .view-content table thead th {
-    border: 0;
-    background: none;
+  border: 0;
+  background: none;
 }
 
 th#view-uid-table-column,
@@ -32,7 +32,7 @@ td.views-field.views-field-field-hr-description {
 
 .js td .dropbutton-multiple,
 .table-responsive {
-  padding: 0
+  padding: 0;
 }
 
 /* theming */
