@@ -216,7 +216,12 @@
             "file-mapping": {
                 "[project-root]/.editorconfig": false
             }
-        }
+        },
+        "patches": {
+            "drupal/notificationswidget": {
+              "LoggerFactory to use interface; enhancements for USPS HR": "patches/logger-interface-and-custom-uid-functionality.patch"
+            }
+          }
     },
     "config": {
         "optimize-autoloader": true,

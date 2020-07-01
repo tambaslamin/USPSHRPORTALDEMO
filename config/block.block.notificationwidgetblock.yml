@@ -1,0 +1,22 @@
+uuid: e7e16d71-2f76-4cc3-aa2b-b1ce50469b3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - notifications_widget
+  theme:
+    - uspshrdemo
+id: notificationwidgetblock
+theme: uspshrdemo
+region: global_notifications_top
+weight: 0
+provider: null
+plugin: notification_widget_block
+settings:
+  id: notification_widget_block
+  label: 'Notification widget block'
+  provider: notifications_widget
+  label_display: '0'
+  block_notification_type: '1'
+  block_notification_logs_display: 0
+visibility: {  }

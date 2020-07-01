@@ -5,6 +5,8 @@
  * Provides functionalities specific to the USPS HR Portal.
  */
 
+use Drupal\Core\Entity\EntityInterface;
+
 /**
  * {@inheritdoc}
  */
@@ -14,5 +16,72 @@ function usps_hr_form_alter(&$form, &$form_state, $form_id) {
     $form['name']['#title'] = t('Employee ID');
     $form['name']['#attributes']['placeholder'] = 'Enter ACE ID or EIN';
     $form['pass']['#attributes']['placeholder'] = 'Enter your password';
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ *
+ * Enable the notifications ECK hook.
+ */
+function usps_hr_hr_portal_pmo_update(EntityInterface $entity) {
+  _post_save__hr_portal_pmo($entity);
+}
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * Enable the notifications ECK hook.
+ */
+function usps_hr_hr_portal_pmo_insert(EntityInterface $entity) {
+  _post_save__hr_portal_pmo($entity, TRUE);
+}
+
+/**
+ * Acts on saved PMO task to create notifications.
+ */
+function _post_save__hr_portal_pmo(EntityInterface $entity, $new = FALSE) {
+  $task_title = (!empty($entity->get('title')->getValue()[0]['value']))
+    ? $entity->get('title')->getValue()[0]['value']
+    : 'Untitled Task';
+
+  $entity_id = $entity->id();
+
+  $notificationService = \Drupal::service('notifications_widget.logger');
+  $message = [];
+  $message['id'] = $entity_id;
+  $message['bundle'] = 'hr_task';
+  $message['content_link'] = 'hr_portal_pmo/' . $entity_id;
+
+  $character_limit = 100;
+
+  if ($entity->hasField('field_hr_assigned_to')) {
+    $message['content'] = 'Message';
+    if ($new) {
+      $notification_message = 'You have been assigned a new task: ' . $task_title;
+      $message['content'] = strlen($message) > $character_limit
+        ? substr($message, 0, $character_limit) . '...'
+        : $message;
+    }
+    else {
+      $notification_message = 'A task that you are assigned to has been updated: ' . $task_title;
+      $message['content'] = strlen($notification_message) > $character_limit
+        ? substr($notification_message, 0, $character_limit) . '...'
+        : $notification_message;
+    }
+    // For each assigned user.
+    foreach ($entity->get('field_hr_assigned_to')->referencedEntities() as $referenced_user) {
+      $referenced_user_id = $referenced_user->get('field_hr_user')->getValue()[0]['target_id'];
+      $notificationService->logNotification($message, 'update', $entity, $referenced_user_id);
+    }
+
+    // For author of task.
+    if (!$new) {
+      $notification_message = 'A task that you created has been updated: ' . $task_title;
+      $message['content'] = strlen($notification_message) > $character_limit
+        ? substr($notification_message, 0, $character_limit) . '...'
+        : $notification_message;
+      $notificationService->logNotification($message, 'create', $entity);
+    }
   }
 }
