@@ -74,3 +74,116 @@
 .user-menu-global  #account-userlogout a {
   color: #fff;
 }
+
+/* megamenu mobile */
+.sf-has-clone-parent {
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.sf-menu ul {
+  position: static;
+}
+
+.sf-has-clone-parent .sf-depth-3.sf-no-children:last-child {
+  margin-bottom: 30px;
+}
+
+li.sf-depth-2.main-menu-il.menuparent {
+  width: 50% !important;
+}
+
+.sub-menu-title {
+  color: #333366;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  margin-bottom: 14px;
+  padding-left: 15px !important;
+}
+
+.header #navbar-main li.sf-multicolumn-wrapper .sf-depth-3 {
+  padding: 0 0 14px 30px;
+}
+
+.header #navbar-main li.sf-multicolumn-wrapper .sf-depth-3 a,
+.sf-has-clone-parent .sf-depth-3 {
+  color: #1073ea;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+}
+.header #navbar-main li.sf-multicolumn-wrapper .sf-depth-3 a {
+  padding: 0;
+}
+
+.sf-has-clone-parent .sf-depth-3 {
+  padding: 0 15px 15px;
+  font-size: 12px;
+}
+
+/* megamenu tablet */
+@media (min-width: 768px) {
+  .header #navbar-main li.sf-multicolumn-wrapper {
+    width: 90vw !important;
+    border-radius: 5px;
+  }
+
+  .header #navbar-main li.sf-multicolumn-wrapper ol {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+
+  li.sf-depth-2.main-menu-il.menuparent {
+    width: 100% !important;
+    flex: 0 0 33%;
+  }
+
+  li.sf-depth-2.main-menu-il.menuparent .sf-multicolumn-column {
+    width: 100% !important;
+  }
+
+  .header #navbar-main li.sf-multicolumn-wrapper .sf-depth-3 {
+    padding: 0 1em 14px;
+  }
+}
+
+/* megamenu desktop */
+@media (min-width: 992px) {
+  .sub-menu-title {
+    padding-left: 30px !important;
+  }
+
+  .menuparent ul.sf-multicolumn {
+    margin-top: 17px !important;
+    max-width: 960px !important;
+  }
+
+  .header #navbar-main li.sf-multicolumn-wrapper ,
+  .header #navbar-main li.sf-multicolumn-wrapper  > ol {
+    max-width: 960px !important;
+  }
+
+  ul.sf-menu ul {
+    position: absolute;
+  }
+
+  .sf-multicolumn-column {
+    width: 100% !important;
+  }
+
+  .header #navbar-main li.sf-multicolumn-wrapper  > ol {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .header #navbar-main li.sf-multicolumn-wrapper  > ol .sf-depth-2 {
+    flex: 0 0 33% !important;
+  }
+
+  .header #navbar-main li.sf-multicolumn-wrapper .sf-depth-3 {
+    padding: 0 0 14px 30px;
+  }
+}
