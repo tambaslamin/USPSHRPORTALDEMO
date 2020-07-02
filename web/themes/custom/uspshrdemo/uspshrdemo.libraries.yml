@@ -51,3 +51,7 @@ search-results:
   css:
     theme:
       css/search-results.css: {}
+pmo-task:
+  css:
+    theme:
+      css/pmo-task-page.css: {}
