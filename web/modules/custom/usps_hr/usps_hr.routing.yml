@@ -1,0 +1,7 @@
+usps_hr.content:
+  path: '/notifications'
+  defaults:
+    _controller: '\Drupal\usps_hr\Controller\NotificationsController::content'
+    _title: 'Notifications'
+  requirements:
+    _permission: 'access content'

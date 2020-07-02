@@ -51,7 +51,7 @@ body:not(.path-frontpage) .region-global-page-title-wrapper {
 }
 body:not(.node--type-page) .block-page-title-block h1 ,
 body.transparent-background .block-page-title-block h1 {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 /**
@@ -94,4 +94,9 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 body.white-background #content article {
   background: #fff;
   padding: 15px 100px 50px;
+}
+body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page) #block-uspshrdemo-content {
+  padding: 30px;
+  margin-top: -30px;
+  border-radius: 4px;
 }

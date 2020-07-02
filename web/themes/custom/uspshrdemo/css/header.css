@@ -114,6 +114,42 @@
   background: transparent;
   right: 0;
 }
+#block-notificationwidgetblock .dropdown-menu {
+  padding: 30px;
+}
+#block-notificationwidgetblock .drop-content {
+  padding-bottom: 20px;
+}
+#block-notificationwidgetblock .view-all-notifications {
+  display: block;
+  padding: 20px 0 0;
+  border-top: 1px solid #ededed;
+  font-size: 14px;
+}
+#block-notificationwidgetblock .notification-items {
+  padding: 15px 0 !important;
+}
+#block-notificationwidgetblock .notification-items:first-of-type {
+  padding: 0 0 15px 0 !important;
+}
+#block-notificationwidgetblock .notification-diff {
+  display: block;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #999999;
+  margin-top: 10px;
+}
+#block-notificationwidgetblock  .notify-drop .drop-content li:hover {
+  background: transparent;
+}
+#block-notificationwidgetblock .notify-drop li.unread {
+  border-left: none;
+}
 
 /**
  * My Account.
@@ -123,6 +159,10 @@
   height: 42px;
   border-radius: 50%;
   margin: 0;
+}
+.region-global-myaccount-top {
+  height: 60px;
+  margin-bottom: -20px;
 }
 
 /**
@@ -139,9 +179,4 @@
 .employee-login-block a.btn-light:hover,
 .employee-login-block a.btn-light:focus {
   background: #d8d8d8;
-}
-
-.region-global-myaccount-top {
-  height: 60px;
-  margin-bottom: -20px;
 }
