@@ -57,3 +57,7 @@ notifications-page:
   css:
     theme:
       css/notifications-page.css: {}
+pmo-task:
+  css:
+    theme:
+      css/pmo-task-page.css: {}
