@@ -16,6 +16,27 @@ body:not(.page-user-login) #main-wrapper {
 }
 
 /**
+ * Alerts.
+ */
+.alert::before {
+  display: none !important;
+}
+
+/**
+ * Icons.
+ */
+.card .svg-inline--fa,
+.card .svg-inline--fa {
+  background: #1073ea;
+  color: #fff;
+  border: 15px solid #1073ea;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+/**
  * Nav Tabs.
  */
 .region-global-page-title nav.tabs .nav-link:not(.active) {

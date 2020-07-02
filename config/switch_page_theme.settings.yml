@@ -1,0 +1,22 @@
+spt_table:
+  -
+    status: '1'
+    pages: '/user/*/edit'
+    theme: uspshrdemo
+    roles:
+      authenticated: authenticated
+      anonymous: 0
+      hr_former_employee: 0
+      ace_user: 0
+      hr_standard_user: 0
+      hr_professional: 0
+      hr_content_owner: 0
+      hr_supervisor: 0
+      hr_manager: 0
+      administrator: 0
+    weight: '-10'
+    language:
+      en: 0
+      es: 0
+      fr: 0
+    remove: Remove
