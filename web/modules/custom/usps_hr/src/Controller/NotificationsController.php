@@ -64,7 +64,6 @@ class NotificationsController extends ControllerBase {
     $currentUser = $this->currentUser;
 
     $uid = $currentUser->id();
-    $notificationType = 0;
     $totalCount = 0;
     $unreadCount = 0;
     $notificationList = [];
