@@ -123,6 +123,15 @@ li.sf-depth-2.main-menu-il.menuparent {
   font-size: 12px;
 }
 
+ul.sf-menu.sf-accordion.ssf-hidden,
+.sf-accordion-toggle {
+  display: none;
+}
+
+ul.sf-menu.sf-accordion.sf-expanded {
+  display: block;
+}
+
 /* megamenu tablet */
 @media (min-width: 768px) {
   .header #navbar-main li.sf-multicolumn-wrapper {
