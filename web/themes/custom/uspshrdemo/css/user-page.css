@@ -11,7 +11,8 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   min-height: 248px;
 }
 
-body:not(.node--type-page) .block-page-title-block h1, body.transparent-background .block-page-title-block h1 {
+body:not(.node--type-page) .block-page-title-block h1,
+body.transparent-background .block-page-title-block h1 {
   margin-bottom: 10px;
 }
 
