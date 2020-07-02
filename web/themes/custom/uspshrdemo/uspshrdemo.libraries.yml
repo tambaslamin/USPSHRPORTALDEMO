@@ -51,6 +51,12 @@ search-results:
   css:
     theme:
       css/search-results.css: {}
+notifications-page:
+  js:
+    js/notifications-page.js: {}
+  css:
+    theme:
+      css/notifications-page.css: {}
 pmo-task:
   css:
     theme:
