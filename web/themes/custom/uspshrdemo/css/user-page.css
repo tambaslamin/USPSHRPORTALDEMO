@@ -1,10 +1,59 @@
+/**
+ * @file
+ * Profile page styles.
+ */
 body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page) #block-uspshrdemo-content {
   padding: 0;
   background: none;
 }
+details#edit-usps-person-profile-profiles-0 > summary {
+  display: none;
+}
+fieldset.card.card-body {
+  padding: 0;
+}
+article fieldset,
+article .field {
+  display: flex;
+}
+.profile--type--usps-person-profile {
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .profile,
+  form.user-form {
+    padding: 15px;
+    border-radius: 4px;
+    background: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .vertical-tabs__menu {
+    width: 25%;
+  }
+  .vertical-tabs__panes {
+    max-width: 70% !important;
+    flex: 0 0 70%;
+  }
+}
 
-.region-global-page-title-wrapper {
-  min-height: 248px;
+/* Tabs menu */
+.vertical-tabs__menu .vertical-tabs__menu-item {
+  padding: 0 0 0 0;
+}
+
+body:not(.node--type-page) .block-page-title-block h1,
+body.transparent-background .block-page-title-block h1 {
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  margin-bottom: 7em;
+}
+
+.page-subtitle p {
+  padding-left: 15px;
+  margin: 0;
 }
 
 /* General Tab */
@@ -13,14 +62,12 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   margin-bottom: 35px;
   width: 100%;
 }
-
-.profile-name {
+article .profile-name {
   display: inline-block;
   width: 79%;
   padding-top: 14px;
   padding-left: 30px;
 }
-
 .main-content .profile .field--name-user-picture {
   width: 100px;
   height: 100px;
@@ -29,7 +76,6 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   z-index: 1;
   float: left;
 }
-
 .tabTitle {
   font-family: Helvetica Neue;
   font-weight: bold;
@@ -40,84 +86,67 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   padding-bottom: 27px;
   margin-bottom: 30px;
 }
-
 .vertical-tabs {
+  align-items: flex-start;
   border: 0;
 }
-
 .vertical-tabs__panes,
 .vertical-tabs__menu {
   box-shadow: 0px 24px 64px rgba(22, 27, 45, 0.05);
-  margin-top: -40px;
 }
-
 .vertical-tabs__panes {
   background: #fff;
   border-radius: 5px;
+  width: 70%;
+  margin-left: 5%;
 }
-
 .vertical-tabs__menu,
 .vertical-tabs__menu-item {
   background: #fff;
   border: 0;
 }
-
 .vertical-tabs-item.fiert {
   margin-top: 31px;
 }
-
 .vertical-tabs__menu {
-  padding-top: 30px;
-  margin-right: 40px;
-  max-height: 286px;
-  width: 230px;
   border-radius: 5px;
+  padding: 15px;
 }
-
 .vertical-tabs__menu-item {
   padding: 0 0 0 30px;
 }
-
 .vertical-tabs__menu-item a {
   font-family: Helvetica Neue;
   font-size: 16px;
   color: #1073ea;
 }
-
 .vertical-tabs__menu-item a:hover {
   outline: none;
 }
-
 .vertical-tabs__menu-item.is-selected a {
   color: #161c2d;
 }
-
-.field--name-field-profile-first-name {
+article .field--name-field-profile-first-name {
   margin-right: 5px;
 }
-
-.field--name-field-profile-first-name,
-.field--name-field-profile-last-name {
+article .field--name-field-profile-first-name,
+article .field--name-field-profile-last-name {
   font-family: Helvetica Neue;
   font-size: 31px;
   color: #161c2d;
   float: left;
 }
-
-.field--name-field-profile-title {
+article .field--name-field-profile-title {
   margin-left: 130px;
 }
-
 .field--name-field-profile-start-date {
   border-top: 1px solid #ededed;
   padding-top: 30px;
 }
-
 .field--name-field-profile-start-date,
 .field--name-field-profile-primary-location {
   margin-bottom: 47px;
 }
-
 .field--name-field-profile-start-date .field__label,
 .field--name-field-profile-primary-location .field__label,
 .field--name-field-profile-language .field__label,
@@ -130,58 +159,51 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   font-weight: bold;
   width: 165px;
   margin-right: 45px;
-  float: left;
+  display: flex;
 }
-
-.vertical-tabs__panes .form-group legend {
+#edit-usps-person-profile-profiles-0-entity-field-profile-notifications-pref-wrapper .fieldset-legend,
+#edit-usps-person-profile-profiles-0-entity-field-profile-notifications-pref--wrapper .fieldset-legend {
+  width: auto;
+}
+article .vertical-tabs__panes .form-group legend {
   width: 165px;
   margin-right: 45px;
   float: left;
 }
-
 .vertical-tabs__panes {
   padding: 30px 30px 60px 30px;
 }
-
 .field--name-field-profile-start-date .field__item,
 .field--name-field-profile-primary-location .field__item,
 .field--name-field-profile-language .field__item {
   font-size: 16px;
   color: #161c2d;
 }
-
-.main-content .profile .address,
-.field--name-field-profile-telephone,
-.field--name-field-profile-email {
-  margin-left: 210px;
-}
-
 .field--name-field-profile-email {
   word-break: break-all;
 }
-
 .profile .address,
 .field--name-field-profile-telephone {
   margin-bottom: 30px;
 }
-
+#edit-usps-person-profile-profiles-0-entity-field-profile-manager-0-format {
+  display: none;
+}
 
 @media (max-width: 992px) {
-  .profile-name {
+  article .profile-name {
     width: 75%;
   }
-
-  .field--name-field-profile-start-date .field__label,
-  .field--name-field-profile-primary-location .field__label,
-  .field--name-field-profile-language .field__label,
-  .vertical-tabs__panes .form-group .fieldset-legend,
-  .vertical-tabs__panes .form-group legend {
+  article .field--name-field-profile-start-date .field__label,
+  article .field--name-field-profile-primary-location .field__label,
+  article .field--name-field-profile-language .field__label,
+  article .vertical-tabs__panes .form-group .fieldset-legend,
+  article .vertical-tabs__panes .form-group legend {
     width: 150px;
   }
-
-  .main-content .profile .address,
-  .field--name-field-profile-telephone,
-  .field--name-field-profile-email {
+  article .main-content .profile .address,
+  article .field--name-field-profile-telephone,
+  article .field--name-field-profile-email {
     margin-left: 195px;
   }
 }
@@ -192,41 +214,34 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
     border-radius: 5px;
     padding: 15px;
   }
-
-  .profile-name {
+  article .profile-name {
     width: 60%;
     padding-left: 15px;
   }
-
   .details-wrapper {
     padding-bottom: 60px;
   }
-
   .main-content .profile .field--name-user-picture {
     position: initial;
   }
-
   .field--name-field-profile-first-name,
   .field--name-field-profile-last-name {
     font-size: 18px;
   }
-
-  .field--name-field-profile-start-date .field__label,
-  .field--name-field-profile-primary-location .field__label,
-  .field--name-field-profile-language .field__label,
-  .details-wrapper .form-group .fieldset-legend,
-  .details-wrapper .form-group legend {
+  article .field--name-field-profile-start-date .field__label,
+  article .field--name-field-profile-primary-location .field__label,
+  article .field--name-field-profile-language .field__label,
+  article .details-wrapper .form-group .fieldset-legend,
+  article .details-wrapper .form-group legend {
     width: 145px;
     margin-right: auto;
   }
-
   .details-wrapper .form-group legend {
     float: left;
   }
-
-  .main-content .profile .address,
-  .field--name-field-profile-telephone,
-  .field--name-field-profile-email {
+  article .main-content .profile .address,
+  article .field--name-field-profile-telephone,
+  article .field--name-field-profile-email {
     margin-left: 145px;
   }
 }
@@ -239,21 +254,19 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   .details-wrapper .form-group legend {
     float: none;
   }
-
   .main-content .profile .address,
   .field--name-field-profile-telephone,
   .field--name-field-profile-email {
     margin-left: 0;
   }
 }
-/* Retirement Eligibility */
 
+/* Retirement Eligibility */
 .field--name-field-profile-retirement-eligibl,
 .field--name-field-profile-retirement-date {
   display: flex;
   margin-bottom: 15px;
 }
-
 .field--name-field-profile-retirement-eligibl .field__label,
 .field--name-field-profile-retirement-date .field__label {
   color: #333366;
@@ -262,16 +275,19 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   text-transform: uppercase;
   flex: 0 0 40%;
 }
-
 .field--name-field-profile-retirement-eligibl .field__item,
 .field--name-field-profile-retirement-date .field__item {
   font-size: 16px;
   color: #161c2d;
 }
 
-
 /* configure dashboard tab */
-
+.field--name-field-profile-your-apps,
+.field--name-field-profile-your-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .field--name-field-profile-your-apps .field__label,
 .field--name-field-profile-your-links .field__label {
   color: #333366;
@@ -279,28 +295,23 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .field--name-field-profile-your-apps  .field__items,
 .field--name-field-profile-your-links .field__items {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
 }
-
 .field--name-field-profile-your-apps  .field__item,
 .field--name-field-profile-your-links .field__item {
   flex: 0 0 33%;
   font-size: 16px;
   color: #999999;
   margin-bottom: 15px;
-  padding-left: 32px;
 }
-
 .field--name-field-profile-your-apps  .field__item:checked,
 .field--name-field-profile-your-links .field__item:checked {
   color: #161c2d;
 }
-
 .field--name-field-profile-your-links .field__label {
   margin-top: 60px;
 }
@@ -308,6 +319,10 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
 /* Preferences tab */
 .field--name-field-profile-email-frequenc .field__label {
   display: none;
+}
+.field--name-field-profile-task-preferences,
+.field--name-field-profile-notifications-pref {
+  flex-direction: row;
 }
 .field--name-field-profile-email-preferences,
 .field--name-field-profile-task-preferences,
@@ -318,7 +333,6 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .field--name-field-profile-email-preferences .field__label,
 .field--name-field-profile-task-preferences .field__label,
 .field--name-field-profile-notifications-pref .field__label {
@@ -329,7 +343,6 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   padding-top: 32px;
   flex: 0 0 40%;
 }
-
 .field--name-field-profile-email-preferences .field__item,
 .field--name-field-profile-email-frequenc .field__item {
   font-size: 15px;
@@ -337,7 +350,6 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   padding-top: 30px;
   position: absolute;
 }
-
 .field--name-field-profile-email-preferences .field__item {
   left: 41%;
 }
@@ -345,21 +357,17 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   right: 20%;
   top: 60px;
 }
-
 .field--name-field-profile-task-preferences .field__items,
 .field--name-field-profile-notifications-pref .field__items {
   flex: 0 0 60%;
   padding-top: 30px;
 }
-
 .field--name-field-profile-task-preferences .field__item,
 .field--name-field-profile-notifications-pref .field__item {
   font-size: 16px;
   color: #999999;
   margin-bottom: 12px;
-  padding-left: 32px;
 }
-
 .field--name-field-profile-task-preferences .field__item:checked,
 .field--name-field-profile-notifications-pref .field__item:checked {
   color: #161c2d;
@@ -377,10 +385,31 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   .field--name-field-profile-your-links .field__item {
     flex: 0 0 50%;
   }
-
   .field--name-field-profile-email-preferences .field__item,
   .field--name-field-profile-email-frequenc .field__item {
     position: static;
     padding-left: 0;
+  }
+}
+
+/* Misc. components on user edit page. */
+form > fieldset.form-group,
+#edit-group-personalization,
+#edit-group-user-account-details,
+#edit-actions {
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+}
+#edit-group-personalization,
+#edit-group-user-account-details {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  form > fieldset.form-group,
+  #edit-group-personalization,
+  #edit-group-user-account-details,
+  #edit-actions {
+    margin-left: 30%;
   }
 }

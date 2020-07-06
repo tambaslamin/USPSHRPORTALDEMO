@@ -61,7 +61,7 @@ function _post_save__hr_portal_pmo(EntityInterface $entity, $new = FALSE) {
       $notification_message = 'You have been assigned a new task: ' . $task_title;
       $message['content'] = strlen($message) > $character_limit
         ? substr($message, 0, $character_limit) . '...'
-        : $message;
+        : $notification_message;
     }
     else {
       $notification_message = 'A task that you are assigned to has been updated: ' . $task_title;

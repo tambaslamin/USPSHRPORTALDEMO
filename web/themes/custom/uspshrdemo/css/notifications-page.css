@@ -2,7 +2,17 @@
  * @file
  * Notifications page styles.
  */
-
+.region-global-page-title-wrapper {
+  min-height: 248px;
+}
+body:not(.node--type-page) .block-page-title-block h1,
+body.transparent-background .block-page-title-block h1 {
+  margin-bottom: 10px;
+}
+.page-subtitle p {
+  padding-left: 15px;
+  margin: 0;
+}
 .notifications-header {
   font-family: Helvetica Neue;
   font-style: normal;
