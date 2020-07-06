@@ -516,7 +516,7 @@ display:
           hide_alter_empty: false
           plugin_id: custom
       title: ''
-      use_more: true
+      use_more: false
       use_more_always: false
       use_more_text: 'All Tasks'
       link_display: page_all_tasks
@@ -1001,7 +1001,7 @@ display:
           hide_alter_empty: false
           plugin_id: custom
       title: 'MY TASKS'
-      use_more: true
+      use_more: false
       use_more_always: false
       use_more_text: 'All To Dos'
       link_display: page_all_tasks
