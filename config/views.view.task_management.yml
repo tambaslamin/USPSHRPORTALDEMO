@@ -477,7 +477,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n<div class=\"col-sm-12\">\r\n<p>{{ title }} <br />\r\n{{ field_hr_due_date }}\r\n<br />Assigned to: {{ field_hr_assigned_to }}</p>\r\n</div>\r\n</div>"
+            text: "<div class=\"container\">\r\n<div class=\"col-sm-12\">\r\n<p>{{ title }} <br />\r\n{{ field_hr_due_date }}</p>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -962,7 +962,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n<div class=\"col-sm-12\">\r\n<p>{{ title }} <br />\r\n{{ field_hr_due_date }} <br />\r\nAssigned to: {{ field_hr_assigned_to }} <br />\r\nAuthored by: {{ uid }}</p>\r\n</div>\r\n</div>"
+            text: "<div class=\"container\">\r\n<div class=\"col-sm-12\">\r\n<p>{{ title }} <br />\r\n{{ field_hr_due_date }}</p>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
