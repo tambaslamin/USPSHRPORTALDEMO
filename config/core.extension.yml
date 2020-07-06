@@ -1,5 +1,4 @@
 module:
-  acquia_lift: 0
   actions_permissions: 0
   address: 0
   admin_toolbar: 0
@@ -55,13 +54,11 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  fontawesome: 0
   geolocation: 0
   geolocation_address: 0
   geolocation_google_maps: 0
   geolocation_google_places_api: 0
   geolocation_google_static_maps: 0
-  geolocation_here: 0
   gnode: 0
   google_analytics: 0
   group: 0
@@ -112,7 +109,6 @@ module:
   redirect: 0
   redirect_404: 0
   rest: 0
-  search: 0
   search_api: 0
   search_api_autocomplete: 0
   search_api_pantheon: 0
@@ -124,7 +120,6 @@ module:
   smart_ip: 0
   smart_ip_ip2location_bin_db: 0
   smart_ip_ipinfodb_web_service: 0
-  smart_ip_maxmind_geoip2_bin_db: 0
   smtp: 0
   superfish: 0
   switch_page_theme: 0
@@ -134,7 +129,6 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  toolbar_anti_flicker: 0
   tour: 0
   update: 0
   user: 0
