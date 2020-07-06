@@ -1,23 +1,26 @@
-uuid: ac74839d-f31d-4d46-b8b9-32ea67b384a9
+uuid: dd65a004-4330-4c2b-923f-58f8ec2333a9
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:c1f77ba5-c543-4168-990b-223fb6045df2'
   module:
     - block_class
+    - block_content
     - user
   theme:
     - uspshrdemo
 third_party_settings:
   block_class:
     classes: 'col text-right employee-login-block'
-id: employeeloginblock
+id: employeeloginblock_2
 theme: uspshrdemo
 region: global_myaccount_top
 weight: 0
 provider: null
-plugin: 'block_content:2f193632-b21b-4587-8cdc-a4ea8b2f7f3b'
+plugin: 'block_content:c1f77ba5-c543-4168-990b-223fb6045df2'
 settings:
-  id: 'block_content:2f193632-b21b-4587-8cdc-a4ea8b2f7f3b'
+  id: 'block_content:c1f77ba5-c543-4168-990b-223fb6045df2'
   label: 'Employee Login Block'
   provider: block_content
   label_display: '0'

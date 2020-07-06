@@ -14,9 +14,9 @@ spt_table:
       hr_supervisor: 0
       hr_manager: 0
       administrator: 0
-    weight: '-10'
     language:
-      en: 0
-      es: 0
-      fr: 0
+      en: en
+      es: es
+      fr: fr
+    weight: '-10'
     remove: Remove

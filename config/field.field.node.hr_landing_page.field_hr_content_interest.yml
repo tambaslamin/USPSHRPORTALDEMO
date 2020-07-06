@@ -10,7 +10,7 @@ id: node.hr_landing_page.field_hr_content_interest
 field_name: field_hr_content_interest
 entity_type: node
 bundle: hr_landing_page
-label: 'Content Interest'
+label: 'Personalization Interests'
 description: ''
 required: false
 translatable: true

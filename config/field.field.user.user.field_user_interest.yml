@@ -11,8 +11,8 @@ id: user.user.field_user_interest
 field_name: field_user_interest
 entity_type: user
 bundle: user
-label: 'User Interest'
-description: ''
+label: 'Personalization Interests'
+description: 'Use this field to personalize content for the user'
 required: false
 translatable: false
 default_value: {  }

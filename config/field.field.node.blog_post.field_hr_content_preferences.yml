@@ -10,8 +10,8 @@ id: node.blog_post.field_hr_content_preferences
 field_name: field_hr_content_preferences
 entity_type: node
 bundle: blog_post
-label: 'Content Preferences'
-description: 'Used for personalization'
+label: 'Personalization Preferences'
+description: 'Use this field to personalize content for the user'
 required: false
 translatable: false
 default_value: {  }

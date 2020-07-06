@@ -1,16 +1,16 @@
-uuid: 35bf522d-c317-4304-9923-1976c00a96bd
+uuid: 38473ffa-88b0-4b63-870a-4c7ec9f268c9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_hr_content_preferences
+    - field.storage.node.field_hr_content_other_interest
     - node.type.hr_landing_page
-    - taxonomy.vocabulary.hr_personalization_preferences
-id: node.hr_landing_page.field_hr_content_preferences
-field_name: field_hr_content_preferences
+    - taxonomy.vocabulary.hr_other_personalization
+id: node.hr_landing_page.field_hr_content_other_interest
+field_name: field_hr_content_other_interest
 entity_type: node
 bundle: hr_landing_page
-label: 'Personalization Preferences'
+label: 'Other Personalization Interests'
 description: ''
 required: false
 translatable: true
@@ -20,10 +20,10 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      hr_personalization_preferences: hr_personalization_preferences
+      hr_other_personalization: hr_other_personalization
     sort:
       field: name
       direction: asc
     auto_create: false
-    auto_create_bundle: hr_personalization_interests
+    auto_create_bundle: ''
 field_type: entity_reference
