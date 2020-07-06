@@ -10,11 +10,12 @@ registration: true
 roles:
   hr_former_employee: hr_former_employee
   authenticated: authenticated
+  ace_user: ace_user
   hr_standard_user: hr_standard_user
   hr_professional: hr_professional
   hr_content_owner: hr_content_owner
   hr_supervisor: hr_supervisor
   hr_manager: hr_manager
   administrator: administrator
-allow_revisions: true
-new_revision: true
+allow_revisions: false
+new_revision: false
