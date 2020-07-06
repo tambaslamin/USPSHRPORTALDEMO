@@ -12,7 +12,7 @@ field_name: field_user_other_personalization
 entity_type: user
 bundle: user
 label: 'User Other personalization'
-description: ''
+description: 'Use this field to personalize content for the user'
 required: false
 translatable: false
 default_value: {  }

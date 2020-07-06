@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.hr_landing_page.body
     - field.field.node.hr_landing_page.field_hr_content_interest
     - field.field.node.hr_landing_page.field_hr_content_location
+    - field.field.node.hr_landing_page.field_hr_content_other_interest
     - field.field.node.hr_landing_page.field_hr_content_preferences
     - field.field.node.hr_landing_page.field_page_style
     - field.field.node.hr_landing_page.layout_builder__layout
@@ -27,16 +28,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          81516999-1668-4503-ade3-6b5739c05361:
-            uuid: 81516999-1668-4503-ade3-6b5739c05361
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:hr_landing_page:links'
-            additional: {  }
-            weight: 0
           d1abfa84-1c11-4222-b767-a86ccd675fae:
             uuid: d1abfa84-1c11-4222-b767-a86ccd675fae
             region: content
@@ -51,7 +42,17 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 1
+            weight: 2
+          81516999-1668-4503-ade3-6b5739c05361:
+            uuid: 81516999-1668-4503-ade3-6b5739c05361
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:hr_landing_page:links'
+            additional: {  }
+            weight: 3
           180ae0d2-4279-4f0c-b7eb-6f59c7dd66c4:
             uuid: 180ae0d2-4279-4f0c-b7eb-6f59c7dd66c4
             region: content
@@ -61,54 +62,7 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:hr_landing_page:content_moderation_control'
             additional: {  }
-            weight: 2
-          bdaaff33-9fc1-461f-b0e6-cef763f165ea:
-            uuid: bdaaff33-9fc1-461f-b0e6-cef763f165ea
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:hr_landing_page:field_hr_content_interest'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 3
-          614c854e-a967-4812-8342-763c301b0eae:
-            uuid: 614c854e-a967-4812-8342-763c301b0eae
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:hr_landing_page:field_hr_content_location'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: geolocation_latlng
-            additional: {  }
-            weight: 4
-          ad61d2b0-93f8-4fbc-a6e9-098bb90ea3a5:
-            uuid: ad61d2b0-93f8-4fbc-a6e9-098bb90ea3a5
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:hr_landing_page:field_hr_content_preferences'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 5
+            weight: 1
         third_party_settings: {  }
 id: node.hr_landing_page.default
 targetEntityType: node
@@ -141,6 +95,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: geolocation_latlng
+    region: content
+  field_hr_content_other_interest:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_hr_content_preferences:
     weight: 105

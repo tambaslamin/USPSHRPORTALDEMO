@@ -11,8 +11,8 @@ id: user.user.field_user_preferences
 field_name: field_user_preferences
 entity_type: user
 bundle: user
-label: 'User Preferences'
-description: ''
+label: 'Personalization Preferences'
+description: 'Use this field to personalize content for the user'
 required: false
 translatable: false
 default_value: {  }

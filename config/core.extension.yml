@@ -120,6 +120,10 @@ module:
   serialization: 0
   settings_tray: 0
   shortcut: 0
+  smart_ip: 0
+  smart_ip_ip2location_bin_db: 0
+  smart_ip_ipinfodb_web_service: 0
+  smart_ip_maxmind_geoip2_bin_db: 0
   smtp: 0
   superfish: 0
   system: 0

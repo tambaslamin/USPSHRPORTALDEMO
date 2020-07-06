@@ -1,0 +1,8 @@
+version: lite
+edition: city
+user_account: null
+license_key: null
+db_auto_update: true
+bin_file_custom_path: null
+_core:
+  default_config_hash: fnYOwh8XmrJE6mWThh6ESo387LMfIvK4J8jDKJYL6Qg

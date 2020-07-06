@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.hr_landing_page.body
     - field.field.node.hr_landing_page.field_hr_content_interest
     - field.field.node.hr_landing_page.field_hr_content_location
+    - field.field.node.hr_landing_page.field_hr_content_other_interest
     - field.field.node.hr_landing_page.field_hr_content_preferences
     - field.field.node.hr_landing_page.field_page_style
     - field.field.node.hr_landing_page.layout_builder__layout
@@ -13,9 +14,29 @@ dependencies:
     - workflows.workflow.editorial
   module:
     - content_moderation
-    - geolocation
+    - field_group
+    - geolocation_google_maps
     - path
     - text
+third_party_settings:
+  field_group:
+    group_personalization:
+      children:
+        - field_hr_content_interest
+        - field_hr_content_preferences
+        - field_hr_content_other_interest
+        - field_hr_content_location
+      parent_name: ''
+      weight: 13
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: Personalization
 id: node.hr_landing_page.default
 targetEntityType: node
 bundle: hr_landing_page
@@ -23,7 +44,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 11
     settings:
       rows: 9
       summary_rows: 3
@@ -33,58 +54,97 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_hr_content_interest:
-    weight: 123
+    weight: 16
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
     region: content
   field_hr_content_location:
-    weight: 124
-    settings: {  }
+    weight: 19
+    settings:
+      centre:
+        fit_bounds:
+          enable: true
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      hide_textfield_form: false
+      google_map_settings:
+        map_features:
+          marker_infowindow:
+            enabled: true
+          control_locate:
+            enabled: true
+          control_zoom:
+            enabled: true
+          control_maptype:
+            enabled: true
+          control_geocoder:
+            enabled: true
+            weight: -100
+          control_recenter:
+            enabled: true
+        type: ROADMAP
+        zoom: 10
+        height: 400px
+        width: 100%
+        minZoom: 0
+        maxZoom: 20
+        gestureHandling: auto
     third_party_settings: {  }
-    type: geolocation_latlng
+    type: geolocation_googlegeocoder
     region: content
-  field_hr_content_preferences:
-    weight: 125
+  field_hr_content_other_interest:
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_hr_content_preferences:
+    weight: 17
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
     region: content
   field_page_style:
-    weight: 122
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 9
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -92,39 +152,39 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 10
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -133,7 +193,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
