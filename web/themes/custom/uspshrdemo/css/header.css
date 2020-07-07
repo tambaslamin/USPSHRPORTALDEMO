@@ -33,7 +33,13 @@
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page > .form-row,
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset,
 .region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset input {
-  flex: 1;
+  flex-grow: 1;
+}
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page fieldset {
+  flex-basis: 100%;
+}
+.region-global-search-top #views-exposed-form-pantheon-search-search-api-page #edit-actions {
+  display: none;
 }
 .region-global-search-top form {
   display: flex;
@@ -113,9 +119,21 @@
   border-radius: 50%;
   background: #ffffff;
   right: 0;
-  margin-top: 3px;
+  margin-top: 1px;
   margin-right: 6px;
   margin-left: 0;
+}
+@media (min-width: 768px) {
+  #block-notificationwidgetblock .notification-icon::after {
+    margin-top: -6px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #block-notificationwidgetblock .notification-icon::after {
+    margin-top: 0;
+    margin-right: 6px;
+  }
 }
 #block-notificationwidgetblock .dropdown-menu {
   padding: 30px;
