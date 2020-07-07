@@ -142,7 +142,7 @@ ul.sf-menu.sf-accordion.sf-expanded {
     display: block !important;
   }
   .navbar-collapse ul li.sf-depth-2,
-    .navbar-collapse ul li.sf-depth-3 {
+  .navbar-collapse ul li.sf-depth-3 {
     border-bottom: 0;
   }
   .header #navbar-main li.sf-multicolumn-wrapper ol {
