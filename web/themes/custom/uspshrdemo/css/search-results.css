@@ -64,8 +64,11 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   background: none;
 }
 
-.sidebar_first,
 .main-content {
+  margin-top: -10px;
+}
+
+.sidebar_first {
   margin-top: -40px;
 }
 
