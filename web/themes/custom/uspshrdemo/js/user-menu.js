@@ -7,6 +7,9 @@
       $('.region-global-myaccount-top', context).hover (
         function(e) {
           $('.user-menu-global').css("display", "block");
+          $('#superfish-account-accordion').removeClass("sf-hidden");
+          $('#superfish-account-accordion').css("display", "block");
+          $('#superfish-account-accordion').css("position", "relative");
         }
       );
     }
