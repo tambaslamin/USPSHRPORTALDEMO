@@ -2,6 +2,9 @@
  * @file
  * Profile page styles.
  */
+.js-quickedit-page-title {
+  display: none;
+}
 body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page) #block-uspshrdemo-content {
   padding: 0;
   background: none;
@@ -25,6 +28,9 @@ article .field {
     padding: 15px;
     border-radius: 4px;
     background: #fff;
+  }
+  .region-global-myaccount-top .profile {
+    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -190,6 +196,21 @@ article .vertical-tabs__panes .form-group legend {
   display: none;
 }
 
+/* Moderation Dashboard */
+.moderation-dashboard-region {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.moderation-dashboard-region .views-row {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page) #block-uspshrdemo-content {
+  margin-top: -40px;
+}
+
 @media (max-width: 992px) {
   article .profile-name {
     width: 75%;
@@ -215,7 +236,7 @@ article .vertical-tabs__panes .form-group legend {
     padding: 15px;
   }
   article .profile-name {
-    width: 60%;
+    width: calc(100% - 100px);
     padding-left: 15px;
   }
   .details-wrapper {
@@ -224,8 +245,8 @@ article .vertical-tabs__panes .form-group legend {
   .main-content .profile .field--name-user-picture {
     position: initial;
   }
-  .field--name-field-profile-first-name,
-  .field--name-field-profile-last-name {
+  article .field--name-field-profile-first-name,
+  article .field--name-field-profile-last-name {
     font-size: 18px;
   }
   article .field--name-field-profile-start-date .field__label,
@@ -242,7 +263,7 @@ article .vertical-tabs__panes .form-group legend {
   article .main-content .profile .address,
   article .field--name-field-profile-telephone,
   article .field--name-field-profile-email {
-    margin-left: 145px;
+    margin-left: 0;
   }
 }
 

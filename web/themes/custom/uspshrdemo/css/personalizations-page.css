@@ -1,0 +1,13 @@
+/**
+ * @file
+ * personalizations page specific CSS.
+ */
+.views-element-container {
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.views-element-container .card-body {
+  padding: 0;
+}

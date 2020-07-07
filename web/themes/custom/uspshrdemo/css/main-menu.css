@@ -138,7 +138,13 @@ ul.sf-menu.sf-accordion.sf-expanded {
     width: 90vw !important;
     border-radius: 5px;
   }
-
+  .navbar-collapse.collapse.show {
+    display: block !important;
+  }
+  .navbar-collapse ul li.sf-depth-2,
+  .navbar-collapse ul li.sf-depth-3 {
+    border-bottom: 0;
+  }
   .header #navbar-main li.sf-multicolumn-wrapper ol {
     display: flex;
     flex-wrap: wrap;

@@ -69,6 +69,7 @@ body:not(.path-frontpage) .region-global-page-title-wrapper {
   background: #3573b1;
   padding-top: 3em;
   color: #fff;
+  min-height: 248px;
 }
 body:not(.node--type-page) .block-page-title-block h1 ,
 body.transparent-background .block-page-title-block h1 {
@@ -120,4 +121,19 @@ body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landi
   padding: 30px;
   margin-top: -30px;
   border-radius: 4px;
+}
+
+/**
+ * Retiree page
+ */
+@media (min-width: 992px) {
+  .card-body-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 572px) {
+  .global-header-utilities .field--type-text-with-summary {
+    text-align: left;
+    padding: 10px 0;
+  }
 }
