@@ -4,6 +4,10 @@ status: true
 dependencies:
   module:
     - eck
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: custom
 id: hr_portal_pmo.field_hr_assigned_to
 field_name: field_hr_assigned_to
 entity_type: hr_portal_pmo

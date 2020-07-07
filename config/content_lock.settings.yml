@@ -1,7 +1,109 @@
 verbose: 1
-types: {  }
+types:
+  block_content: {  }
+  comment: {  }
+  contact_message: {  }
+  content_moderation_state: {  }
+  feeds_subscription: {  }
+  feeds_feed: {  }
+  file: {  }
+  group: {  }
+  group_content: {  }
+  media: {  }
+  node:
+    '*': '*'
+  path_alias: {  }
+  pm_thread_delete_time: {  }
+  private_message_thread: {  }
+  private_message: {  }
+  pm_thread_access_time: {  }
+  profile: {  }
+  redirect: {  }
+  search_api_task: {  }
+  shortcut: {  }
+  taxonomy_term: {  }
+  user: {  }
+  webform_submission: {  }
+  menu_link_content: {  }
+  hr_portal_pmo: {  }
 types_translation_lock: {  }
-types_js_lock: {  }
-form_op_lock: {  }
+types_js_lock:
+  - node
+form_op_lock:
+  block_content:
+    mode: 0
+    values: {  }
+  comment:
+    mode: 0
+    values: {  }
+  contact_message:
+    mode: 0
+    values: {  }
+  content_moderation_state:
+    mode: 0
+    values: {  }
+  feeds_subscription:
+    mode: 0
+    values: {  }
+  feeds_feed:
+    mode: 0
+    values: {  }
+  file:
+    mode: 0
+    values: {  }
+  group:
+    mode: 0
+    values: {  }
+  group_content:
+    mode: 0
+    values: {  }
+  media:
+    mode: 0
+    values: {  }
+  node:
+    mode: 0
+    values: {  }
+  path_alias:
+    mode: 0
+    values: {  }
+  pm_thread_delete_time:
+    mode: 0
+    values: {  }
+  private_message_thread:
+    mode: 0
+    values: {  }
+  private_message:
+    mode: 0
+    values: {  }
+  pm_thread_access_time:
+    mode: 0
+    values: {  }
+  profile:
+    mode: 0
+    values: {  }
+  redirect:
+    mode: 0
+    values: {  }
+  search_api_task:
+    mode: 0
+    values: {  }
+  shortcut:
+    mode: 0
+    values: {  }
+  taxonomy_term:
+    mode: 0
+    values: {  }
+  user:
+    mode: 0
+    values: {  }
+  webform_submission:
+    mode: 0
+    values: {  }
+  menu_link_content:
+    mode: 0
+    values: {  }
+  hr_portal_pmo:
+    mode: 0
+    values: {  }
 _core:
   default_config_hash: 6Ka3T1c-CIjEUO1Q64NXKksLthkMhj53a6zy4RJBtkc

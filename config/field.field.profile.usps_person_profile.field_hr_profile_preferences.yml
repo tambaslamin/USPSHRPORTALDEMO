@@ -1,0 +1,29 @@
+uuid: c0fc26c6-0e24-4b2a-a8a0-eb709084c2cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hr_profile_preferences
+    - profile.type.usps_person_profile
+    - taxonomy.vocabulary.hr_personalization_preferences
+id: profile.usps_person_profile.field_hr_profile_preferences
+field_name: field_hr_profile_preferences
+entity_type: profile
+bundle: usps_person_profile
+label: 'Content Based on your preferences'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hr_personalization_preferences: hr_personalization_preferences
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

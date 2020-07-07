@@ -8,3 +8,6 @@ display:
         status:
           group_info:
             label: Estado
+        permission:
+          expose:
+            label: Permiso

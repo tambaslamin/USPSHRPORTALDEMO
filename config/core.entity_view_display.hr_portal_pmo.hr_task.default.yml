@@ -26,18 +26,18 @@ mode: default
 content:
   changed:
     type: timestamp
-    weight: 13
+    weight: 12
     region: content
-    label: above
+    label: inline
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
   created:
-    label: above
+    label: inline
     type: timestamp
-    weight: 12
+    weight: 11
     region: content
     settings:
       date_format: medium
@@ -46,22 +46,22 @@ content:
     third_party_settings: {  }
   field_hr_assigned_to:
     weight: 1
-    label: above
+    label: inline
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_hr_description:
     weight: 3
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_hr_due_date:
     weight: 6
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -70,7 +70,7 @@ content:
     region: content
   field_hr_est_hours:
     weight: 7
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -81,16 +81,16 @@ content:
     region: content
   field_hr_priority:
     weight: 5
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_hr_project:
     weight: 8
-    label: above
+    label: inline
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
@@ -112,14 +112,14 @@ content:
     region: content
   field_hr_task_status:
     weight: 2
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_hr_type:
     weight: 4
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -133,9 +133,9 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   uid:
-    label: above
+    label: inline
     type: author
-    weight: 11
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }

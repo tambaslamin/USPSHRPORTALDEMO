@@ -67,7 +67,6 @@ permissions:
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'
   - 'use editorial transition publish'
-  - 'view any hr_app_pages content'
   - 'view any hr_portal_pmo entities'
   - 'view any unpublished content'
   - 'view any webform submission'

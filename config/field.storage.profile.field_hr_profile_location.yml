@@ -1,0 +1,19 @@
+uuid: c6a285b0-4f2d-421c-bf5f-f4cfe18f4d2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - geolocation
+    - profile
+id: profile.field_hr_profile_location
+field_name: field_hr_profile_location
+entity_type: profile
+type: geolocation
+settings: {  }
+module: geolocation
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

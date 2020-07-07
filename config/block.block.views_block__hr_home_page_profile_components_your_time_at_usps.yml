@@ -13,7 +13,7 @@ dependencies:
 id: views_block__hr_home_page_profile_components_your_time_at_usps
 theme: uspshrdemo
 region: content_top_left
-weight: 0
+weight: -20
 provider: null
 plugin: 'views_block:hr_home_page_profile_components-your_time_at_usps'
 settings:

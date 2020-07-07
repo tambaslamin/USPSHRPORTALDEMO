@@ -1,28 +1,27 @@
-uuid: ea4f4643-6708-40d2-a657-b92e0ba091f9
+uuid: 5333c281-52c4-465f-be67-391c517b1187
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.hr_home_page_profile_components
+    - views.view.location_based_personalization
   module:
     - system
     - views
   theme:
     - uspshrdemo
-id: views_block__hr_home_page_profile_components_my_apps_and_links
+id: views_block_my_location_based_content
 theme: uspshrdemo
 region: content_top_middle
-weight: -21
+weight: -20
 provider: null
-plugin: 'views_block:hr_home_page_profile_components-my_apps_and_links'
+plugin: 'views_block:location_based_personalization-block_my_location_based_content'
 settings:
-  id: 'views_block:hr_home_page_profile_components-my_apps_and_links'
+  id: 'views_block:location_based_personalization-block_my_location_based_content'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
