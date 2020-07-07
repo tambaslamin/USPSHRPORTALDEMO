@@ -9,7 +9,7 @@ dependencies:
 id: tabs
 theme: uspshrdemo
 region: global_page_title
-weight: -20
+weight: -19
 provider: null
 plugin: local_tasks_block
 settings:

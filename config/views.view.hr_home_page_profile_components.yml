@@ -229,7 +229,7 @@ display:
           empty: false
           tokenize: true
           content:
-            value: '<a href="/user/{{ arguments.uid }}/edit#edit-group-profile-retirement-eligib">Manage My Apps & Links</a>'
+            value: '<a href="/user/{{ arguments.uid }}/edit#edit-group-profile-preferences">Manage My Apps & Links</a>'
             format: full_html
           plugin_id: text
       defaults:

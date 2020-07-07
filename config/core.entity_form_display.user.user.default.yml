@@ -46,6 +46,7 @@ third_party_settings:
         description: ''
         required_fields: true
         open: false
+        formatter: closed
       label: Personalization
     group_user_account_details:
       children:
