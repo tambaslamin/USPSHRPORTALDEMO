@@ -196,6 +196,21 @@ article .vertical-tabs__panes .form-group legend {
   display: none;
 }
 
+/* Moderation Dashboard */
+.moderation-dashboard-region {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.moderation-dashboard-region .views-row {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body:not(.transparent-background):not(.page-user-login):not(.node--type-hr-landing-page) #block-uspshrdemo-content {
+  margin-top: -40px;
+}
+
 @media (max-width: 992px) {
   article .profile-name {
     width: 75%;
