@@ -61,3 +61,11 @@ pmo-task:
   css:
     theme:
       css/pmo-task-page.css: {}
+personalizations-page:
+  css:
+    theme:
+      css/personalizations-page.css: {}
+password:
+  css:
+    theme:
+      css/password.css: {}
