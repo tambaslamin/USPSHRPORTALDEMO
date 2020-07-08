@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.user_personalization
   module:
+    - block_class
     - system
     - views
   theme:
     - uspshrdemo
+third_party_settings:
+  block_class:
+    classes: home-page-card-styling
 id: views_block_my_profile_personalization_interest
 theme: uspshrdemo
 region: content_top_left
