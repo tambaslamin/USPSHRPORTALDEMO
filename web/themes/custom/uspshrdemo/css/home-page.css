@@ -26,10 +26,10 @@
 /**
  * Generic profile list block.
  */
- .home-page-card-styling .item-list li {
+.home-page-card-styling .item-list li {
   padding: 10px 0;
- }
- .home-page-card-styling .item-list li:not(:last-of-type) {
+}
+.home-page-card-styling .item-list li:not(:last-of-type) {
   border-bottom: 1px solid #eff1f7;
 }
 
