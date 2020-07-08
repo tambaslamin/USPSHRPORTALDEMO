@@ -86,7 +86,7 @@ display:
           row_class: ''
           default_row_class: true
           type: ul
-          wrapper_class: item-list
+          wrapper_class: 'item-list col'
           class: ''
       row:
         type: fields
@@ -3108,7 +3108,7 @@ display:
           tokenize: false
           content: 'No results found'
           plugin_id: text_custom
-      css_class: 'card card-body'
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -3315,7 +3315,7 @@ display:
           entity_type: user
           entity_field: uid
           plugin_id: user_uid
-      css_class: 'card card-body'
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

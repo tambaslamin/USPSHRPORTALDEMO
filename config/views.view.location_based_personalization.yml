@@ -70,7 +70,7 @@ display:
           row_class: ''
           default_row_class: true
           type: ul
-          wrapper_class: item-list
+          wrapper_class: 'item-list col'
           class: ''
       row:
         type: fields
@@ -186,6 +186,7 @@ display:
         pager: false
         title: false
         fields: false
+        css_class: false
       block_description: 'My Location Based Content'
       display_description: ''
       title: 'Content Based on My Location'
@@ -304,6 +305,7 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
