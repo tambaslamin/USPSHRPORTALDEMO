@@ -1,0 +1,28 @@
+uuid: e8e5e7dc-1ae9-41e7-9576-49abb1a6a6b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_hr_profile_location
+    - profile.type.usps_person_profile
+  module:
+    - geolocation
+id: profile.usps_person_profile.field_hr_profile_location
+field_name: field_hr_profile_location
+entity_type: profile
+bundle: usps_person_profile
+label: 'Content based on your Location'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    lat_sin: '0.65336431750362'
+    lat_cos: '0.75704363719209'
+    lng_rad: '-1.290477622058'
+    value: '40.7957399, -73.93892129999999'
+    lat: '40.7957399'
+    lng: '-73.93892129999999'
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

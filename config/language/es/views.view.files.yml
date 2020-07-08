@@ -4,6 +4,8 @@ display:
       fields:
         status:
           label: Estado
+        count:
+          label: 'Usado en'
       filters:
         status:
           expose:
@@ -13,3 +15,5 @@ display:
       fields:
         entity_label:
           label: Entidad
+        type:
+          label: 'Tipo de entidad'

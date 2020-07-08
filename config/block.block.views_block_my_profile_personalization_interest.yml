@@ -1,22 +1,22 @@
-uuid: ea4f4643-6708-40d2-a657-b92e0ba091f9
+uuid: cc61507b-8376-4b37-b2f2-ba3eec30c1a8
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.hr_home_page_profile_components
+    - views.view.user_personalization
   module:
     - system
     - views
   theme:
     - uspshrdemo
-id: views_block__hr_home_page_profile_components_my_apps_and_links
+id: views_block_my_profile_personalization_interest
 theme: uspshrdemo
-region: content_top_middle
-weight: -21
+region: content_top_left
+weight: -18
 provider: null
-plugin: 'views_block:hr_home_page_profile_components-my_apps_and_links'
+plugin: 'views_block:user_personalization-block_my_profile_personalization_interest'
 settings:
-  id: 'views_block:hr_home_page_profile_components-my_apps_and_links'
+  id: 'views_block:user_personalization-block_my_profile_personalization_interest'
   label: ''
   provider: views
   label_display: visible

@@ -24,7 +24,7 @@ bundle: hr_task
 mode: default
 content:
   field_hr_assigned_to:
-    weight: 7
+    weight: 8
     settings:
       form_mode: default
       override_labels: true
@@ -41,7 +41,7 @@ content:
     type: inline_entity_form_complex
     region: content
   field_hr_description:
-    weight: 6
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -49,7 +49,7 @@ content:
     type: text_textarea
     region: content
   field_hr_due_date:
-    weight: 3
+    weight: 4
     settings:
       increment: 15
       date_order: YMD
@@ -58,68 +58,17 @@ content:
     type: datetime_datelist
     region: content
   field_hr_est_hours:
-    weight: 4
+    weight: 5
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_hr_priority:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_hr_project:
-    weight: 8
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Project
-      label_plural: Projects
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
-    region: content
-  field_hr_ref_documents:
-    weight: 10
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Document
-      label_plural: Documents
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
-    region: content
-  field_hr_task_notes:
-    weight: 9
-    settings:
-      form_mode: default
-      override_labels: true
-      label_singular: Note
-      label_plural: Notes
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      revision: false
-      collapsible: false
-      collapsed: false
-      allow_duplicate: false
-    third_party_settings: {  }
-    type: inline_entity_form_complex
     region: content
   field_hr_task_status:
     weight: 1
@@ -128,7 +77,7 @@ content:
     type: options_select
     region: content
   field_hr_type:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -148,15 +97,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete_tags
-    weight: 11
+  translation:
+    weight: 9
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
+  field_hr_project: true
+  field_hr_ref_documents: true
+  field_hr_task_notes: true
+  uid: true
