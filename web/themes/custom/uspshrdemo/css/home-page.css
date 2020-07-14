@@ -24,12 +24,23 @@
 }
 
 /**
+ * Generic profile list block.
+ */
+.home-page-card-styling .item-list li {
+  padding: 10px 0;
+}
+.home-page-card-styling .item-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eff1f7;
+}
+
+/**
  * Profile components.
  */
 #block-views-block-hr-home-page-profile-components-your-time-at-usps h2,
 #block-views-block-hr-home-page-profile-components-my-apps-and-links h2,
 #block-retirementeligibility h2,
-.region-top-right-contents h2 {
+.region-top-right-contents h2,
+.home-page-card-styling h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -42,7 +53,8 @@
 #block-views-block-hr-home-page-profile-components-your-time-at-usps,
 #block-views-block-hr-home-page-profile-components-my-apps-and-links,
 #block-retirementeligibility,
-.region-top-right-contents {
+.region-top-right-contents,
+.home-page-card-styling {
   margin-bottom: 15px;
 }
 #block-views-block-hr-home-page-profile-components-your-time-at-usps .views-row,
