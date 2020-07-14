@@ -1,0 +1,8 @@
+tips:
+  search-api-server-form-name:
+    label: 服务器名称
+  search-api-server-form-description:
+    label: 服务器描述
+  search-api-server-form-backend:
+    label: 服务器后端
+    body: '服务器可以基于不同的技术，这称之为“后端”。服务器只能使用一种后端，而且之后不能更改。启用了“数据库搜索”模块后，可以使用“数据库”后端。另外一种比较常用的后端是 <a href="https://www.drupal.org/project/search_api_solr">Solr</a>，不过该服务器本身需要单独设置。'

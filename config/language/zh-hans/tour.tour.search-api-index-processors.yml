@@ -1,0 +1,5 @@
+tips:
+  search-api-index-processors-weights:
+    label: 处理器顺序
+  search-api-index-processors-settings:
+    label: 处理器设置

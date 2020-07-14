@@ -1,0 +1,43 @@
+uuid: 4e7bf8cf-729e-4b8c-afb3-277c1151a99b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.task_management
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - uspshrdemo
+id: views_block__task_management_block_my_to_do_tasks_annie
+theme: uspshrdemo
+region: content_top_right
+weight: -22
+provider: null
+plugin: 'views_block:task_management-block_my_to_do_tasks_annie'
+settings:
+  id: 'views_block:task_management-block_my_to_do_tasks_annie'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      ace_user: ace_user
+      hr_standard_user: hr_standard_user
+      hr_professional: hr_professional
+      hr_content_owner: hr_content_owner
+      hr_supervisor: hr_supervisor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

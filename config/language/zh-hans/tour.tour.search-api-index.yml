@@ -1,0 +1,15 @@
+tips:
+  search-api-index-index-status:
+    label: 索引状态
+  search-api-index-status:
+    label: 状态
+  search-api-index-tracker:
+    label: 过往文章
+  search-api-index-server:
+    label: 服务器
+  search-api-index-server-index-status:
+    label: 服务器索引状态
+  search-api-index-cron-batch-size:
+    label: 计划任务批次大小
+  search-api-index-clear:
+    label: 清除已索引的数据

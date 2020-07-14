@@ -16,28 +16,28 @@ settings:
       label: 'TSP Benefits'
     -
       value: 'Link 2'
-      label: 'Link 2'
+      label: 'Manager Resources'
     -
       value: 'Link 3'
-      label: 'Link 3'
+      label: 'Retirement Planning Support'
     -
       value: 'Link 4'
-      label: 'Link 4'
+      label: 'Bargaining Employees'
     -
       value: 'Link 5'
-      label: 'Link 5'
+      label: 'Advance My Career'
     -
       value: 'Link 6'
-      label: 'Link 6'
+      label: 'Pay And Benefits Support'
     -
       value: 'Link 7'
-      label: 'Link 7'
+      label: 'Job Performance'
     -
       value: 'Link 8'
-      label: 'Link 8'
+      label: 'Hiring Support'
     -
       value: 'Link 9'
-      label: 'Link 9'
+      label: 'Health and Wellness'
   allowed_values_function: ''
 module: options
 locked: false

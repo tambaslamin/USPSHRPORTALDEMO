@@ -8,7 +8,6 @@ module:
   automated_cron: 0
   ban: 0
   better_exposed_filters: 0
-  big_pipe: 0
   block: 0
   block_blacklist: 0
   block_class: 0
@@ -34,7 +33,6 @@ module:
   dblog: 0
   diff: 0
   dropzonejs: 0
-  dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
   eck: 0
   editor: 0
@@ -57,14 +55,11 @@ module:
   geolocation: 0
   geolocation_address: 0
   geolocation_google_maps: 0
-  geolocation_google_places_api: 0
-  geolocation_google_static_maps: 0
   gnode: 0
   google_analytics: 0
   group: 0
   help: 0
   history: 0
-  honeypot: 0
   image: 0
   inline_entity_form: 0
   language: 0
@@ -96,12 +91,6 @@ module:
   path_alias: 0
   private_message: 0
   profile: 0
-  purge: 0
-  purge_drush: 0
-  purge_processor_cron: 0
-  purge_processor_lateruntime: 0
-  purge_tokens: 0
-  purge_ui: 0
   quickedit: 0
   r4032login: 0
   rdf: 0
@@ -117,9 +106,6 @@ module:
   serialization: 0
   settings_tray: 0
   shortcut: 0
-  smart_ip: 0
-  smart_ip_ip2location_bin_db: 0
-  smart_ip_ipinfodb_web_service: 0
   smtp: 0
   superfish: 0
   switch_page_theme: 0

@@ -714,7 +714,7 @@ display:
         title: 'My Personalized Dashboard'
         menu_name: account
         enabled: false
-        weight: -43
+        weight: -41
       filters:
         field_hr_content_interest_target_id:
           id: field_hr_content_interest_target_id

@@ -20,14 +20,9 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 0
     settings:
       trim_length: 600
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
@@ -35,5 +30,6 @@ hidden:
   field_hr_content_location: true
   field_hr_content_preferences: true
   langcode: true
+  links: true
   private_message_link: true
   search_api_excerpt: true

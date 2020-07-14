@@ -1,0 +1,9 @@
+tips:
+  search-api-server-status:
+    label: 状态
+  search-api-server-backend:
+    label: 后端类
+    body: '此服务器使用的后端插件。后端插件决定了项目索引和搜索的方式 - 例如，使用数据库还是 Apache Solr 服务器。'
+  search-api-server-clear:
+    label: 删除已索引的全部数据
+    body: 这将永久删除此服务器中已索引的全部非只读数据。项目将会重新排入索引的队列。在重新进行索引之前，搜索所影响的索引将不会返回任何结果。

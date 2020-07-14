@@ -4,7 +4,11 @@ status: true
 dependencies:
   module:
     - datetime
+    - field_permissions
     - profile
+third_party_settings:
+  field_permissions:
+    permission_type: custom
 id: profile.field_profile_retirement_date
 field_name: field_profile_retirement_date
 entity_type: profile

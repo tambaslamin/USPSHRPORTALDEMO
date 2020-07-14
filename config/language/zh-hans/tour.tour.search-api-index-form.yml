@@ -1,0 +1,11 @@
+tips:
+  search-api-index-form-name:
+    label: 索引名称
+  search-api-index-form-tracker:
+    label: 过往文章
+  search-api-index-form-server:
+    label: 服务器
+  search-api-index-form-description:
+    label: 索引描述
+  search-api-index-form-options:
+    label: 高级选项

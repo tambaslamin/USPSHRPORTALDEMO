@@ -15,7 +15,21 @@ label: Address
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    langcode: en
+    country_code: US
+    administrative_area: TN
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: ''
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
 default_value_callback: ''
 settings:
   available_countries:
@@ -23,16 +37,24 @@ settings:
   langcode_override: ''
   field_overrides:
     givenName:
-      override: hidden
+      override: required
     additionalName:
-      override: hidden
+      override: optional
     familyName:
-      override: hidden
+      override: required
     organization:
       override: hidden
+    addressLine1:
+      override: required
+    addressLine2:
+      override: optional
     sortingCode:
       override: hidden
     dependentLocality:
       override: hidden
+    locality:
+      override: required
+    administrativeArea:
+      override: required
   fields: {  }
 field_type: address

@@ -1,0 +1,42 @@
+uuid: b1475cc4-06f5-4e81-97dd-9a2dd5cd3e00
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.task_management
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - uspshrdemo
+id: views_block__task_management_block_my_assigned_tasks_annie
+theme: uspshrdemo
+region: content_top_right
+weight: -20
+provider: null
+plugin: 'views_block:task_management-block_my_assigned_tasks_annie'
+settings:
+  id: 'views_block:task_management-block_my_assigned_tasks_annie'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      ace_user: ace_user
+      hr_standard_user: hr_standard_user
+      hr_professional: hr_professional
+      hr_content_owner: hr_content_owner
+      hr_supervisor: hr_supervisor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

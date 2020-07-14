@@ -1,0 +1,23 @@
+label: 此索引中的字段
+tips:
+  search-api-index-fields-introduction:
+    label: 此索引中的字段
+    body: 此页面按数据源分组列出了此索引中的字段。(与数据源无关的字段列在“常规”里。)字段可在视图或基于索引的其他搜索显示中添加为过滤器或者排序条件。字段类型为“全文本”的还可进行全文搜索。
+  search-api-index-fields-add:
+    label: 添加字段
+  search-api-index-fields-label:
+    label: 标签
+  search-api-index-fields-machine-name:
+    label: 机读名称
+  search-api-index-fields-type:
+    label: 类型
+  search-api-index-fields-boost:
+    label: Boost
+  search-api-index-fields-edit:
+    label: 编辑字段
+  search-api-index-fields-remove:
+    label: 移除字段
+  search-api-index-fields-submit:
+    label: 保存变更
+  search-api-index-fields-cancel:
+    label: 取消变更

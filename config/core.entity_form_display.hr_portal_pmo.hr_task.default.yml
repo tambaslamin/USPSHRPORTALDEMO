@@ -50,12 +50,9 @@ content:
     region: content
   field_hr_due_date:
     weight: 4
-    settings:
-      increment: 15
-      date_order: YMD
-      time_type: '24'
+    settings: {  }
     third_party_settings: {  }
-    type: datetime_datelist
+    type: datetime_default
     region: content
   field_hr_est_hours:
     weight: 5

@@ -82,7 +82,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 20
+          items_per_page: 10
           offset: 0
           id: 0
           total_pages: null
@@ -107,26 +107,19 @@ display:
         options:
           view_modes:
             'entity:hr_portal_pmo':
-              hr_documents: search_results
-              hr_notes: search_results
-              hr_org: search_results
-              hr_people: search_results
-              hr_project: search_results
               hr_task: search_results
-              hr_team: search_results
             'entity:node':
               article: teaser
               blog_post: teaser
-              entity_browser_test: teaser
               forms: teaser
               hr_announcement: teaser
+              hr_app_pages: teaser
               hr_event: teaser
               hr_landing_page: teaser
               hr_media_gallery: teaser
               hr_topic: teaser
+              landing_page_publicly_accessible: teaser
               page: teaser
-            'entity:profile':
-              usps_person_profile: default
       fields:
         body:
           table: search_api_index_primary_hr_search

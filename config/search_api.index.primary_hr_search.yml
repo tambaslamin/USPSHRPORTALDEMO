@@ -3,31 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.hr_portal_pmo.field_hr_assigned_to
-    - field.storage.hr_portal_pmo.field_hr_est_hours
-    - field.storage.hr_portal_pmo.field_hr_description
-    - field.storage.hr_portal_pmo.field_hr_end_date
-    - field.storage.hr_portal_pmo.field_hr_priority
-    - field.storage.hr_portal_pmo.field_hr_task_status
-    - field.storage.hr_portal_pmo.field_hr_type
     - field.storage.node.body
     - field.storage.node.field_category
     - field.storage.node.field_form_category
     - field.storage.node.field_tags
-    - field.storage.profile.field_profile_first_name
-    - field.storage.profile.field_profile_last_name
-    - field.storage.profile.field_profile_retirement_date
-    - field.storage.profile.field_profile_start_date
-    - field.storage.profile.field_profile_title
-    - field.storage.profile.field_profile_your_apps
-    - field.storage.profile.field_profile_your_links
+    - field.storage.hr_portal_pmo.field_hr_assigned_to
+    - field.storage.hr_portal_pmo.field_hr_description
+    - field.storage.hr_portal_pmo.field_hr_est_hours
+    - field.storage.hr_portal_pmo.field_hr_priority
+    - field.storage.hr_portal_pmo.field_hr_task_status
+    - field.storage.hr_portal_pmo.field_hr_type
     - search_api.server.pantheon_search
   module:
-    - eck
     - taxonomy
     - node
+    - eck
     - search_api
-    - profile
 id: primary_hr_search
 name: 'Primary Search'
 description: ''
@@ -75,62 +66,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_form_category
-  field_profile_first_name:
-    label: 'First Name'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_first_name
-    type: string
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_first_name
-  field_profile_last_name:
-    label: 'Last Name'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_last_name
-    type: string
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_last_name
-  field_profile_retirement_date:
-    label: 'Retirement Date'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_retirement_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_retirement_date
-  field_profile_start_date:
-    label: 'Start Date'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_start_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_start_date
-  field_profile_title:
-    label: Title
-    datasource_id: 'entity:profile'
-    property_path: field_profile_title
-    type: text
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_title
-  field_profile_your_apps:
-    label: 'Your Apps'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_your_apps
-    type: string
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_your_apps
-  field_profile_your_links:
-    label: 'Your Links'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_your_links
-    type: string
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_your_links
   field_tags:
     label: Tags
     datasource_id: 'entity:node'
@@ -188,14 +123,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.hr_portal_pmo.field_hr_description
-  pmo_field_hr_end_date:
-    label: 'HR End Date'
-    datasource_id: 'entity:hr_portal_pmo'
-    property_path: field_hr_end_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.hr_portal_pmo.field_hr_end_date
   pmo_field_hr_est_hours:
     label: 'Est. Hours'
     datasource_id: 'entity:hr_portal_pmo'
@@ -291,22 +218,38 @@ field_settings:
 datasource_settings:
   'entity:hr_portal_pmo':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - hr_task
     languages:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - en
+        - es
+        - fr
+        - zh-hans
   'entity:node':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - article
+        - blog_post
+        - forms
+        - hr_announcement
+        - hr_app_pages
+        - hr_event
+        - hr_landing_page
+        - hr_media_gallery
+        - hr_topic
+        - landing_page_publicly_accessible
+        - page
     languages:
-      default: true
-      selected: {  }
-  'entity:profile':
-    bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - en
+        - es
+        - fr
+        - zh-hans
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
@@ -335,11 +278,6 @@ processor_settings:
     all_fields: false
     fields:
       - body
-      - field_profile_first_name
-      - field_profile_last_name
-      - field_profile_title
-      - field_profile_your_apps
-      - field_profile_your_links
       - pmo_field_hr_description
       - pmo_field_hr_est_hours
       - pmo_field_hr_priority
@@ -357,11 +295,6 @@ processor_settings:
     all_fields: false
     fields:
       - body
-      - field_profile_first_name
-      - field_profile_last_name
-      - field_profile_title
-      - field_profile_your_apps
-      - field_profile_your_links
       - pmo_field_hr_description
       - pmo_field_hr_est_hours
       - pmo_field_hr_priority

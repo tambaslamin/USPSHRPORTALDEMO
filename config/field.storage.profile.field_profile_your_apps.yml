@@ -25,19 +25,19 @@ settings:
       label: eOPF
     -
       value: HERO
-      label: HERO
+      label: HERO-CSOD
     -
       value: 'App 6'
-      label: 'App 6'
+      label: PES/PFP
     -
       value: 'App 7'
-      label: 'App 7'
+      label: eTravel
     -
       value: 'App 8'
-      label: 'App 8'
+      label: eReassign
     -
       value: 'App 9'
-      label: 'App 9'
+      label: TACS
   allowed_values_function: ''
 module: options
 locked: false

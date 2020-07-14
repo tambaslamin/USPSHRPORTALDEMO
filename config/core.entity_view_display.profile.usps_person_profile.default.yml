@@ -29,7 +29,6 @@ dependencies:
     - address
     - datetime
     - field_group
-    - geolocation
     - options
     - telephone
     - text
@@ -146,29 +145,6 @@ targetEntityType: profile
 bundle: usps_person_profile
 mode: default
 content:
-  field_hr_profile_interest:
-    weight: 34
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_hr_profile_location:
-    weight: 36
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: geolocation_latlng
-    region: content
-  field_hr_profile_preferences:
-    weight: 35
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_profile_address:
     weight: 31
     label: hidden
@@ -307,9 +283,8 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  search_api_excerpt:
-    weight: 1
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_hr_profile_interest: true
+  field_hr_profile_location: true
+  field_hr_profile_preferences: true
+  search_api_excerpt: true
